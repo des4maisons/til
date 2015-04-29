@@ -1,3 +1,4 @@
+* [Lita](https://www.lita.io/) is a plugin-friendly ruby-based chat bot gem
 * OSX puts its text dictionary in `/usr/share/dict/words`
 * `knife` is a tool to change files in a chef-server at runtime. It can be run from a
     machine that isn't the chef server - it communicates updates to the server using an HTTP API. E.g.:
