@@ -1,5 +1,10 @@
+* To assign the output of a shell command to a variable in a Makefile, use the `shell` command:
+
+    ```make
+    DATE = $(shell date '+%Y-%m-%d')
+    ```
 * Lita cannot have configuration in place for non-loaded plugins. In this example, I configured lita-hipchat without enabling:
-* 
+
     ```
     [2015-04-30 17:55:51 UTC] FATAL: Lita configuration file could not be processed. The exception was:
     undefined method `hipchat' for #<Lita::Configuration:0x007ff6b12b3ea0>
