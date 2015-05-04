@@ -1,3 +1,4 @@
+* To search for which `chef` nodes have a certain role (e.g. `foo`), use `knife search node role:foo`
 * To assign the output of a shell command to a variable in a Makefile, use the `shell` command:
 
     ```make
