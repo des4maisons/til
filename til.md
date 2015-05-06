@@ -1,3 +1,5 @@
+* `lsof -i tcp:3000` is a hopefully portable command for seeing what process is running on port `3000`.
+    (The incantation of `netstat` I used previously doesn't work on OSX)
 * To run redis as installed by brew on Mac OSX, `redis-server /usr/local/etc/redis.conf`
 * To see the actual executable you are using while under rbenv shims magic, use `rbenv which gem`
 * To search for which `chef` nodes have a certain role (e.g. `foo`), use `knife search node role:foo`
