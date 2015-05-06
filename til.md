@@ -1,5 +1,10 @@
-* In bash, if ~ is quoted, it doesn't get expanded to your home directory.
+* In bash, if `~` is quoted, it doesn't get expanded to your home directory.
+
     ```
+    $ file ~
+    /Users/marguerite: directory
+    $ file "~"
+    ~: cannot open `~' (No such file or directory)
     ```
 * `lsof -i tcp:3000` is a hopefully portable command for seeing what process is running on port `3000`.
     (The incantation of `netstat` I used previously doesn't work on OSX)
