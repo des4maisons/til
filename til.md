@@ -1,3 +1,4 @@
+* [A list of vagrant boxes, complete with their download url](http://www.vagrantbox.es/)
 * In bash, if `~` is quoted, it doesn't get expanded to your home directory.
 
     ```
