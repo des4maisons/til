@@ -1,3 +1,4 @@
+* UID mappings. A single user can own a range of userids, useful for user namespaces. In `/etc/subuid` (see `man subuid`), you   can see what range each user has access to.
 * [A list of vagrant boxes, complete with their download url](http://www.vagrantbox.es/)
 * In bash, if `~` is quoted, it doesn't get expanded to your home directory.
 
