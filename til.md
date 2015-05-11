@@ -1,3 +1,12 @@
+* One way of creating ruby libraris: In your library base file you should require all the files
+    defining things you want at top-level scope. E.g.:
+
+    ```ruby
+    # lib/my-library.rb
+    require 'my-library/version'
+
+    Dir[File.join(File.dirname(__FILE__), 'my-library', 'top-level', '*.rb')].each { |lib| require lib }
+    ```
 * You need to install the `ruby-build` plugin for `rbenv` if you want to be able to `rbenv install 2.1.4`
 * UID mappings. A single user can own a range of userids, useful for user namespaces. In `/etc/subuid` (see `man subuid`), you   can see what range each user has access to.
 * [A list of vagrant boxes, complete with their download url](http://www.vagrantbox.es/)
