@@ -1,3 +1,8 @@
+* On OSX, `netstat` doesn't show you PIDs. You need to use `lsof` to see the PID:
+    ```
+    netstat -l | grep $SOME_IP   # grab the port. marguerite.<port_number>
+    lsof -i tcp:$PORT_NUMBER   # here you can see the pid
+    ```
 * To list files in an installed debian package, `dpkg -L $package_name`
 * One way of creating ruby libraris: In your library base file you should require all the files
     defining things you want at top-level scope. E.g.:
