@@ -1,5 +1,6 @@
 * On OSX, `netstat` doesn't show you PIDs. You need to use `lsof` to see the PID:
-    ```
+
+    ```bash
     netstat -l | grep $SOME_IP   # grab the port. marguerite.<port_number>
     lsof -i tcp:$PORT_NUMBER   # here you can see the pid
     ```
