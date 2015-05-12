@@ -1,3 +1,4 @@
+* To list files in an installed debian package, `dpkg -L $package_name`
 * One way of creating ruby libraris: In your library base file you should require all the files
     defining things you want at top-level scope. E.g.:
 
