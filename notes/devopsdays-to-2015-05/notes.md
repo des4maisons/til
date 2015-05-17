@@ -1,7 +1,7 @@
 Things to read
 ---------
 
-* bridget kromhout (?)
+* Bridget Kromhout on what not no run in a container
 * Ops pain thermodynamics
 * The Phoenix Project
 
