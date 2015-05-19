@@ -1,3 +1,5 @@
+* Vagrant plugins installed via `vagrant plugin install <name>` are published
+  as gems in the official rubygems repo
 * [goiardi](https://github.com/ctdk/goiardi) is an in-memory chef server written in go
 * On OSX, `netstat` doesn't show you PIDs. You need to use `lsof` to see the PID:
 
