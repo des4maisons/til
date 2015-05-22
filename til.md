@@ -1,3 +1,6 @@
+* If your automation experiences a timeout during a `git clone` on `git
+  ls-remote`, it's possible that `git` is expecting user input, such as a
+  password to decrypt your private key (which in my case was empty!)
 * An LWRP in chef is a Lightweight Resource or Provider. Chef provides 2 ways
   of implementing a resource (say). You can subclass a Chef::resource and write
   your own getters and setters, or you can define a resource using a simple DSL.
