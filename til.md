@@ -1,3 +1,7 @@
+* An LWRP in chef is a Lightweight Resource or Provider. Chef provides 2 ways
+  of implementing a resource (say). You can subclass a Chef::resource and write
+  your own getters and setters, or you can define a resource using a simple DSL.
+  [See this page](https://docs.chef.io/lwrp_custom.html)
 * Vagrant plugins installed via `vagrant plugin install <name>` are published
   as gems in the official rubygems repo
 * [goiardi](https://github.com/ctdk/goiardi) is an in-memory chef server written in go
