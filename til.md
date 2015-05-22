@@ -1,3 +1,5 @@
+* [`sysdig`](http://www.sysdig.org/) is strace+tcpdump+lsof in one more
+  user-friendly package.
 * If your automation experiences a timeout during a `git clone` on `git
   ls-remote`, it's possible that `git` is expecting user input, such as a
   password to decrypt your private key (which in my case was empty!)
