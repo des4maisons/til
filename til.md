@@ -1,3 +1,5 @@
+* Keep local SSH speedy when not connected to the internet: set `UseDNS`
+  configuration to `no` in the ssh server config.
 * [`sysdig`](http://www.sysdig.org/) is strace+tcpdump+lsof in one more
   user-friendly package.
 * If your automation experiences a timeout during a `git clone` on `git
