@@ -1,3 +1,6 @@
+* [This page on chef auth](https://docs.chef.io/auth.html) talks about
+  how authorization/authentication to chef-server works (knife, chef-client...)
+  including the bootstrapping process.
 * If your keyboard is acting like it has a stuck key, but unsticking all keys
   doesn't fix it, nor does it work on your laptop, check that you don't have a
   3rd keyboard plugged in with something on top of it.
