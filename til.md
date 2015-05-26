@@ -1,3 +1,48 @@
+* There are 2 ways to bootstrap a new knife workstation. One involves having
+  access to the chef server, the other requires the admin's pem file (key).
+  Both involve having the validator.pem available on the workstation.
+    * Using the admin pem:
+    ```
+    $ knife configure --initial
+    WARNING: No knife configuration file found
+    Where should I put the config file? [/home/jtimberman/.chef/knife.rb]
+    Please enter the chef server URL: [http://chef.example.com:4000] https://chef.example.com
+    Please enter a name for the new user: [jtimberman]
+    Please enter the existing admin name: [admin]
+    Please enter the location of the existing admin's private key: [/etc/chef/admin.pem] .chef/admin.pem
+    Please enter the validation clientname: [chef-validator]
+    Please enter the location of the validation key: [/etc/chef/validation.pem] .chef/chef-validator.pem
+    Please enter the path to a chef repository (or leave blank):
+    Creating initial API user...
+    Please enter a password for the new user: Created user[jtimberman]
+    Configuration file written to /home/jtimberman/.chef/knife.rb
+    ```
+
+    * using access to the server (you need to have configured knife there first):
+    ```
+    chef-server$ knife client create my-username -n -a -f /tmp/my-username.pem
+    Created client[my-username]
+    ----
+    workstation$ mkdir ~/.chef
+    workstation$ scp chef-server.com:/tmp/my-username.pem ~/.chef/my-username.pem
+    workstation$ knife configure
+    No knife configuration file found
+    Where should I put the config file? [~/.chef/knife.rb]
+    Please enter the chef server URL: [http://localhost:4000] http://chef-server.example.com:4000
+    Please enter an existing username or clientname for the API: [my-username] my-username
+    Please enter the validation clientname: [chef-validator]
+    Please enter the location of the validation key: [/etc/chef/validation.pem] ~/.chef/validation.pem
+    Please enter the path to a chef repository (or leave blank):
+    WARN: You must place your client key in:
+    WARN: /home/$USER/.chef/my-username.pem
+    WARN: Before running commands with Knife!
+    WARN:
+    WARN: You must place your validation key in:
+    WARN: /home/$USER/validation.pem
+    WARN: Before generating instance data with Knife!
+    WARN:
+    WARN: Configuration file written to /home/$USER/.chef/knife.rb
+    ```
 * [This page on chef auth](https://docs.chef.io/auth.html) talks about
   how authorization/authentication to chef-server works (knife, chef-client...)
   including the bootstrapping process.
