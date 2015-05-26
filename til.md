@@ -1,3 +1,6 @@
+* If your keyboard is acting like it has a stuck key, but unsticking all keys
+  doesn't fix it, nor does it work on your laptop, check that you don't have a
+  3rd keyboard plugged in with something on top of it.
 * Keep local SSH speedy when not connected to the internet: set `UseDNS`
   configuration to `no` in the ssh server config.
 * [`sysdig`](http://www.sysdig.org/) is strace+tcpdump+lsof in one more
