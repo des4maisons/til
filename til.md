@@ -1,3 +1,4 @@
+* Most likely, knife is already configured on your chef server.
 * There are 2 ways to bootstrap a new knife workstation. One involves having
   access to the chef server, the other requires the admin's pem file (key).
   Both involve having the validator.pem available on the workstation.
