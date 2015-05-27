@@ -1,3 +1,13 @@
+* If you are debugging a network connection to a container, verify
+    * that both the vm and the container are running
+    * that iptable rules are not blocking/dropping any of your traffic
+    * that traffic is going from the vm to the container as expected (tcpdump)
+    * that nginx isn't running anywhere to mess up what you think should happen
+* `iptables -t nat -S <chain>` displays the rules for chain `<chain>`
+* `iptables -n -L -v` displays numeric ip addresses and ports, lists all rules
+  for (all) chains, and outputs the hit counts for each rule.
+* `tcpdump tcp -i any -nn port xxxx` dumps any traffic on any interface, to or
+  from port xxxx, and does not attempt to resolve port numbers or ip addresses.
 * Most likely, knife is already configured on your chef server.
 * There are 2 ways to bootstrap a new knife workstation. One involves having
   access to the chef server, the other requires the admin's pem file (key).
