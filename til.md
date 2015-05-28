@@ -4,6 +4,7 @@
     * that iptable rules are not blocking/dropping any of your traffic
     * that traffic is going from the vm to the container as expected (tcpdump)
     * that nginx isn't running anywhere to mess up what you think should happen
+    * that you aren't forwarding ports to any restricted ports such as 80 or 443
 * `iptables -t nat -S <chain>` displays the rules for chain `<chain>`
 * `iptables -n -L -v` displays numeric ip addresses and ports, lists all rules
   for (all) chains, and outputs the hit counts for each rule.
