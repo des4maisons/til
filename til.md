@@ -1,3 +1,4 @@
+* To configure the log level for GoCD, edit `/etc/go/log4j.properties`
 * `OH` in twitter speak means "overheard"
 * If you are debugging a network connection to a container, verify
     * that both the vm and the container are running
