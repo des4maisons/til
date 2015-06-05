@@ -1,3 +1,5 @@
+* Authentication problems? Is it because you have 2-factor authentication
+    enabled?
 * Troubleshooting problems of any kind:
     1. Is solving this problem necessary? Look bigger picture. Is the bigger
         thing you're trying to solve the right approach? Are you picking the
