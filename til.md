@@ -1,3 +1,9 @@
+* Troubleshooting problems of any kind:
+    1. Is solving this problem necessary? Look bigger picture. Is the bigger
+        thing you're trying to solve the right approach? Are you picking the
+        wrong battles?
+    1. Is this going to be yaks? Maybe there's a different problem you can solve.
+    1. How long have you been fighting this? Is it time to ask for help?
 * To configure the log level for GoCD, edit `/etc/go/log4j.properties`
 * `OH` in twitter speak means "overheard"
 * If you are debugging a network connection to a container, verify
