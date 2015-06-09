@@ -1,3 +1,7 @@
+* To test a given file in `rspec`:
+    ```
+    rake spec SPEC=/path/to/spec_file.rb
+    ```
 * In ChefSpec, notifications don't fire, since ChefSpec is attempting to stub
     out any actions that are taken as a result of a resource. This means you
     can't test something with `action :nothing`, since it won't get triggered.
