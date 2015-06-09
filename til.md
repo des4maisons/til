@@ -1,3 +1,7 @@
+* There's an anchor button on 1password menu-bar-drop-down-windows that lets
+    you anchor the window on top of everything even after the 1password menu has
+    been dismissed. Useful for when you know you're going to need that same
+    password again and again.
 * In `rspec` tests, `context` is the same as `describe`, and `describe` is a
     thing that lets you apply `before` and `let` blocks to a group of tests.
     You can nest `describes`, but it's easier to read if you use `context`
