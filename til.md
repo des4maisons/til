@@ -1,3 +1,6 @@
+* In ChefSpec, notifications don't fire, since ChefSpec is attempting to stub
+    out any actions that are taken as a result of a resource. This means you
+    can't test something with `action :nothing`, since it won't get triggered.
 * [vagrant share](https://docs.vagrantup.com/v2/share/index.html) exposes your
     vagrant ports to the outside internet.
 * [`ngrok`](https://ngrok.com/) is a tool that sets up a tunnel from the
