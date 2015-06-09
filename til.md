@@ -1,3 +1,7 @@
+* In `rspec` tests, `context` is the same as `describe`, and `describe` is a
+    thing that lets you apply `before` and `let` blocks to a group of tests.
+    You can nest `describes`, but it's easier to read if you use `context`
+    inside of a `describe`.
 * `-y` option for `strace`: displays full path in file descriptors. e.g.:
     ```
     [pid 28968] read(244</var/go/x.properties>, "prop1=stuff\nprop2=stompy"..., 8192) = 72
