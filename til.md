@@ -1,3 +1,7 @@
+* `-y` option for `strace`: displays full path in file descriptors. e.g.:
+    ```
+    [pid 28968] read(244</var/go/x.properties>, "prop1=stuff\nprop2=stompy"..., 8192) = 72
+    ```
 * Why `let` is better than instance variables in `before` blocks in `rspec`
     tests (See [this stack overflow answer](http://stackoverflow.com/questions/5359558/when-to-use-rspec-let/5359979#53599790)
 * Authentication problems? Is it because you have 2-factor authentication
