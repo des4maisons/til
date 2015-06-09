@@ -1,3 +1,7 @@
+* [vagrant share](https://docs.vagrantup.com/v2/share/index.html) exposes your
+    vagrant ports to the outside internet.
+* [`ngrok`](https://ngrok.com/) is a tool that sets up a tunnel from the
+    outside internet to your computer.
 * There's an anchor button on 1password menu-bar-drop-down-windows that lets
     you anchor the window on top of everything even after the 1password menu has
     been dismissed. Useful for when you know you're going to need that same
