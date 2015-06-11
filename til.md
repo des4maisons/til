@@ -1,3 +1,6 @@
+* You can view the contents of an `ar`. `ar t` to list contents, `ar x` to
+    extract.
+* Debian packages are `ar` archive files.
 * To test a given file in `rspec`:
     ```
     rake spec SPEC=/path/to/spec_file.rb
