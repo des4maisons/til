@@ -1,3 +1,5 @@
+* To remove the "Apps" button from your chrome bookmark bar: right click on the
+    bar and click "Show Apps Shortcut"
 * You can view the contents of an `ar`. `ar t` to list contents, `ar x` to
     extract.
 * Debian packages are `ar` archive files.
