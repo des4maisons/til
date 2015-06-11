@@ -34,6 +34,8 @@
 * To configure the log level for GoCD, edit `/etc/go/log4j.properties`
 * `OH` in twitter speak means "overheard"
 * If you are debugging a network connection to a container, verify
+    * that the ip that is being connected to is the ip of the machine you want
+      to connect to
     * that in any web requests, you put the port in the right spot
     * that both the vm and the container are running
     * that iptable rules are not blocking/dropping any of your traffic
