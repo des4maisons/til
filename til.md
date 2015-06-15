@@ -38,7 +38,6 @@
         wrong battles?
     1. Is this going to be yaks? Maybe there's a different problem you can solve.
     1. How long have you been fighting this? Is it time to ask for help?
-* To configure the log level for GoCD, edit `/etc/go/log4j.properties`
 * `OH` in twitter speak means "overheard"
 * If you are debugging a network connection to a container, verify
     * that the ip that is being connected to is the ip of the machine you want
