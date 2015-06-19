@@ -1,3 +1,23 @@
+* To test this:
+
+    ```ruby
+    not_if { ::File.exists?("/usr/local/bin/jq") }
+    ```
+
+    You need to allow the `File` class to behave normally before you stub it.
+    Chef and RSpec both have calls to `File.exist?`, so you need to only stub
+    yours:
+
+    ```ruby
+    it "whatever" do
+      allow(File).to receive(:exist?)
+        .and_call_original
+      allow(File).to receive(:exist?)
+        .with("your/file/that/is/being/tested")
+        .and_return(false)
+      expect(chef_run).to run_bash('stuff')
+    end
+    ```
 * SOP means "standard operation procedure"
 * By default, `berks` (the `chef` equivalent of `bundler`) looks to
     http://cookbooks.opscode.com/ to download cookbooks listed in `Berskfile`.
