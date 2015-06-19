@@ -1,3 +1,6 @@
+* Some cheap ways to truncate a file:
+    * `truncate -s 0 $dest_file`
+    * `cp /dev/null $dest_file`
 * To test this:
 
     ```ruby
