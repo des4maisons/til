@@ -1,3 +1,4 @@
+* Show total amount of free memory: `free -m` (`-m` is for "megabytes")
 * Some cheap ways to truncate a file:
     * `truncate -s 0 $dest_file`
     * `cp /dev/null $dest_file`
