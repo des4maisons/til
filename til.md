@@ -1,3 +1,4 @@
+* The Net::HTTP lib lets you make web requests in ruby
 * Show total amount of free memory: `free -m` (`-m` is for "megabytes")
 * Some cheap ways to truncate a file:
     * `truncate -s 0 $dest_file`
