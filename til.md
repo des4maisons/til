@@ -1,3 +1,4 @@
+* In vim, `:ls` lists your buffers. `:b<n>` takes you to buffer `<n>`.
 * The Net::HTTP lib lets you make web requests in ruby
 * Show total amount of free memory: `free -m` (`-m` is for "megabytes")
 * Some cheap ways to truncate a file:
