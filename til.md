@@ -1,3 +1,11 @@
+* In ruby, you can do a set-like difference of arrays like this:
+    ```ruby
+    x = [1, 2, 3]
+    y = [3, 4, 5]
+    x - y
+    ==> [1, 2]
+    ```
+    There is also the Set class, if you're into that sort of thing.
 * In vim, `:ls` lists your buffers. `:b<n>` takes you to buffer `<n>`.
 * The Net::HTTP lib lets you make web requests in ruby
 * Show total amount of free memory: `free -m` (`-m` is for "megabytes")
