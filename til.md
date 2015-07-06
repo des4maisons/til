@@ -1,3 +1,7 @@
+* "Strategy" is a general plan for how you will acheive something. "Tactics"
+    refers to the specifics of the many activities you may need to do to
+    execute that strategy. Strategy happens before battle, tactics are
+    implemented during.
 * Bind mounting lets you mount the same filesystem at 2 different spots
 * In ruby, you can do a set-like difference of arrays like this:
     ```ruby
