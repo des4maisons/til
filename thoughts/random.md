@@ -3,3 +3,4 @@
     not know something by asking in the first place. So you should not feel
     ashamed or offended when someone thinks there's something else you don't
     know.
+- "Do the simplest thing that could possibly work." - Ward Cunningham
