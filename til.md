@@ -1,3 +1,4 @@
+* Bind mounting lets you mount the same filesystem at 2 different spots
 * In ruby, you can do a set-like difference of arrays like this:
     ```ruby
     x = [1, 2, 3]
