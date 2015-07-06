@@ -1,3 +1,6 @@
+* ETL stands for "Extract, Transform, Load" - the process of taking data from
+    sources, transforming it according to your needs, and storing it somewhere
+    else.
 * "Strategy" is a general plan for how you will acheive something. "Tactics"
     refers to the specifics of the many activities you may need to do to
     execute that strategy. Strategy happens before battle, tactics are
