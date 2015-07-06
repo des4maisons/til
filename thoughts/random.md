@@ -6,3 +6,6 @@
 - "Do the simplest thing that could possibly work." - Ward Cunningham
 - When you build a command line tool to do something, it means it can be run
     from jenkins :)
+- When some code you write interacts with private github repos, you need to
+    take care that the extra step of authentication doesn't make it impossible
+    to automate your processes.
