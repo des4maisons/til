@@ -1,3 +1,6 @@
+* "Moonlighting" means working at a secondary job. Historically: (in
+    19th-century Ireland) the carrying out of cattle-maiming, murders, etc,
+    during the night in protest against the land-tenure system
 * ETL stands for "Extract, Transform, Load" - the process of taking data from
     sources, transforming it according to your needs, and storing it somewhere
     else.
