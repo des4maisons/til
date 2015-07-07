@@ -78,7 +78,13 @@
     tests (See [this stack overflow answer](http://stackoverflow.com/questions/5359558/when-to-use-rspec-let/5359979#53599790)
 * Authentication problems? Is it because you have 2-factor authentication
     enabled?
-* Troubleshooting problems of any kind:
+* Determining if your code is correct:
+    1. isolate it to the simplest thing
+    1. Get this simple thing under test
+    1. review all booleans (should your trues be falses?)
+    1. Did you spell anything wrong?
+    1. Did you read the error message carefully?
+* Troubleshooting/debugging problems of any kind:
     1. Is solving this problem necessary? Look bigger picture. Is the bigger
         thing you're trying to solve the right approach? Are you picking the
         wrong battles?
