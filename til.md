@@ -1,3 +1,8 @@
+* In bash, to use `<` to compare strings, you should use `[[`, and not `[`:
+    ```
+    $ [ a > b ]   # exits 0
+    $ [[ a > b ]] # exists 1
+    ```
 * In iTerm, command+/ shows you where your cursor is
 * Debugging a java program:
     - Check which jdk you are using. OpenJDK vs Oracle can behave differently
