@@ -1,3 +1,4 @@
+* In iTerm, command+/ shows you where your cursor is
 * Debugging a java program:
     - Check which jdk you are using. OpenJDK vs Oracle can behave differently
         when advanced java functionality is used
