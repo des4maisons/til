@@ -1,3 +1,6 @@
+* Debugging a java program:
+    - Check which jdk you are using. OpenJDK vs Oracle can behave differently
+        when advanced java functionality is used
 * "Moonlighting" means working at a secondary job. Historically: (in
     19th-century Ireland) the carrying out of cattle-maiming, murders, etc,
     during the night in protest against the land-tenure system
