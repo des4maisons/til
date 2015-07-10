@@ -1,3 +1,4 @@
+* `1>&2` at the end of your line to direct stdout to stderr. STOP FORGETTING!
 * In bash, to use `<` to compare strings, you should use `[[`, and not `[`:
     ```
     $ [ a > b ]   # exits 0
