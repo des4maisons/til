@@ -1,3 +1,11 @@
+* Attribute nesting in chef:
+    > `ohai foo/bar`
+    > `search foo_bar`
+    > `knife foo.bar`
+    > these are the three forms for specifying nesting..
+* The chef `search` function uses `solr` as a backend. So you can't use `.` to
+    describe nested attributes, because the `.` is already used for something
+    in solr
 * `jar -tf` for listing the contents of a jar
 * `1>&2` at the end of your line to direct stdout to stderr. STOP FORGETTING!
 * In bash, to use `<` to compare strings, you should use `[[`, and not `[`:
