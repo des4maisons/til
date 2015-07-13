@@ -1,3 +1,17 @@
+* It is in theory easy to cross-compile pure go programs. From [this
+    page](http://solovyov.net/en/2012/cross-compiling-go/):
+    > I’m on OS X and my Go source code resides in ~/var/go. In this case what
+        I do is:
+        ```
+        cd ~/var/go/src
+        CGO_ENABLED=0 GOOS=linux GOARCH=amd64 ./make.bash
+        CGO_ENABLED=0 GOOS=windows GOARCH=amd64 ./make.bash
+        ```
+        And afterwards in different directory:
+        ```
+        CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o gr-linux64 goreplace
+        CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o gr-win64 goreplace
+        ```
 * To manage a bash script with an infinite loop:
     ```
     echo $$ > /var/run/my_script.pid
