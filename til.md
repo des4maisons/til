@@ -1,3 +1,8 @@
+* To manage a bash script with an infinite loop:
+    ```
+    echo $$ > /var/run/my_script.pid
+    ```
+    and then, somewhere else, `kill $(cat /var/run/my_script.pid)`
 * Attribute nesting in chef:
     > `ohai foo/bar`
     > `search foo_bar`
