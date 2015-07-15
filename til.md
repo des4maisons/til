@@ -1,3 +1,5 @@
+* The environment variable `BUNDLER_GEMFILE` tells bundler which Gemfile to
+    use, so you don't need to `cd` somewhere to run `bundle exec`.
 * It is in theory easy to cross-compile pure go programs. From [this
     page](http://solovyov.net/en/2012/cross-compiling-go/):
     > I’m on OS X and my Go source code resides in ~/var/go. In this case what
