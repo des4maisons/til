@@ -1,3 +1,7 @@
+- When proposing a change, phrase the proposition as "Does anyone object to
+    this?" vs "Is this OK?". There are a lot of ways to do things and you work
+    with smart people who have lots of strong, well-informed opinions. Avoid
+    triggering that in the wrong way.
 - When someone is explaining something you asked about, don't get annoyed when
     they explain something you already know. You've already decided it's ok to
     not know something by asking in the first place. So you should not feel
