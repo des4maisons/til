@@ -1,3 +1,8 @@
+* `--include` and `--exclude` for `s3cmd sync` does not work the way I expect.
+    Would have thought that `--exclude '*' --include '*/foo/console.log'` would
+    pick up all `foo/console.log`. But in actuality I first need to `include`
+    whatever directories `foo` might happen to be in.  At least that was my
+    observation today.
 * The environment variable `BUNDLER_GEMFILE` tells bundler which Gemfile to
     use, so you don't need to `cd` somewhere to run `bundle exec`.
 * It is in theory easy to cross-compile pure go programs. From [this
