@@ -1,3 +1,6 @@
+- Things whose data sources are simple yaml files or hash tables are nice.
+    Things that make it hard to programmatically update their data sources are
+    not nice :(
 - When proposing a change, phrase the proposition as "Does anyone object to
     this?" vs "Is this OK?". There are a lot of ways to do things and you work
     with smart people who have lots of strong, well-informed opinions. Avoid
