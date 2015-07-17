@@ -1,3 +1,5 @@
+- I should probably assume that chat, like all asyncronous channels, is faulty,
+    and important messages should be retried if they have not been acknowledged.
 - Things whose data sources are simple yaml files or hash tables are nice.
     Things that make it hard to programmatically update their data sources are
     not nice :(
