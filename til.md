@@ -1,3 +1,9 @@
+* How to break up long strings in ruby:
+    ```ruby
+    x = 'this '\
+      'is a kinda '\
+      'long string'
+    ```
 * `--include` and `--exclude` for `s3cmd sync` does not work the way I expect.
     Would have thought that `--exclude '*' --include '*/foo/console.log'` would
     pick up all `foo/console.log`. But in actuality I first need to `include`
