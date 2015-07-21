@@ -1,3 +1,6 @@
+- A good time to move from bash script to actual code: at the 50L mark. Same
+    threshold can apply to breaking up large files or classes. (Courtesy
+    @deyman)
 - I should probably assume that chat, like all asyncronous channels, is faulty,
     and important messages should be retried if they have not been acknowledged.
 - Things whose data sources are simple yaml files or hash tables are nice.
