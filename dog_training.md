@@ -22,7 +22,7 @@
             performing it in front of you, so they may come to you before performing. you
             may need to leverage baby gates or something to separate you from your dog.
     - one that is precise, executed right away, and executed quickly
-    - one that is offered if and only if cued, and only it is offerred, and it
+    - one that is offered if and only if cued, and only it is offered, and it
         is offered quickly.
         - This may be desirable for some behaviours, but you should always
             enforce volunteering to sit for a guest, volunteering to go to the
@@ -31,6 +31,8 @@
     - Don't increase difficulty in more than 1 of the above at once.
     - The first couple "fluent" behaviours will be the hardest to achieve. The
         subsequent ones should be easier as your dog figures things out.
+    - Good rule of thumb: 85% success in at least 20 places in your home is a
+        good start to fluency
 - When trying to get your dog from being distracted:
     - remember, many small distractions can really add up to distract your dog.
     - make the dog feel better about being in the presence of a distraction by
@@ -69,3 +71,11 @@
     not when he fails.
 * [Train your dog to lie down peacfully beside the dinner table when
     eating](http://www.clickertraining.com/node/596)
+* Train your dog to "Get It" as a way of distracting your dog from a great many
+    things (e.g. passing dogs). "Get It" tells the dog they should start
+    sniffing the ground for an unknown quantity of delicious treats of unknown
+    nature, most likely behind you. Sniffing naturally relaxes the dog, which
+    is then rewarded by finding the treats. You should train your dog to "Get
+    It" while they are wearing whatever collar and leash they would be wearing
+    outside. That way your dog will start sniffing, completely distracted,
+    naturally relax, and you can block the destraction with your body.
