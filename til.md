@@ -1,3 +1,4 @@
+* In bash, `seq 1 1 15` will print numbers 1 to 15.
 * How to break up long strings in ruby:
     ```ruby
     x = 'this '\
