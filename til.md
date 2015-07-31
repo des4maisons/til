@@ -1,3 +1,7 @@
+* Create the scaffolding for a gem:
+    ```
+    bundle gem gemname
+    ```
 * Multi-line comments in ruby:
     ```ruby
     =begin
