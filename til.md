@@ -1,3 +1,10 @@
+* Multi-line comments in ruby:
+    ```ruby
+    =begin
+    ^ should be at the beginning of the line
+    This entire thing is a comment!
+    =end
+    ```
 * In bash, `seq 1 1 15` will print numbers 1 to 15.
 * How to break up long strings in ruby:
     ```ruby
