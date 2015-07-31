@@ -1,3 +1,7 @@
+* Print public key associated with private key:
+   ```
+   ssh-keygen -y -f <priv-key-path>
+   ```
 * Create the scaffolding for a gem:
     ```
     bundle gem gemname
