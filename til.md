@@ -1,3 +1,10 @@
+* in mysql, if you have a `''@'localhost'` user, a `'marguerite'@'%'` user and
+    NO `'marguerite'@'localhost'` user, then the `''@'localhost'` will take
+    precedence. You might get permission denied if you try to use mysql on
+    localhost using the `marguerite` user with `marguerite`'s password. If
+    neither `''` or `'marguerite'` has a password, you might get `''`'s grants.
+    Basically, you need to greate a `'marguerite'@'localhost'` user with
+    `'marguerite'`'s password for `marguerite` to be able to log in on localhost
 * When `nc -tzv` gives you multiple conflicting responses, e.g. as follows:
     ```
     nc: connectx to localhost port 3306 (tcp) failed: Connection refused
