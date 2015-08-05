@@ -1,3 +1,20 @@
+* When `nc -tzv` gives you multiple conflicting responses, e.g. as follows:
+    ```
+    nc: connectx to localhost port 3306 (tcp) failed: Connection refused
+    found 0 associations
+    found 1 connections:
+         1: flags=82<CONNECTED,PREFERRED>
+            outif lo0
+            src 127.0.0.1 port 50410
+            dst 127.0.0.1 port 3306
+            rank info not available
+            TCP aux info available
+
+    Connection to localhost port 3306 [tcp/mysql] succeeded!
+    ```
+    it might be because you have 2 entries for `localhost` in your `/etc/hosts`
+    \- one for ipv4 and one for ipv6. One of them is failing and the other is
+    succeeding.
 * In ruby documentation, `Klass.method` is referring to the class method
     `method` on `Klass`, and `Klass#method` is referring to the install method
     `method` on `Klass`.
