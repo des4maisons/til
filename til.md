@@ -1,3 +1,6 @@
+* In ruby documentation, `Klass.method` is referring to the class method
+    `method` on `Klass`, and `Klass#method` is referring to the install method
+    `method` on `Klass`.
 * In GoCD, if you "rebuild" a failed build from the page containing the failed
     build, it will re-use the same config and everything (I think). So if you
     change the config (eg, you change the directory that a material should be
