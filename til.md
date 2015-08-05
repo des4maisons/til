@@ -1,3 +1,9 @@
+* In GoCD, if you "rebuild" a failed build from the page containing the failed
+    build, it will re-use the same config and everything (I think). So if you
+    change the config (eg, you change the directory that a material should be
+    checked out in), those changes will not affect the rebuilding of that build.
+    BUT if you "rebuild" from the pipelines list page using the play button, it
+    will apply the new config.
 * Print public key associated with private key:
    ```
    ssh-keygen -y -f <priv-key-path>
