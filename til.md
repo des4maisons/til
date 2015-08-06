@@ -1,3 +1,5 @@
+* In tmux, if you `C-B` and immediately hit the up arrow key multiple times,
+    you will cycle through the window panes.
 * in mysql, if you have a `''@'localhost'` user, a `'marguerite'@'%'` user and
     NO `'marguerite'@'localhost'` user, then the `''@'localhost'` will take
     precedence. You might get permission denied if you try to use mysql on
