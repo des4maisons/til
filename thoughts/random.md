@@ -1,3 +1,9 @@
+- One reason I think that chefspec tests are weird is that they are
+    testing the implementation of a recipe. A good unit test for a class will
+    only test the external interface of that class, whereas chefspec tests are
+    testing the internal implementation. I guess that's an artifact of chef
+    code modifying global state, and the external interface of a recipe is the
+    same as the internal state.
 - A good time to move from bash script to actual code: at the 50L mark. Same
     threshold can apply to breaking up large files or classes. (Courtesy
     @deyman)
