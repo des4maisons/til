@@ -1,9 +1,14 @@
-* Run `rspec --init` to generate all the `rspec` bootstrapping code you need.
-* Adding bundler tasks to your `Rakefile` allows you to to run `rake build` to
-    build your gem:
-    ```
-    Bundler::GemHelper.install_tasks
-    ```
+* Gem project boostrapping:
+    * Create the scaffolding for a gem:
+        ```
+        bundle gem gemname
+        ```
+    * Run `rspec --init` to generate all the `rspec` bootstrapping code you need
+    * Adding bundler tasks to your `Rakefile` allows you to to run `rake build`
+        to build your gem:
+        ```
+        Bundler::GemHelper.install_tasks
+        ```
 * `dig +short` will give you a terse answer to a `dig` query
 * In tmux, if you `C-B` and immediately hit the up arrow key multiple times,
     you will cycle through the window panes.
@@ -44,10 +49,6 @@
    ```
    ssh-keygen -y -f <priv-key-path>
    ```
-* Create the scaffolding for a gem:
-    ```
-    bundle gem gemname
-    ```
 * Multi-line comments in ruby:
     ```ruby
     =begin
