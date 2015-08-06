@@ -1,3 +1,4 @@
+* `dig +short` will give you a terse answer to a `dig` query
 * In tmux, if you `C-B` and immediately hit the up arrow key multiple times,
     you will cycle through the window panes.
 * in mysql, if you have a `''@'localhost'` user, a `'marguerite'@'%'` user and
