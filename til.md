@@ -1,4 +1,13 @@
-* rspec to halt after first failing test: `rspec --fail-fast`
+* In `rspec`, to get a non-strict double (one doesn't care what method you
+    call) that returns a non-strict double for any method you call on it, use
+   ```ruby
+   double().as_null_object
+   ```
+* `man proc` shows you all the things you can find under `/proc`
+* rspec to halt after first failing test:
+    ```
+    rspec --fail-fast
+    ```
 * Gem project boostrapping:
     * Create the scaffolding for a gem:
         ```
