@@ -1,3 +1,5 @@
+- It is amazing how many problems I solve in the first hour of the day against
+    which I have spent a large chunk of the day previous banging my head.
 - One reason I think that chefspec tests are weird is that they are
     testing the implementation of a recipe. A good unit test for a class will
     only test the external interface of that class, whereas chefspec tests are
