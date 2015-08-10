@@ -1,3 +1,4 @@
+* rspec to halt after first failing test: `rspec --fail-fast`
 * Gem project boostrapping:
     * Create the scaffolding for a gem:
         ```
