@@ -1,3 +1,5 @@
+* If you mount a bundler project into a VM, make running bundler faster by
+    installing the bundler dependencies in another directory on the VM.
 * In `rspec`, to get a non-strict double (one doesn't care what method you
     call) that returns a non-strict double for any method you call on it, use
    ```ruby
