@@ -1,3 +1,9 @@
+- I took a thought -- "yay my new earbuds arrived" -- and turned it into 3 great
+    things: "Yay! Eric is here! he brought my new earbuds - the ones I
+    ordered using the gift card that those people gave me." I became a lot
+    happier, because I realized (a) Eric was here, (b) I had my headphones, and
+    (c) I felt appreciated because the gift card was from some people who were
+    thanking me for something.
 - It is amazing how many problems I solve in the first hour of the day against
     which I have spent a large chunk of the day previous banging my head.
 - One reason I think that chefspec tests are weird is that they are
