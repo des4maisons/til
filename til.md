@@ -19,7 +19,7 @@
         ```
     * Run `rspec --init` to generate all the `rspec` bootstrapping code you need
     * Adding bundler tasks to your `Rakefile` allows you to to run `rake build`
-        to build your gem:
+        to build your gem, and `rake release` to publish your gem on rubygems
         ```
         Bundler::GemHelper.install_tasks
         ```
