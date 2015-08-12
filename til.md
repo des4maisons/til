@@ -4,22 +4,26 @@
     installing the bundler dependencies in another directory on the VM.
 * In `rspec`, to get a non-strict double (one doesn't care what method you
     call) that returns a non-strict double for any method you call on it, use
+
    ```ruby
    double().as_null_object
    ```
 * `man proc` shows you all the things you can find under `/proc`
 * rspec to halt after first failing test:
+
     ```
     rspec --fail-fast
     ```
 * Gem project boostrapping:
     * Create the scaffolding for a gem:
+
         ```
         bundle gem gemname
         ```
     * Run `rspec --init` to generate all the `rspec` bootstrapping code you need
     * Adding bundler tasks to your `Rakefile` allows you to to run `rake build`
         to build your gem, and `rake release` to publish your gem on rubygems
+
         ```
         Bundler::GemHelper.install_tasks
         ```
@@ -34,6 +38,7 @@
     Basically, you need to greate a `'marguerite'@'localhost'` user with
     `'marguerite'`'s password for `marguerite` to be able to log in on localhost
 * When `nc -tzv` gives you multiple conflicting responses, e.g. as follows:
+
     ```
     nc: connectx to localhost port 3306 (tcp) failed: Connection refused
     found 0 associations
@@ -60,10 +65,12 @@
     BUT if you "rebuild" from the pipelines list page using the play button, it
     will apply the new config.
 * Print public key associated with private key:
+
    ```
    ssh-keygen -y -f <priv-key-path>
    ```
 * Multi-line comments in ruby:
+
     ```ruby
     =begin
     ^ should be at the beginning of the line
@@ -72,6 +79,7 @@
     ```
 * In bash, `seq 1 1 15` will print numbers 1 to 15.
 * How to break up long strings in ruby:
+
     ```ruby
     x = 'this '\
       'is a kinda '\
@@ -88,17 +96,20 @@
     page](http://solovyov.net/en/2012/cross-compiling-go/):
     > I’m on OS X and my Go source code resides in ~/var/go. In this case what
         I do is:
+
         ```
         cd ~/var/go/src
         CGO_ENABLED=0 GOOS=linux GOARCH=amd64 ./make.bash
         CGO_ENABLED=0 GOOS=windows GOARCH=amd64 ./make.bash
         ```
         And afterwards in different directory:
+
         ```
         CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o gr-linux64 goreplace
         CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o gr-win64 goreplace
         ```
 * To manage a bash script with an infinite loop:
+
     ```
     echo $$ > /var/run/my_script.pid
     ```
@@ -114,6 +125,7 @@
 * `jar -tf` for listing the contents of a jar
 * `1>&2` at the end of your line to direct stdout to stderr. STOP FORGETTING!
 * In bash, to use `<` to compare strings, you should use `[[`, and not `[`:
+
     ```
     $ [ a > b ]   # exits 0
     $ [[ a > b ]] # exists 1
@@ -134,6 +146,7 @@
     implemented during.
 * Bind mounting lets you mount the same filesystem at 2 different spots
 * In ruby, you can do a set-like difference of arrays like this:
+
     ```ruby
     x = [1, 2, 3]
     y = [3, 4, 5]
@@ -176,6 +189,7 @@
     extract.
 * Debian packages are `ar` archive files.
 * To test a given file in `rspec`:
+
     ```
     rake spec SPEC=/path/to/spec_file.rb
     ```
@@ -195,6 +209,7 @@
     You can nest `describes`, but it's easier to read if you use `context`
     inside of a `describe`.
 * `-y` option for `strace`: displays full path in file descriptors. e.g.:
+
     ```
     [pid 28968] read(244</var/go/x.properties>, "prop1=stuff\nprop2=stompy"..., 8192) = 72
     ```
@@ -234,6 +249,7 @@
   access to the chef server, the other requires the admin's pem file (key).
   Both involve having the validator.pem available on the workstation.
     * Using the admin pem:
+
     ```
     $ knife configure --initial
     WARNING: No knife configuration file found
@@ -251,6 +267,7 @@
     ```
 
     * using access to the server (you need to have configured knife there first):
+
     ```
     chef-server$ knife client create my-username -n -a -f /tmp/my-username.pem
     Created client[my-username]
