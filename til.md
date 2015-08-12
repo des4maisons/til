@@ -1,3 +1,8 @@
+* Before you package a gem, ensure the permissions of the files that will go
+    into your gem are world-readable. Pre-packaged permissions carry through to
+    post-installation. If someone runs `sudo gem install <yourgem>` to
+    install your gem system wide, if the files originally lacked
+    world-readability, non-root users will not be able to use your gem.
 * When debugging a command with `strace`, first make sure the behaviour is the
     same between when you `sudo` or you don't `sudo` the command.
 * If you mount a bundler project into a VM, make running bundler faster by
