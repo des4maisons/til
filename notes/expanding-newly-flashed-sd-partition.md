@@ -51,7 +51,8 @@ If you (say) are flashing an SD card with ubuntu to run on a raspberry pi, here'
         device name as above.
     * Delete all non-boot partitions from the device:
 
-        1.
+        1. Open the device in the partition-editing program:
+
             ```
             sudo fdisk /dev/sdb
             ```
