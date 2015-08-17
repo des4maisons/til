@@ -1,3 +1,18 @@
+* `tail +2` will print all but the first line of the file.
+* When you get the following type of error:
+
+    ```
+    $ bundle exec irb
+    Could not find rake-10.4.2 in any of the sources
+    Run `bundle install` to install missing gems.
+    ```
+    be sure that bundler is loading the correct irb. It could be that `rake` is
+    installed under `ruby2.0.0`, but it is trying to run an `irb` for an older
+    version of ruby. Try
+    ```
+    $ bundle exec irb2.0
+    ```
+    I don't know why this happens :(
 * Before you package a gem, ensure the permissions of the files that will go
     into your gem are world-readable. Pre-packaged permissions carry through to
     post-installation. If someone runs `sudo gem install <yourgem>` to
