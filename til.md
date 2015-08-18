@@ -1,3 +1,6 @@
+* When you run `gem source --add <url>`, your `~/.gemrc` gets updated.
+    That means if you run that as root, as (say) part of a chef run, non-root
+    users will not be able to see that added source.
 * The shebang line in a program tells the program executor to run the program
     specified in the shebang line, passing the file as an argument. E.G.:
 
