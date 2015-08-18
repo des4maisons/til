@@ -1,3 +1,11 @@
+* The shebang line in a program tells the program executor to run the program
+    specified in the shebang line, passing the file as an argument. E.G.:
+
+    ```
+    $ ./meow
+    #!/bin/cat
+    meow
+    ```
 * In `vim` "explore" mode, hitting `t` will open the file under the cursor in a
     new tab.
 * `tail +2` will print all but the first line of the file.
