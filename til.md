@@ -1,3 +1,5 @@
+* In `vim` "explore" mode, hitting `t` will open the file under the cursor in a
+    new tab.
 * `tail +2` will print all but the first line of the file.
 * When you get the following type of error:
 
@@ -12,7 +14,8 @@
     ```
     $ bundle exec irb2.0
     ```
-    I don't know why this happens :(
+    Not completely clear on why this happens, but it will likely go away if you
+    unlink /usr/bin/irb and relink it to /usr/bin/irb2.0.
 * Before you package a gem, ensure the permissions of the files that will go
     into your gem are world-readable. Pre-packaged permissions carry through to
     post-installation. If someone runs `sudo gem install <yourgem>` to
