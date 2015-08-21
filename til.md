@@ -1,3 +1,9 @@
+* Many logging frameworks in java support the following for logging an
+    exception:
+
+    ```
+    LOGGER.error("there was an error", exception);
+    ```
 * When you run `gem source --add <url>`, your `~/.gemrc` gets updated.
     That means if you run that as root, as (say) part of a chef run, non-root
     users will not be able to see that added source.
