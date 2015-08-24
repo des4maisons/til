@@ -1,3 +1,5 @@
+* Brightbox has sensible ruby packages for ubuntu.
+    [See the docs about it](https://www.brightbox.com/docs/ruby/ubuntu/)
 * Many logging frameworks in java support the following for logging an
     exception:
 
