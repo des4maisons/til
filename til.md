@@ -1,3 +1,8 @@
+* Testing `logrotate`:
+    - `logrotate -d` gives good debug output wrt what `logrotate` is doing.
+    - `logrotate --fonce` forces a logrotate run even if it's not needed.
+    - `/var/lib/logrotate/status` is a log when rotates happened. You can edit
+        it to trick logrotate into rotating again.
 * Brightbox has sensible ruby packages for ubuntu.
     [See the docs about it](https://www.brightbox.com/docs/ruby/ubuntu/)
 * Many logging frameworks in java support the following for logging an
