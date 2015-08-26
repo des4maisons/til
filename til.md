@@ -1,3 +1,7 @@
+* When you get weird error messages from AWS saying "invalid value for field
+    groupId" as part of a RunInstances action, I suspect it's because the
+    security group name you provided does not exist. Check that you are using
+    the correct aws credentials!
 * Testing `logrotate`:
     - `logrotate -d` gives good debug output wrt what `logrotate` is doing.
     - `logrotate --fonce` forces a logrotate run even if it's not needed.
