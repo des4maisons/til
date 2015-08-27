@@ -1,3 +1,7 @@
+* The below two points make the process model for (say) `unicorn` work. The
+    parent root `unicorn` process is typically run as root, whereas the children
+    are often not. But the children can still access the log files created by
+    the parent.
 * When a process forks, the file descriptors are inherited by the children, and
     they point to the same file description in the OS's file table.
 * If you open a file and then `seteuid` so that the new effective user is not
