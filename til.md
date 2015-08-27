@@ -1,3 +1,6 @@
+* A cheap way to get an audible bell that will alert when the current command
+    finishes running: enter a tab twice! when the command is finished, it will
+    try to tab complete, causing a bell.
 * `tar - | ssh "untar -"` vs `scp -r` for less back-and-forth over the network
     :)
 * One way to be able to restart a service over ssh without sudo (a bit of a
