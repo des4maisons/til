@@ -1,3 +1,7 @@
+* One way to be able to restart a service over ssh without sudo (a bit of a
+    roundabout and non-obvious way, but a way nonetheless) is to use `monit` to
+    monitor a `restart.txt` file, which can be touched over ssh, and which
+    triggers a restart. Mimicking `Passenger`.
 * the environment variable `LD_LIBRARY_PATH` defines the search path for
     dynamically linked libraries
 * Passenger apps can be restarted by running `touch tmp/restart.txt` in the
