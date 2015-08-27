@@ -1,3 +1,5 @@
+* Passenger apps can be restarted by running `touch tmp/restart.txt` in the
+    project directory.
 * The below two points make the process model for (say) `unicorn` work. The
     parent root `unicorn` process is typically run as root, whereas the children
     are often not. But the children can still access the log files created by
