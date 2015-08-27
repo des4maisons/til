@@ -1,3 +1,5 @@
+* the environment variable `LD_LIBRARY_PATH` defines the search path for
+    dynamically linked libraries
 * Passenger apps can be restarted by running `touch tmp/restart.txt` in the
     project directory.
 * The below two points make the process model for (say) `unicorn` work. The
