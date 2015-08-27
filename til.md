@@ -1,3 +1,8 @@
+* When a process forks, the file descriptors are inherited by the children, and
+    they point to the same file description in the OS's file table.
+* If you open a file and then `seteuid` so that the new effective user is not
+    the owner of the file, the process can still operate on the file descriptor.
+    via the original executing user's privileges.
 * When you get weird error messages from AWS saying "invalid value for field
     groupId" as part of a RunInstances action, I suspect it's because the
     security group name you provided does not exist. Check that you are using
