@@ -1,3 +1,4 @@
+* In tmux to clear your scrollback history: `clear-history`
 * A cheap way to get an audible bell that will alert when the current command
     finishes running: enter a tab twice! when the command is finished, it will
     try to tab complete, causing a bell.
