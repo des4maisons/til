@@ -1,3 +1,8 @@
+* You should stop using `ps aux`. See [stackexchange
+    question](http://unix.stackexchange.com/questions/106847/what-does-aux-mean-in-ps-aux).
+    OSX special-cases the `aux` argement, which means you
+    can't easily add another option like `-f` in the `aux` form. The preferred
+    form, `ps -ax`, allows you to add the `-f` easily.
 * Docker-machine process:
     ```
     machine_name=default
