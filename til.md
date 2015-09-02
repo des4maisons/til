@@ -1,3 +1,9 @@
+* Docker-machine process:
+    ```
+    machine_name=default
+    docker-machine start $machine_name
+    eval $(docker-machine env $machine_name)
+    ```
 * In tmux to clear your scrollback history: `clear-history`
 * A cheap way to get an audible bell that will alert when the current command
     finishes running: enter a tab twice! when the command is finished, it will
