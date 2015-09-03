@@ -1,3 +1,6 @@
+* If your tmux is screwed up because you accidentally catted a binary file,
+    you may be able to fix it by renaming the window in which you catted.
+    [See the stack exchange question.](http://unix.stackexchange.com/questions/49886/tmux-status-bar-corrupted-after-catting-a-binary-file-how-to-reset)
 * You should stop using `ps aux`. See [stackexchange
     question](http://unix.stackexchange.com/questions/106847/what-does-aux-mean-in-ps-aux).
     OSX special-cases the `aux` argement, which means you
