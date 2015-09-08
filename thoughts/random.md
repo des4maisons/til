@@ -1,3 +1,6 @@
+- Just because other people have a lot of context on an issue,  don't shy away
+    from the issue and assume that you can't understand it. Sometimes the issue
+    ends up being simpler than you (or the others) imagined.
 - I took a thought -- "yay my new earbuds arrived" -- and turned it into 3 great
     things: "Yay! Eric is here! he brought my new earbuds - the ones I
     ordered using the gift card that those people gave me." I became a lot
