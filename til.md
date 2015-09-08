@@ -1,3 +1,5 @@
+* `bundle install --retry=5` retries 5 times on network and github issues
+* `bundle install --jobs=5` starts 5 parellel workers
 * If your tmux is screwed up because you accidentally catted a binary file,
     you may be able to fix it by renaming the window in which you catted.
     [See the stack exchange question.](http://unix.stackexchange.com/questions/49886/tmux-status-bar-corrupted-after-catting-a-binary-file-how-to-reset)
