@@ -1,3 +1,21 @@
+* In chef, if you get an error like this, you may have overridden your
+    `/etc/hosts` during the chef run so that your hostname does not resolve to
+    what it should anymore:
+
+    ```
+    Server Response:
+    ----------------
+    Failed to authenticate as 'stuff'. Ensure that your node_name and client key are correct.
+
+    Relevant Config Settings:
+    -------------------------
+    chef_server_url   "http://10.0.2.15:4646"
+    node_name         "stuff"
+    client_key        "/etc/chef/client.pem"
+
+    If these settings are correct, your client_key may be invalid, or
+    you may have a chef user with the same client name as this node.
+    ```
 * In travis, the `addons/hosts` is a list of hostnames pointing to localhost.
 * [This](https://github.com/nickola/chef-hostname/blob/595016a90bc66e548410f8882f59e15eeee6f180/recipes/default.rb#L49-L65)
     is a good example of how to do search-replace-or-append-line in chef.
