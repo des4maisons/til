@@ -158,11 +158,16 @@
     checked out in), those changes will not affect the rebuilding of that build.
     BUT if you "rebuild" from the pipelines list page using the play button, it
     will apply the new config.
-* Print public key associated with private key:
+* Print ssh public key associated with private key:
 
    ```
    ssh-keygen -y -f <priv-key-path>
    ```
+* Print rsa public key associated with a private key / pem file:
+
+    ```
+    openssl rsa -in key.pem -pubout
+    ```
 * Multi-line comments in ruby:
 
     ```ruby
