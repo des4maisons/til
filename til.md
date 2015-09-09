@@ -1,3 +1,4 @@
+* In travis, the `addons/hosts` is a list of hostnames pointing to localhost.
 * [This](https://github.com/nickola/chef-hostname/blob/595016a90bc66e548410f8882f59e15eeee6f180/recipes/default.rb#L49-L65)
     is a good example of how to do search-replace-or-append-line in chef.
     Maybe you should make that into an lwrp :P
