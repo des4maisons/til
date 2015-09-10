@@ -1,3 +1,25 @@
+* `capybara-screenshot` is a gem you can include to take screenshots of the
+    browser during failing capybara tests.
+
+    If you are using `Test::Unit` to run your capybara tests, you should have
+    this in your `test/test_helper.rb`:
+
+    ```ruby
+    require 'capybara-screenshot/testunit'
+    ```
+* In the webkit driver for capybara, `page.driver.error_messages` and
+    `page.driver.console_messages` contain the errors and logs written to the
+    console via javascript.
+* To run a specific test using the `Test::Unit` `ruby` framework, you can do
+    this:
+
+    ```
+    bundle exec ruby -I test path/to/test_file.rb -n '/method_name_regex/'
+    ```
+    In this case, `/method_name_regex/` should match `it_does_what_you_want`,
+    assuming you have a test that looks like this: `it 'does what you want'`
+* `xvfb-run` lets you run a command inside a virtual X server. You can use it
+    to run your webkit tests. E.g., `bundle exec xvfb-run ruby test`
 * In chef, if you get an error like this, you may have overridden your
     `/etc/hosts` during the chef run so that your hostname does not resolve to
     what it should anymore:
