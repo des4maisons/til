@@ -1,3 +1,17 @@
+* In `/etc/hosts`, a line looks like this:
+
+    ```
+    IP_address canonical_hostname [aliases...]
+    ```
+    Note, `canonical_hostname` is not the same as `aliases`. This manifests
+    itself when I run `chef-client` on a node. It looks like `chef-client` will
+    look up the `canonical_hostname` from an alias in order to determine what
+    client name it should use when authenticating with the chef server.
+    E.g., the client name should be `foo`, but I have this line in `/etc/hosts`:
+    ```
+    127.0.0.1 foo.bar foo
+    ```
+    and so `chef-client` presents the client name as `foo.bar`.
 * To move a patch between git repositories:
     creating the patchfile:
 
