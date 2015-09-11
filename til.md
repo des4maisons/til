@@ -231,6 +231,11 @@
    ```
    ssh-keygen -y -f <priv-key-path>
    ```
+* Print decrypted private key:
+
+    ```
+    openssl rsa –in enc.key -out dec.key
+    ```
 * Print rsa public key associated with a private key / pem file:
 
     ```
