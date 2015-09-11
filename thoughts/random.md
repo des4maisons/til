@@ -1,3 +1,8 @@
+- Asking for a favour in an ecosystem where you don't know who can actually
+    grant the favour:
+
+    > Hi folks, who do I need to talk to to get setup with such and such
+    > account?
 - Just because other people have a lot of context on an issue,  don't shy away
     from the issue and assume that you can't understand it. Sometimes the issue
     ends up being simpler than you (or the others) imagined.
