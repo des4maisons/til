@@ -1,3 +1,16 @@
+* To move a patch between git repositories:
+    creating the patchfile:
+
+    ```
+    git diff -p > x.patch
+    ```
+
+    Applying:
+    ```
+    git apply x.patch
+    # or
+    `patch -p1 < x.patch`
+    ```
 * `capybara-screenshot` is a gem you can include to take screenshots of the
     browser during failing capybara tests.
 
