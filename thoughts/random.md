@@ -1,4 +1,8 @@
 - All ideas are welcome, not all ideas are relevant
+- How does making panhandling illegal help? Is it to ease the discomfort of the
+    middle class? If you want to understand the makeup of our society and not
+    live in a bubble, you would do well to look panhandling and panhandlers in
+    the eye and understand that they are a part of society too.
 - Asking for a favour in an ecosystem where you don't know who can actually
     grant the favour:
 
