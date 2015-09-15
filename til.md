@@ -1,3 +1,5 @@
+* In slack, option-click on a message's date will mark messages unread from
+    there.
 * In `/etc/hosts`, a line looks like this:
 
     ```
