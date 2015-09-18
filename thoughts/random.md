@@ -1,3 +1,4 @@
+- All ideas are welcome, not all ideas are relevant
 - Asking for a favour in an ecosystem where you don't know who can actually
     grant the favour:
 
