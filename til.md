@@ -1,3 +1,12 @@
+* When you create an LWRP in chef, you can create a chef-spec "matcher" for it.
+    For example, you would be able to write this in a spec file:
+    ```ruby
+    expect(chef_run).to my_custom_matcher('...')
+    ```
+
+    The name `my_custom_matcher` is chosen by you, and specified in
+    `libraries/matcher.rb` in your coobkook. See [more
+    info](https://github.com/sethvargo/chefspec#packaging-custom-matchers)
 * In slack, option-click on a message's date will mark messages unread from
     there.
 * In `/etc/hosts`, a line looks like this:
