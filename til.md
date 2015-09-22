@@ -1,3 +1,15 @@
+* To create a negated rspec matcher, do the following:
+
+   ```ruby
+   RSpec::Matchers.define_negated_matcher :not_match, :match
+   expect(x).to not_match(/stompy/)
+   ```
+* A [matcher](https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers)
+    in rspec is the part that comes after the `expect(x).to `. Eg,
+
+    ```ruby
+    expect(x).to match(/slurp/)
+    ```
 * When you create an LWRP in chef, you can create a chef-spec "matcher" for it.
     For example, you would be able to write this in a spec file:
     ```ruby
