@@ -1,9 +1,14 @@
+* HTTP basic-auth via url:
+
+    ```
+    http://<username>:<password>@hostname
+    ```
 * To create a negated rspec matcher, do the following:
 
-   ```ruby
-   RSpec::Matchers.define_negated_matcher :not_match, :match
-   expect(x).to not_match(/stompy/)
-   ```
+    ```ruby
+    RSpec::Matchers.define_negated_matcher :not_match, :match
+    expect(x).to not_match(/stompy/)
+    ```
 * A [matcher](https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers)
     in rspec is the part that comes after the `expect(x).to `. Eg,
 
