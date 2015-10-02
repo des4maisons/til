@@ -1,3 +1,5 @@
+* `rake <task> --dry-run` will show you all the tasks that will be executed to
+    run <task>.
 * HTTP basic-auth via url:
 
     ```
