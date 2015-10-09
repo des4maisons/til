@@ -1,3 +1,9 @@
+* To assert the conjunction ("and"-ing) of two rspec matchers, use the `.and`
+    method of a matcher:
+    ```ruby
+    "abc".should(include("a").and(include("b")))
+    expect(foo).to receive(:bar).with(include("slurp").and include("burp"))
+    ```
 * `rake <task> --dry-run` will show you all the tasks that will be executed to
     run <task>.
 * HTTP basic-auth via url:
