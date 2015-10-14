@@ -1,3 +1,16 @@
+* User management commands in mysql:
+
+    ```
+    DROP USER 'username'@'%'
+    CREATE USER 'username'@'%' IDENTIFIED BY 'mypass';
+    GRANT ALL ON *.* TO 'useranem'@'%';
+    REVOKE INSERT ON *.* FROM 'username'@'%';
+    SET PASSWORD FOR 'username'@'%' = PASSWORD('mypass')
+    ```
+* `list('abc')` => `['a', 'b', 'c']` in python (list of a string makes a list
+    of chars)
+* `set('abc')` => `set(['a', 'b', 'c'])` in python (set of a string makes a
+    list of chars)
 * To assert the conjunction ("and"-ing) of two rspec matchers, use the `.and`
     method of a matcher:
     ```ruby
