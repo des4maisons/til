@@ -1,3 +1,10 @@
+* If you get this error from chef and the client & node aren't in `knife
+    {client,node} list`, you may need to delete `/etc/chef/client.pem` on the
+    node.
+
+    ```
+    Failed to authenticate as 'pd-ci-agent1'. Ensure that your node_name and client key are correct.
+    ```
 * User management commands in mysql:
 
     ```
@@ -13,6 +20,7 @@
     list of chars)
 * To assert the conjunction ("and"-ing) of two rspec matchers, use the `.and`
     method of a matcher:
+
     ```ruby
     "abc".should(include("a").and(include("b")))
     expect(foo).to receive(:bar).with(include("slurp").and include("burp"))
