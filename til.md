@@ -1,3 +1,6 @@
+* If you want to run your CI system in docker to build docker images,
+    bind-mount the host docker daemon socket into the CI docker container. Your
+    life will be better for it. [See this article](http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/)
 * If you get this error from chef and the client & node aren't in `knife
     {client,node} list`, you may need to delete `/etc/chef/client.pem` on the
     node.
