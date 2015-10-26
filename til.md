@@ -1,3 +1,9 @@
+* You can't very well strace `service xyz restart` if it's controlled by
+    upstart. Upstart uses events to trigger the running of applications, so your
+    application won't be a fork / exceve of `service xyz restart`.
+* If `service xyz restart` works on your server but there's no
+    `/etc/init.d/xyz`, it may be run by [upstart](http://upstart.ubuntu.com/).
+    Look for the config file in `/etc/init/xyz.conf`.
 * The file extnsion used for Golang templates in the docs is `.tmpl`.
 * Beware while playing with Consul if you lose cluster quorum or shut down your
     cluster! Consul requires manual intervention in this case in order to
