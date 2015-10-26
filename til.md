@@ -1,3 +1,11 @@
+* Beware while playing with Consul if you lose cluster quorum or shut down your
+    cluster! Consul requires manual intervention in this case in order to
+    recover. If you don't manually intervene, it will be unable to elect a new
+    leader. See [the outage recovery
+    guide](https://consul.io/docs/guides/outage.html) and
+    [numerous](https://github.com/hashicorp/consul/issues/993)
+    [issues](https://github.com/hashicorp/consul/issues/454) on the
+    [subject](https://github.com/hashicorp/consul/issues/924)
 * If you want to run your CI system in docker to build docker images,
     bind-mount the host docker daemon socket into the CI docker container. Your
     life will be better for it. [See this article](http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/)
