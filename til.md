@@ -1,3 +1,4 @@
+* Visual explanation of how raft works: http://thesecretlivesofdata.com/raft/
 * Raft keeps a log of previous messages and a list of peers in `peers.json`. If
     you are just messing around and your cluster ends up in a weird state (such
     as old IP addresses showing up in the logs), you
