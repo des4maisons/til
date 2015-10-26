@@ -1,3 +1,15 @@
+* while using the `heroku/ruby` docker image, if you find that bundler is not
+    finding the gems installed via `bundle install`, it could be that your local
+    `.bundle` is overriding the one createed by the build step of `heroku/ruby`.
+    `heroku/ruby` installs to `/app/heroku/ruby/bundle`, and for `bundler` to pick
+    that up the `.bundle` file needs to be updated with that path. Example error:
+    ```
+    Trigger 5, RUN bundle exec rake assets:precompile
+    Step 0 : RUN bundle exec rake assets:precompile
+     ---> Running in 06e2edba3727
+    /app/heroku/ruby/bundle/ruby/2.2.0/gems/bundler-1.9.10/lib/bundler/spec_set.rb:92:in `block in materialize': Could not find addressable-2.3.8 in any of the sources (Bundler::GemNotFound)
+    ```
+    Remove your local `.bundle` and things should work.
 * Visual explanation of how raft works: http://thesecretlivesofdata.com/raft/
 * Raft keeps a log of previous messages and a list of peers in `peers.json`. If
     you are just messing around and your cluster ends up in a weird state (such
