@@ -1,3 +1,4 @@
+* The file extnsion used for Golang templates in the docs is `.tmpl`.
 * Beware while playing with Consul if you lose cluster quorum or shut down your
     cluster! Consul requires manual intervention in this case in order to
     recover. If you don't manually intervene, it will be unable to elect a new
