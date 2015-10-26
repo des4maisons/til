@@ -1,3 +1,8 @@
+* Raft keeps a log of previous messages and a list of peers in `peers.json`. If
+    you are just messing around and your cluster ends up in a weird state (such
+    as old IP addresses showing up in the logs), you
+    could delete all of raft's data (and serf's data, if you happen to be running
+    consul -- see /var/consul/{serf,raft})
 * You can't very well strace `service xyz restart` if it's controlled by
     upstart. Upstart uses events to trigger the running of applications, so your
     application won't be a fork / exceve of `service xyz restart`.
