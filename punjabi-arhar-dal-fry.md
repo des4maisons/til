@@ -22,6 +22,7 @@ made with pigeon pea lentils or yellow lentils.
 * 3 cups water (or more - check notes on cooking in a pot below)
 
 ### other ingredients:
+
 * 2 tbsp butter or ghee for tempering
 * 1 medium Indian bay leaf (tej patta) (optional)
 * 2 cloves
