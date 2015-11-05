@@ -1,3 +1,8 @@
+* `bundle package --no-install` downloads all gems to a local cache without
+    installing them. This is useful if you want to download all gems as a
+    pre-build step for building a docker image. (useful if some gems come from
+    private git repos.)
+* `set -u` in bash causes an error when you use an undefined variable.
 * while using the `heroku/ruby` docker image, if you find that bundler is not
     finding the gems installed via `bundle install`, it could be that your local
     `.bundle` is overriding the one createed by the build step of `heroku/ruby`.
