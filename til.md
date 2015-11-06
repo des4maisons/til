@@ -1,3 +1,7 @@
+* When you feel intimidated about having a conversation about something with
+    another team, try picking the brains of some of the people on that team
+    first. Through that conversation, you will likely become less ignorant, gain
+    more empathy, learn more context, hear the biggest holes in your ideas...
 * `bundle package --no-install` downloads all gems to a local cache without
     installing them. This is useful if you want to download all gems as a
     pre-build step for building a docker image. (useful if some gems come from
