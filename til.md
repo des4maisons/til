@@ -1,3 +1,12 @@
+* When someone disagrees with you in an unhelpful way, if you have the time:
+    * think about what they are saying. If they said it another way, would you
+        agree with them?
+    * write down your thoughts about what makes your position good. write down
+        thoughts about why their position is good. If your position is tied to
+        work that you have done, at least your work won't go to waste. Everyone
+        can learn from the work that you have done.
+    * try to approach the person and give them helpful feedback about why their
+        feedback is unhelpful.
 * When you feel intimidated about having a conversation about something with
     another team, try picking the brains of some of the people on that team
     first. Through that conversation, you will likely become less ignorant, gain
