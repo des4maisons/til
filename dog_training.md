@@ -1,3 +1,43 @@
+- If you want to teach your dog to *not* do something, be vigilant about giving
+    them what they want when they are not doing it, and taking something away
+    when they are. E.g.,
+    - Leaving kitchen door open while dog not in kitchen; closing it as soon as
+      dog sticks face in.
+    - Feeding little treats while dog lies nicely down under the table while we
+        are eating; putting all the treats away as soon as they get up.
+    - Putting on collar as long as they are sitting still; remove collar, put
+        it away, and go do something else as soon as they become lazy and lie
+        down or as soon as their butt pops up.
+    Sometimes they will *mostly* obey you but still try to get away with things
+    if they feel the tradeoff is worth it. Crank up the removal of desired objects
+    until they are being obedient as much as you need them to be.
+- Eventually your dog will learn 'no'. Before that, it's really hard to teach
+    them *not* to do something. How do they know they are being rewarded for
+    *not* doing something? Learning 'No' is very helpful.
+- Giving my dog a dog-bed has helped (I think) make her more relaxed.
+    - It's her space, no one will bother her there, she can relax and chew her
+        bones there.
+    - You can tell her to go to her bed while you do otherwise disturbing chores
+        such as vacuum, sweep, or move furniture around.
+- Get a dog-walker.
+    - A good dog-walker will train off-leash recall, no jumping, etc.
+    - If you go for group-walks, your dog will become part of a pack. Deep bonds form
+        between the dogs. They spend less time figuring out *how*
+        to have fun with the other dogs, and more time just having fun.
+    - Your dog will be rid of excess energy otherwise used to whine and bother
+        you when you are at home, and chew important things when you are out. The
+        dog feels more at ease to just sleep, because her basic needs are met.
+- I have found that the age 9-10 months is when things get a lot easier.
+    - My dog got a lot more focus at that time
+    - was able to better understand cause and effect relationships,
+    - and became overall more affectionate and loving.
+
+    Before 9 months, training to do certain things was a nightmare, an
+    exercise in despair and frustration. Concepts like these would fall on deaf ears:
+    - don't go in the kitchen
+    - don't race through doors ahead of me
+    - don't pull me on walks", "don't chase that squirrel
+    - sit (not lie down, not run around) while I put your collar on to go for a walk
 - Success percentage for obedience in a given environment:
     - 80% <=: your dog is good :)
     - 60-80%: Keep training in that environment
