@@ -1,3 +1,7 @@
+* In GitHub, if you are looking at "foo.rb on master", you can hit "y" to get
+    you a link to "foo.rb at that specific commit". Helpful if you want to link
+    to a specific line, you can do so without worrying about the lines shifting
+    over time as master changes
 * When someone disagrees with you in an unhelpful way, if you have the time:
     * think about what they are saying. If they said it another way, would you
         agree with them?
