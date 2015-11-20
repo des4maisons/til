@@ -1,3 +1,18 @@
+* [This page](https://github.com/bundler/bundler/blob/master/ISSUES.md) is
+    helpful in giving hints to solving bundler problems:
+* If you get errors like these:
+
+    ```
+    pd_lite@vagrant-ubuntu-trusty-64:~/numerator$ /opt/ruby/2.2.2/bin/bundle exec cap pdlite report:check_current_version
+    Could not find highline-1.7.8 in any of the sources
+    Run `bundle install` to install missing gems.
+    ```
+    after you have run bundle install, watch out that the bundler version you
+    are using is compatible with other things (like gem and ruby) in your path.
+    For example, I got that error because I was invoking a bundler that was not
+    on my path, which belonged to a different ruby than the one that was on my
+    path. Putting `/opt/ruby/2.2.2/bin` first in my path fixed that particular
+    error.
 * In GitHub, if you are looking at "foo.rb on master", you can hit "y" to get
     you a link to "foo.rb at that specific commit". Helpful if you want to link
     to a specific line, you can do so without worrying about the lines shifting
