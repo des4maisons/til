@@ -1,3 +1,16 @@
+* On OSX, if you keep being told to type in your ssh key password while using
+    `IdentitiesOnly yes` despite saving the password to your keychain, it is
+    likely that you either have a public key file that is not in a format
+    recognized by your OSX, or that you have no public key file. Generate a new
+    one using `ssh-keygen -y -f id_rsa > id_rsa.pub`. Ghetttooooooooo. `ssh
+    -vvv` is not helpful in diagnosing this problem.
+* On OSX, if you use `IdentitiesOnly yes` in your ssh config, you can still avoid
+    typing in your password *if* you save your password to the system key chain.
+    This will mean you will have to type in your password manually (no copy-paste)
+    into the system dialog.
+* `IdentitiesOnly yes` is how you tell ssh to only use the Identity you
+    specify, and not rely on keys served by ssh-agent. My experience tells me
+    that ssh-agent is not even used, so you will have to type in your password.
 * [This page](https://github.com/bundler/bundler/blob/master/ISSUES.md) is
     helpful in giving hints to solving bundler problems:
 * If you get errors like these:
