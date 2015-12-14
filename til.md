@@ -1,3 +1,14 @@
+* You can tell bundler to pass certain flags during the installation of certain
+    gems. This configuration exists per-machine. For example,
+
+    ```
+    bundle config build.mysql --with-mysql-config=/usr/local/mysql/bin/mysql_config
+    ```
+    This will cause the following invocation of `gem` during a `bundle install`:
+
+    ```
+    gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config
+    ```
 * `lxc-checkconfig` checks for missing kernel features requested by lxc.
 * Most `lxc-*` commands take `--logfile=lxc.log` and `--logpriority=TRACE` as
     options, in case you can't figure out what's going on from the obscure
