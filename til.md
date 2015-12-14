@@ -1,3 +1,4 @@
+* `lxc-checkconfig` checks for missing kernel features requested by lxc.
 * Most `lxc-*` commands take `--logfile=lxc.log` and `--logpriority=TRACE` as
     options, in case you can't figure out what's going on from the obscure
     error message you get, or everything looks dandy but it didn't do what you
