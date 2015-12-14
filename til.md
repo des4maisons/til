@@ -1,3 +1,7 @@
+* Most `lxc-*` commands take `--logfile=lxc.log` and `--logpriority=TRACE` as
+    options, in case you can't figure out what's going on from the obscure
+    error message you get, or everything looks dandy but it didn't do what you
+    want.
 * On OSX, if you keep being told to type in your ssh key password while using
     `IdentitiesOnly yes` despite saving the password to your keychain, it is
     likely that you either have a public key file that is not in a format
