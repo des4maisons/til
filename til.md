@@ -1,3 +1,5 @@
+* For MySQL configuration / plist on OSX, [this](https://gist.github.com/kevinelliott/e12aa642a8388baf2499#mysql-settings)
+     might be helpful
 * You can tell bundler to pass certain flags during the installation of certain
     gems. This configuration exists per-machine. For example,
 
