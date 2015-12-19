@@ -1,3 +1,8 @@
+* size footprint of all top-level directories, sorted by size:
+
+    ```
+    du -sh /* | sort -hk1
+    ```
 * For MySQL configuration / plist on OSX, [this](https://gist.github.com/kevinelliott/e12aa642a8388baf2499#mysql-settings)
      might be helpful
 * You can tell bundler to pass certain flags during the installation of certain
