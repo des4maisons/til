@@ -1,3 +1,9 @@
+- When wanting to play around with a type of tool, pick one. Doesn't
+    matter which one, though you can use the quality of the docs as a guiding
+    point. Learn it, and use it as a comparison point for the next one you learn.
+    Build something you understand well in it, something you can build in an
+    afternoon, as an evaluation project. E.g. a bookmark app if you're learning
+    a web framework.
 - All ideas are welcome, not all ideas are relevant
 - How does making panhandling illegal help? Is it to ease the discomfort of the
     middle class? If you want to understand the makeup of our society and not
