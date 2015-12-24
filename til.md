@@ -1,3 +1,12 @@
+* In yaml, to have a "verbatim" node (one where the information is passed
+    through withou re-interpretation, except to remove the indentation':
+
+    ```
+    foo: |
+      stompy
+      this is
+      grumpy time
+    ```
 * The `GIT_SSH` environment variable is how you override the command that git
     is using to ssh. Set `GIT_SSH` to the path of a file that specifies how the
     ssh command should be invoked. An example of such a file:
