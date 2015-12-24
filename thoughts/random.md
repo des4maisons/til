@@ -1,3 +1,6 @@
+- Solving problems is hard. It often takes insight and eureka moments.
+    Therefore, don't waste your time thinking about problems that are symtomes
+    of bigger problems. Solve the real problems.
 - When wanting to play around with a type of tool, pick one. Doesn't
     matter which one, though you can use the quality of the docs as a guiding
     point. Learn it, and use it as a comparison point for the next one you learn.
