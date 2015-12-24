@@ -1,6 +1,6 @@
 - In a new git repo, use the first (empty) commit's message to describe the
     foreseen purpose of the repo at the time of the commit.
-_ In git, make the first commit an empty one so that
+- In git, make the first commit an empty one so that
     - your first commit with content can be a pull request, and
     - rebasing, which sometimes happens at the beginning of a project, can be
         done more easily.
