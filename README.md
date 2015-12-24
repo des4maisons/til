@@ -7,6 +7,10 @@ This repo logs the tidbits I learn or think of that I want to recall easily.
 It's not super well organized! Here are the files and directories in order of
 most frequently updated.
 
+Note, in any given file, the most recent stuff usually goes at the top. (In the
+rare case that I am feeling organized, I may try to group a new entry with
+similar past entries.)
+
 - [til.md](/til.md) -- mostly technical things I have learned. Specific command
     invocations that are easy to forget but that I hate googling for.
 - [thoughts/](/thoughts) -- Ways to think about things, words of wisdom from
