@@ -76,6 +76,7 @@
     `.bundle` is overriding the one createed by the build step of `heroku/ruby`.
     `heroku/ruby` installs to `/app/heroku/ruby/bundle`, and for `bundler` to pick
     that up the `.bundle` file needs to be updated with that path. Example error:
+
     ```
     Trigger 5, RUN bundle exec rake assets:precompile
     Step 0 : RUN bundle exec rake assets:precompile
@@ -155,6 +156,7 @@
     ```
 * When you create an LWRP in chef, you can create a chef-spec "matcher" for it.
     For example, you would be able to write this in a spec file:
+
     ```ruby
     expect(chef_run).to my_custom_matcher('...')
     ```
@@ -247,6 +249,7 @@
     can't easily add another option like `-f` in the `aux` form. The preferred
     form, `ps -ax`, allows you to add the `-f` easily.
 * Docker-machine process:
+
     ```
     machine_name=default
     docker-machine start $machine_name
