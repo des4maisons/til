@@ -1,3 +1,4 @@
+* [Manipulating binary data in python](http://www.devdungeon.com/content/working-binary-data-python)
 * In yaml, to have a "verbatim" node (one where the information is passed
     through withou re-interpretation, except to remove the indentation':
 
