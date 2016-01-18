@@ -1,3 +1,15 @@
+* To install an apt package of a particular version, use
+
+    ```
+    apt-get install <package-name>=version
+    ```
+* To list all versions of apt packages available to install, use
+
+    ```
+    apt-cache madison <package-name>
+    ```
+
+    Don't ask me why though.
 * [Manipulating binary data in python](http://www.devdungeon.com/content/working-binary-data-python)
 * In yaml, to have a "verbatim" node (one where the information is passed
     through withou re-interpretation, except to remove the indentation':
