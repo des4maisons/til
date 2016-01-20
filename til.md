@@ -1,3 +1,14 @@
+* The official ruby docker image has a `.bundle/config` in the root user's home
+    dir which installs stuff to `/usr/local/bundle` instead of in the dir of the
+    `Gemfile`.
+* Troubleshooting docker-compose networking:
+    - Use `dc up` if you want ports forwarded. `run` doesn't.
+    - In your browser, use your docker-machine ip addr, not `127.0.0.1`.
+    - Use `ports` not `expose` if you want ports forwarded to the host. Wrap
+        `ports` entries in quotes to avoid yaml interpretation shenanigans.
+        [Reference](https://docs.docker.com/compose/compose-file/#ports)
+    - If using ember, wait until the server is completely done building before
+        requesting.
 * To install an apt package of a particular version, use
 
     ```
