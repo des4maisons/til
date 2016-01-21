@@ -9,6 +9,12 @@
         [Reference](https://docs.docker.com/compose/compose-file/#ports)
     - If using ember, wait until the server is completely done building before
         requesting.
+    - Make sure the service in the docker container is not bound to 127.0.0.1
+    - You need to run `lsof` with `sudo` on your docker machine.
+    - Test the connection using `telnet <host> <port>`, from inside the docker
+        container, from docker machine, and from your osx host.
+    - Running `docker ps` will show you which ports are being forwarded by
+        docker to the docker-machine.
 * To install an apt package of a particular version, use
 
     ```
