@@ -1,3 +1,4 @@
+* In YAML, `~` means "nil".
 * The official ruby docker image has a `.bundle/config` in the root user's home
     dir which installs stuff to `/usr/local/bundle` instead of in the dir of the
     `Gemfile`.
