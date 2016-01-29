@@ -1,3 +1,5 @@
+* `#!/bin/bash -x -e` is not a valid shebang line on ubuntu (it is on osx).
+    The valid shebang line is `#!/bin/bash -xe`
 * `mdfind`: an alwayss up to date version of `locate`, used by OSX's Spotlight
 * In YAML, `~` means "nil".
 * The official ruby docker image has a `.bundle/config` in the root user's home
