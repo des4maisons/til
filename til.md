@@ -1,3 +1,5 @@
+* `initctl` controls things managed by `upstart`. `upstart` conf files go into
+    `/etc/init`.
 * `#!/bin/bash -x -e` is not a valid shebang line on ubuntu (it is on osx).
     The valid shebang line is `#!/bin/bash -xe`
 * `mdfind`: an alwayss up to date version of `locate`, used by OSX's Spotlight
