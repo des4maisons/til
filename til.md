@@ -1,3 +1,8 @@
+* `upstart` logs to `/var/log/syslog` when respawning a process:
+
+    ```
+    Feb  9 21:30:30 <host> kernel: ] init: foo main process (<pid>) terminated with status 1
+    ```
 * `initctl` controls things managed by `upstart`. `upstart` conf files go into
     `/etc/init`.
 * `#!/bin/bash -x -e` is not a valid shebang line on ubuntu (it is on osx).
