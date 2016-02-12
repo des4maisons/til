@@ -1,3 +1,13 @@
+* Even if I have already added a `known_hosts` entry for github, I still get
+    these warnings when I `git clone`:
+
+    ```
+    Warning: Permanently added the RSA host key for IP address '192.30.252.130' to the list of known hosts.
+    ```
+
+    This is because of the ssh setting `CheckHostIp`, which verifies that the
+    *ip* of the host is in `known_hosts`, in addition to the hostname. If the
+    IP is not present in `known_hosts`, it is added, but that warning is issued.
 * To remove a known-hosts entry,
 
     ```
