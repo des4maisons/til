@@ -1,3 +1,18 @@
+* To remove a known-hosts entry,
+
+    ```
+    ssh-keygen -f ~/.ssh/known_hosts -R github.com
+    ```
+* To generate the fingerprint for a host's public key already in known-hosts,
+
+    ```
+    ssh-keygen -l -f ~/.ssh/known_hosts -F github.com
+    ```
+* To generate the fingerprint for an ssh public key,
+
+    ```
+    ssh-keygen -l -f /path/to/public_key
+    ```
 * `upstart` logs to `/var/log/syslog` when respawning a process:
 
     ```
