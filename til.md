@@ -1,3 +1,19 @@
+* Gists, though very git-repo-like, don't support directories:
+
+    ```
+    $ g push origin master
+    Counting objects: 47, done.
+    Delta compression using up to 4 threads.
+    Compressing objects: 100% (47/47), done.
+    Writing objects: 100% (47/47), 1.31 MiB | 113.00 KiB/s, done.
+    Total 47 (delta 7), reused 0 (delta 0)
+    remote: Gist does not support directories.
+    remote: These are the directories that are causing problems:
+    remote: slides
+    To git@gist.github.com:<name>.git
+     ! [remote rejected] master -> master (pre-receive hook declined)
+    error: failed to push some refs to 'git@gist.github.com:<name>.git'
+    ```
 * Even if I have already added a `known_hosts` entry for github, I still get
     these warnings when I `git clone`:
 
