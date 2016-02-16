@@ -1,3 +1,6 @@
+* In checf specs, if atttributes which have defaults are appearing as nil, it might
+    be because the attributes belong to a dependent cookbook which is not being
+    declared as a dependency in `metadata.rb`.
 * Gists, though very git-repo-like, don't support directories:
 
     ```
