@@ -1,3 +1,5 @@
+* The `build-essential` apt package contains many things you typically need to
+    compile code, such as `g++`, `gcc`, `make`, etc.
 * If I won't have time to make dinner in the evening, working from home and
     making something that requires little babysitting is a convenient
     alternative
