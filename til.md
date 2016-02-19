@@ -1,3 +1,6 @@
+* If I won't have time to make dinner in the evening, working from home and
+    making something that requires little babysitting is a convenient
+    alternative
 * In checf specs, if atttributes which have defaults are appearing as nil, it might
     be because the attributes belong to a dependent cookbook which is not being
     declared as a dependency in `metadata.rb`.
