@@ -1,3 +1,30 @@
+* In `iptables`, the *command* option short-forms tend to have capital letters:
+
+    ```
+    -P   --policy
+    -A   --append
+    -L   --list
+    -h   < the exception!
+    ```
+
+    command *parameters* tend to be lower case:
+
+    ```
+    -j   --jump <target>
+    -d   --destination <address>[/<mask>]
+    -s   --source <address>[/<mask>]
+    ```
+
+    *non-command-parameter* options are also all lower case, and are limited to
+
+    ```
+    -v   --verbose
+    -n   --numeric
+    --line-numbers
+    -x   --exact (packet, byte counters)
+    -w   --wait (for the xtables lock)
+    --modprobe=<command>
+    ```
 * The `build-essential` apt package contains many things you typically need to
     compile code, such as `g++`, `gcc`, `make`, etc.
 * If I won't have time to make dinner in the evening, working from home and
