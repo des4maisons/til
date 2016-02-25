@@ -1,3 +1,7 @@
+* AWS lambda debugging: If a lambda function test is giving you unhelpful
+    errors,
+    * Check that all files in the uploaded zip are world-readable
+    * Check that all directories in the uploaded zip are world-executable.
 * In `iptables`, the *command* option short-forms tend to have capital letters:
 
     ```
