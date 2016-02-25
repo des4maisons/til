@@ -1,3 +1,11 @@
+* To add an apt-repository,
+    ```
+    apt-get install -y software-properties-common python-software-properties
+    add-apt-repository ppa:git-core/ppa
+    curl -sSL '<url of key>' | apt-key add -
+    apt-get update
+    apt-get install -y git
+    ```
 * Never again worry about deleting a file whose name is only punctuation,
     possibly magic punctuation that might be interpreted by your shell. Delete
     the file in vim's explore mode:
