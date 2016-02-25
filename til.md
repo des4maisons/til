@@ -89,7 +89,8 @@
     dir which installs stuff to `/usr/local/bundle` instead of in the dir of the
     `Gemfile`.
 * Troubleshooting docker-compose networking:
-    - Use `dc up` if you want ports forwarded. `run` doesn't.
+    - Use `dc up` if you want ports forwarded. `run` doesn't, unless you
+        specify the `--service-ports` option.
     - In your browser, use your docker-machine ip addr, not `127.0.0.1`.
     - Use `ports` not `expose` if you want ports forwarded to the host. Wrap
         `ports` entries in quotes to avoid yaml interpretation shenanigans.
