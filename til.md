@@ -1,3 +1,9 @@
+* Never again worry about deleting a file whose name is only punctuation,
+    possibly magic punctuation that might be interpreted by your shell. Delete
+    the file in vim's explore mode:
+    * `vim .`
+    * Move cursor over the file you want to delete
+    * hit 'D'
 * AWS lambda debugging: If a lambda function test is giving you unhelpful
     errors,
     * Check that all files in the uploaded zip are world-readable
