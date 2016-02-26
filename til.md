@@ -1,3 +1,5 @@
+* Travis' container-infra images can all be found [on
+    quay](https://quay.io/organization/travisci)
 * To extract a debian, `dpkg -x <debian> <target dir>`
 * To add an apt-repository,
     ```
