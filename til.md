@@ -1,3 +1,4 @@
+* To extract a debian, `dpkg -x <debian> <target dir>`
 * To add an apt-repository,
     ```
     apt-get install -y software-properties-common python-software-properties
