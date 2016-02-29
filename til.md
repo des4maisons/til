@@ -1,3 +1,5 @@
+* [Summary](https://www.golang-book.com/books/intro/13) of useful golang
+    library functions
 * Testing in go: Say you want to write a test for the package "foo". In the
     directory where you have the foo package, create nother file `foo_test.go`.
     Fill it with this:
