@@ -23,13 +23,13 @@
 * You can make a channel with a limited buffer size. Goroutines will block if
     the buffer is full.
 
-    ```golang
+    ```go
     c := make(chan string, 1) // buffer size of 1
     ```
 * Goroutines communicate over a "channel", which appears to be a pipe with a
     type.
 
-    ```golang
+    ```go
     func pinger(c chan<- string) {
       c <- "ping"
     }
@@ -67,7 +67,7 @@
     automatically implement that interface.
 * Types in go implement the is-a relationship as so:
 
-     ```golang
+     ```go
      type Foo struct { x float64 }
      func (f *Foo) zip() { /* something */ }
 
@@ -82,14 +82,14 @@
      ```
 * Methods on structs in go:
 
-    ```golang
+    ```go
     func (c *Circle) area() float64 {  // "c" is the "receiver"
       return math.Pi * c.r*c.r
     }
     ```
 * Structs / types in go:
 
-    ```golang
+    ```go
     type Circle struct {
       x float64
       y float64
@@ -102,7 +102,7 @@
     returns.
 * You can name the return value in a golang `func`:
 
-    ```golang
+    ```go
     func x() (my_return int) {
       my_return = 5
       return
@@ -110,12 +110,12 @@
     ```
 * Function declaration in golang:
 
-    ```golang
+    ```go
     func <name>(<params>) <return type> { }
     ```
 * iterating over an array in golang:
 
-    ```golang
+    ```go
     for _, v := range my_slice {
       stuff
     }
@@ -123,26 +123,26 @@
 * When you access a map key that doesn't exist, go returns the "zero" value of
     that type. Or you can check for the existence like this:
 
-    ```golang
+    ```go
     if name, ok := my_map["doesn't exist"]; ok {
       fmt.Println(name, ok)
     }
     ```
 * Adding a nd deleting from a golang map:
 
-    ```golang
+    ```go
     x["hi"] = 1
     delete(x, "hi")
     ```
 * Declaring a `map` in `golang`:
 
-    ```golang
+    ```go
     var x map[string]int   // for some reason x needs to be initialized
     x := make(map[string]int)
     ```
 * To declare a `slice` (the more useful version of an `array`) in go:
 
-    ```golang
+    ```go
     var x []int  // length 0
     x := make([]int, 5)  // slice of length 5
     ```
@@ -150,12 +150,12 @@
     Also useful are `copy` and `append`.
 * `golang` variable declaration: `var <var-name> <type> [= <initialization> ]`
 
-    ```golang
+    ```go
     var x string = "hello"
     ```
     You can also do it this way, and `go` infers all the ommitted stuff:
 
-    ```golang
+    ```go
     x := "hello"
     ```
 * `godoc <package> <function>` prints the docs for that function.
