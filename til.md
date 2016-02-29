@@ -1,8 +1,19 @@
+* `golang` variable declaration: `var <var-name> <type> [= <initialization> ]`
+
+    ```
+    var x string = "hello"
+    ```
+    You can also do it this way, and `go` infers all the ommitted stuff:
+
+    ```
+    x := "hello"
+    ```
 * `godoc <package> <function>` prints the docs for that function.
 * Travis' container-infra images can all be found [on
     quay](https://quay.io/organization/travisci)
 * To extract a debian, `dpkg -x <debian> <target dir>`
 * To add an apt-repository,
+
     ```
     apt-get install -y software-properties-common python-software-properties
     add-apt-repository ppa:git-core/ppa
