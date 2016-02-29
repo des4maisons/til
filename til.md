@@ -1,3 +1,10 @@
+* iterating over an array in golang:
+
+   ```golang
+   for _, v := range my_slice {
+     stuff
+   }
+   ```
 * When you access a map key that doesn't exist, go returns the "zero" value of
     that type. Or you can check for the existence like this:
 
