@@ -1,3 +1,7 @@
+* Running `godoc -http=":6060"` makes browsable all the docs on your system,
+    at [localhost:6060/pkg/](http://localhost:6060/pkg/)
+* In golang, functions that begin with a capital are visible to programs that
+    import the packaged.
 * You can make a channel with a limited buffer size. Goroutines will block if
     the buffer is full.
 
