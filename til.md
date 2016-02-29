@@ -1,10 +1,51 @@
+* Interfaces in golang:
+
+    ```
+    type Shape interface {
+      area() float64
+    }
+    ```
+    You can use interfaces as types.
+    Any types that already have methods corresponding to that interface
+    automatically implement that interface.
+* Types in go implement the is-a relationship as so:
+
+     ```golang
+     type Foo struct { x float64 }
+     func (f *Foo) zip() { /* something */ }
+
+     type Bar {
+       Foo
+       y float64
+     }
+
+     b := new(Bar)
+     b.Foo.zip()
+     b.zip()
+     ```
+* Methods on structs in go:
+
+    ```golang
+    func (c *Circle) area() float64 {  // "c" is the "receiver"
+      return math.Pi * c.r*c.r
+    }
+    ```
+* Structs / types in go:
+
+    ```golang
+    type Circle struct {
+      x float64
+      y float64
+      r float64
+    }
+    ```
 * Functions seem to be first-class in go. You can return them, create inline
     functions with closure...
 * Use `defer` in `golang` to "ensure" something gets called before the function
     returns.
 * You can name the return value in a golang `func`:
 
-    ```
+    ```golang
     func x() (my_return int) {
       my_return = 5
       return
@@ -12,7 +53,7 @@
     ```
 * Function declaration in golang:
 
-    ```
+    ```golang
     func <name>(<params>) <return type> { }
     ```
 * iterating over an array in golang:
@@ -25,14 +66,14 @@
 * When you access a map key that doesn't exist, go returns the "zero" value of
     that type. Or you can check for the existence like this:
 
-    ```
+    ```golang
     if name, ok := my_map["doesn't exist"]; ok {
       fmt.Println(name, ok)
     }
     ```
 * Adding a nd deleting from a golang map:
 
-    ```
+    ```golang
     x["hi"] = 1
     delete(x, "hi")
     ```
