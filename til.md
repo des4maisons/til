@@ -1,3 +1,19 @@
+* Testing in go: Say you want to write a test for the package "foo". In the
+    directory where you have the foo package, create nother file `foo_test.go`.
+    Fill it with this:
+
+    ```
+    package foo
+
+    import "testing"
+
+    func TestBar(t *testing.T) {
+      v = Bar([]float64{1,2})  // bar is defined in `foo`
+      if v != "stompy" {
+        t.Error("Expected 'stompy', got ", v)
+      }
+    }
+    ```
 * Running `godoc -http=":6060"` makes browsable all the docs on your system,
     at [localhost:6060/pkg/](http://localhost:6060/pkg/)
 * In golang, functions that begin with a capital are visible to programs that
