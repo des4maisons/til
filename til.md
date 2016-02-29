@@ -1,3 +1,23 @@
+* When you access a map key that doesn't exist, go returns the "zero" value of
+    that type. Or you can check for the existence like this:
+
+    ```
+    if name, ok := my_map["doesn't exist"]; ok {
+      fmt.Println(name, ok)
+    }
+    ```
+* Adding a nd deleting from a golang map:
+
+    ```
+    x["hi"] = 1
+    delete(x, "hi")
+    ```
+* Declaring a `map` in `golang`:
+
+    ```golang
+    var x map[string]int   // for some reason x needs to be initialized
+    x := make(map[string]int)
+    ```
 * To declare a `slice` (the more useful version of an `array`) in go:
 
     ```golang
