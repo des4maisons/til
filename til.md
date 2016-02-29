@@ -1,3 +1,38 @@
+* You can make a channel with a limited buffer size. Goroutines will block if
+    the buffer is full.
+
+    ```golang
+    c := make(chan string, 1) // buffer size of 1
+    ```
+* Goroutines communicate over a "channel", which appears to be a pipe with a
+    type.
+
+    ```golang
+    func pinger(c chan<- string) {
+      c <- "ping"
+    }
+
+    func printer(c <-chan string) {
+      fmt.Println(<-c)
+    }
+
+    func main() {
+      c chan string = make(chan string)
+      go pinger(c)
+      go printer(c)
+    }
+    ```
+
+    Omit the arrows to make the channel bidirectional.
+* A `goroutine` is created when you make a function call but prefix it with
+    `go`.
+
+    ```
+    go foo()
+    go bar()
+    ```
+
+  These functions will execute concurrently.
 * Interfaces in golang:
 
     ```
