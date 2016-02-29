@@ -1,11 +1,19 @@
+* To declare a `slice` (the more useful version of an `array`) in go:
+
+    ```golang
+    var x []int  // length 0
+    x := make([]int, 5)  // slice of length 5
+    ```
+
+    Also useful are `copy` and `append`.
 * `golang` variable declaration: `var <var-name> <type> [= <initialization> ]`
 
-    ```
+    ```golang
     var x string = "hello"
     ```
     You can also do it this way, and `go` infers all the ommitted stuff:
 
-    ```
+    ```golang
     x := "hello"
     ```
 * `godoc <package> <function>` prints the docs for that function.
