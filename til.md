@@ -1,10 +1,27 @@
+* Functions seem to be first-class in go. You can return them, create inline
+    functions with closure...
+* Use `defer` in `golang` to "ensure" something gets called before the function
+    returns.
+* You can name the return value in a golang `func`:
+
+    ```
+    func x() (my_return int) {
+      my_return = 5
+      return
+    }
+    ```
+* Function declaration in golang:
+
+    ```
+    func <name>(<params>) <return type> { }
+    ```
 * iterating over an array in golang:
 
-   ```golang
-   for _, v := range my_slice {
-     stuff
-   }
-   ```
+    ```golang
+    for _, v := range my_slice {
+      stuff
+    }
+    ```
 * When you access a map key that doesn't exist, go returns the "zero" value of
     that type. Or you can check for the existence like this:
 
