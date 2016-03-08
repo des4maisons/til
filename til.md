@@ -1,3 +1,5 @@
+* To control the *shutdown* timeout when you Ctrl-C a `docker-compose up`,
+    you need to run `docker-compose up --timeout=20`
 * [Summary](https://www.golang-book.com/books/intro/13) of useful golang
     library functions
 * Testing in go: Say you want to write a test for the package "foo". In the
@@ -893,13 +895,18 @@
       to connect to
     * that in any web requests, you put the port in the right spot
     * that both the vm and the container are running
-    * that iptable rules are not blocking/dropping any of your traffic
-    * that traffic is going from the vm to the container as expected (tcpdump)
+    * that iptable rules are not blocking/dropping any of your traffic. You can do this by
+        * `itpables -Z` - this zeroes the rule hit counts in iptables
+        * `watch iptables -n -L -v` to see up-to-date hit counts
+        * send packets (via telnet or netcat) to you server, see if counts increase
+        * Remember that `ssh` will constantly be sending packets as well
+    * that traffic is going from the vm to the container as expected (tcpdump, below)
     * that nginx isn't running anywhere to mess up what you think should happen
     * that you aren't forwarding ports to any restricted ports such as 80 or 443
 * `iptables -t nat -S <chain>` displays the rules for chain `<chain>`
 * `iptables -n -L -v` displays numeric ip addresses and ports, lists all rules
-  for (all) chains, and outputs the hit counts for each rule.
+    for (all) chains, number of refenences to those chains (if 0, then chain is
+    not used), and outputs the hit counts for each rule.
 * `tcpdump tcp -i any -nn port xxxx` dumps any traffic on any interface, to or
   from port xxxx, and does not attempt to resolve port numbers or ip addresses.
 * Most likely, knife is already configured on your chef server.
