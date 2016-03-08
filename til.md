@@ -890,7 +890,7 @@
     1. Is this going to be yaks? Maybe there's a different problem you can solve.
     1. How long have you been fighting this? Is it time to ask for help?
 * `OH` in twitter speak means "overheard"
-* If you are debugging a network connection to a container, verify
+* If you are debugging a network connection, verify
     * that the ip that is being connected to is the ip of the machine you want
       to connect to
     * that in any web requests, you put the port in the right spot
@@ -900,9 +900,11 @@
         * `watch iptables -n -L -v` to see up-to-date hit counts
         * send packets (via telnet or netcat) to you server, see if counts increase
         * Remember that `ssh` will constantly be sending packets as well
-    * that traffic is going from the vm to the container as expected (tcpdump, below)
+    * that traffic is arriving at hops along the way, including destination
+        (tcpdump, below)
     * that nginx isn't running anywhere to mess up what you think should happen
-    * that you aren't forwarding ports to any restricted ports such as 80 or 443
+    * that you aren't forwarding container ports to any restricted ports such
+        as 80 or 443, if you are doing docker things
 * `iptables -t nat -S <chain>` displays the rules for chain `<chain>`
 * `iptables -n -L -v` displays numeric ip addresses and ports, lists all rules
     for (all) chains, number of refenences to those chains (if 0, then chain is
