@@ -1,3 +1,5 @@
+* The ruby equivalent of python's `repr()` is `.inspect`. `puts "".inspect`
+    will print `""`, instead of nothing.
 * To control the *shutdown* timeout when you Ctrl-C a `docker-compose up`,
     you need to run `docker-compose up --timeout=20`
 * [Summary](https://www.golang-book.com/books/intro/13) of useful golang
