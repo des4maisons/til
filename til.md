@@ -1,3 +1,8 @@
+* `pkgutil` allows you to query and manipulate Mac OSX Installer packages. eg:
+
+    ```
+    pkgutil --file-info `xcode-select -p` | grep pkg-version
+    ```
 * The ruby equivalent of python's `repr()` is `.inspect`. `puts "".inspect`
     will print `""`, instead of nothing.
 * To control the *shutdown* timeout when you Ctrl-C a `docker-compose up`,
