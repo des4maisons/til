@@ -1,3 +1,4 @@
+* Upstart scripts log service execution to `/var/log/upstart/service-name.log`.
 * `pkgutil` allows you to query and manipulate Mac OSX Installer packages. eg:
 
     ```
