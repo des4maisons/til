@@ -1,3 +1,8 @@
+* Tmux shared sessions:
+    * *you*: `tmux -S /tmp/stompy.tmux.sock new stompy`
+    * *them*: `tmux -S /tmp/stompy.tmux.sock attach -t stompy
+    * They will either have to sudo, or you will have to chmod / chown the
+        `/tmp/stompy.sock` to be readable by them.
 * Upstart scripts log service execution to `/var/log/upstart/service-name.log`.
 * `pkgutil` allows you to query and manipulate Mac OSX Installer packages. eg:
 
