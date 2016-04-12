@@ -1,3 +1,6 @@
+* Clear OSX's dns cache: `sudo killall -HUP mDNSResponder`
+* Clear chrome's dns cache: go here
+    [chrome://net-internals/#dns](chrome://net-internals/#dns) and push the button
 * Tmux shared sessions:
     * *you*: `tmux -S /tmp/stompy.tmux.sock new stompy`
     * *them*: `tmux -S /tmp/stompy.tmux.sock attach -t stompy
