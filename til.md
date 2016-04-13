@@ -1,3 +1,6 @@
+* If you write an init script that hangs, and it runs on boot, boot will hang.
+    If it runs on shutdown, shutdown will hang. Make sure you test your init
+    script in odd scenarios so that this doesn't happen to you.
 * Clear OSX's dns cache: `sudo killall -HUP mDNSResponder`
 * Clear chrome's dns cache: go here
     [chrome://net-internals/#dns](chrome://net-internals/#dns) and push the button
