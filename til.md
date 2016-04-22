@@ -1,3 +1,8 @@
+* /var/run in ubuntu 14.04 is actually /run, which is tmpfs. This means it gets
+    blown away each boot. So if your service writes a pid file to
+    `/var/run`, you should probably `mkdir -p /var/run/needed-dir` and `chown
+    <service_user> /var/run/needed-dir`. Otherwise your service won't be able
+    to write its pid.
 * If you write an init script that hangs, and it runs on boot, boot will hang.
     If it runs on shutdown, shutdown will hang. Make sure you test your init
     script in odd scenarios so that this doesn't happen to you.
