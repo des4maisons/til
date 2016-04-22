@@ -1,3 +1,4 @@
+* If you `rm -rf` a filesystem mount, you get `EBUSY`
 * Chef backs up files before it changes them to `/var/chef/backup`
 * /var/run in ubuntu 14.04 is actually /run, which is tmpfs. This means it gets
     blown away each boot. So if your service writes a pid file to
