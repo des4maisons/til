@@ -1,3 +1,20 @@
+* in go,
+
+    ```
+    x = some_go_struct{}
+    *x.some_string_pointer = "stompy"
+    ```
+    is not allowed - null pointer!
+
+    ```
+    var s string
+    x = some_go_struct{
+      some_string_pointer = & s
+    }
+
+    *x.some_string_pointer = "stompy"
+    ```
+    is allowed
 * If you `rm -rf` a filesystem mount, you get `EBUSY`
 * Chef backs up files before it changes them to `/var/chef/backup`
 * /var/run in ubuntu 14.04 is actually /run, which is tmpfs. This means it gets
