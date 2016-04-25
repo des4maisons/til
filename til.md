@@ -1,3 +1,9 @@
+* Add this to your `.git/config` if you want `git fetch` to pull down all the
+    pull request tips. Put it under `[remote "origin"]`.
+
+    ```
+    fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+    ```
 * in go,
 
     ```
