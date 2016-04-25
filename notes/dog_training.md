@@ -1,3 +1,47 @@
+- When I tell my dog "no", she will stop the bad thing momentarily, but she is
+    not reinforced for doing so.
+    - I can tell her "no" every time she comes near the kitchen, and she sort
+        of gets it. Perhaps she reasons that she doesn't want to risk making me
+        mad, and the kitchen's not that great anyway.
+        - But since she'd rather be by the kitchen, I'm fighting against
+            her instinct to teach her this.
+        - Moreover, when I'm not there, there's no reason *not* to go to
+            the kitchen.
+    - I can tell her "no" every time she pulls.
+        - But she is present in the moment, immersed in being outside. She
+            probably doesn't have much room in her brain to reason about "no"
+            vs "pull". She slows down, but soon speeds up again.
+        - Moreover, each time she does this she is being reinforced for
+            ignoring me.
+    In the case of the pulling, I first need to break into her moment, become
+    more than just a "no". In both cases, I need to provide a rewarding
+    alternative to the undesirable behaviour.
+    See [this youtube video on "positive interrupters"](https://www.youtube.com/watch?v=TBvPaqMZyo8)
+- A behaviour is "reinforced" when it is "rewarded".  Whatever behaviour a dog
+    was doing when it got rewarded is reinforced.
+    - It has always been my dog's instinct to pull. Now, that pulling has been
+        reinforced by a thousand walks during which she has pulled, and been
+        rewarded by making progress on the walk, seeing more of the world,
+        getting to the dog park.
+    - It has been my dog's instinct to get excited at the prospect of going to
+        the dog park. Now, that tendency to get excited has been reinforced. In
+        her excited state, she has been rewarded for walking, for arriving at
+        the dog park.
+- A behaviour is "reinforced" by practice.
+     - It was not my dog's instinct to come when called. But through successive
+         rewardings of coming when called, she now will do so. Now, continuing
+         practice reinforces that behaviour.
+    - But she will no longer come when she senses a cuddle ambush! Now, every
+        time I call her for cuddles, and she *refuses* to come, that refusal is
+        also re-inforced.
+    - In addition to being reinforced by reward, my dog also reinforces her
+        pulling with practice. When I pull *her*, I reinforce it.
+Dogs won't learn if they are overstimulated or overexcited. 
+    attention .
+- You can teach your dog how to choose to be calm as a default behaviour:
+    - [Pretty helpful article that talks about "Settle"](http://yourdogsfriend.org/help/impulse-control/)
+    - [Video by kikopup teaching Settle](https://www.youtube.com/watch?v=wesm2OpE_2c)
+    - [Teaching a dog to be calm *inside* when they were an *outside* dog](http://dogmantics.com/teaching-a-dog-previously-kept-outside-to-be-calm-inside-the-house/)
 - If you want to teach your dog to *not* do something, be vigilant about giving
     them what they want when they are not doing it, and taking something away
     when they are. E.g.,
