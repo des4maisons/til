@@ -1,3 +1,15 @@
+* Steps to proper daemonization of a process:
+
+    1. fork
+    1. setsid
+    1. fork
+    1. chdir("/")
+    1. umask(0)
+    1. close fd 0, 1, 2, all other file descriptors
+    1. reopen 0, 1, 2
+
+    See [this list](http://web.archive.org/web/20120914180018/http://www.steve.org.uk/Reference/Unix/faq_2.html#SEC16)
+    and [this more in-depth explanation](http://codingfreak.blogspot.com/2012/03/daemon-izing-process-in-linux.html)
 * Add this to your `.git/config` if you want `git fetch` to pull down all the
     pull request tips. Put it under `[remote "origin"]`.
 
