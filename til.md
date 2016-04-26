@@ -1,3 +1,10 @@
+* Invoking a serf handler from the command line:
+
+   ```
+   echo <payload> | env SERF_QUERY_NAME=bar handler.sh
+   ```
+   See [the docs](https://www.serfdom.io/docs/agent/event-handlers.html) for more info
+
 * [Reproducing the environment in which monit runs](http://stackoverflow.com/questions/3356476/debugging-monit):
 
     ```
