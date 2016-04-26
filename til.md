@@ -1,3 +1,18 @@
+* [Reproducing the environment in which monit runs](http://stackoverflow.com/questions/3356476/debugging-monit):
+
+    ```
+    # monit runs as superuser
+    $ sudo su
+
+    # the -i option ignores the inherited environment
+    # this PATH is what monit supplies by default
+    $ env -i PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/sh
+
+    # su to the user under "as uid <username>"
+
+    # try running start/stop program here
+    $
+    ```
 * Steps to proper daemonization of a process:
 
     1. fork
