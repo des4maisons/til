@@ -1,3 +1,9 @@
+* To extract a debian, `dpkg -x <debian> <target dir>`
+* To list files in an installed debian package, `dpkg (-L|--listfiles)
+    $package_name`
+* To list files in a .deb file, `dpkg (-c|--contents) <file.deb>`
+* To list files in a package in apt, `apt-file list <package name>`. Might have
+    to `apt-get install apt-file`.
 * Invoking a serf handler from the command line:
 
    ```
@@ -246,7 +252,6 @@
 * `godoc <package> <function>` prints the docs for that function.
 * Travis' container-infra images can all be found [on
     quay](https://quay.io/organization/travisci)
-* To extract a debian, `dpkg -x <debian> <target dir>`
 * To add an apt-repository,
 
     ```
@@ -1070,7 +1075,6 @@
     netstat -l | grep $SOME_IP   # grab the port. marguerite.<port_number>
     lsof -i tcp:$PORT_NUMBER   # here you can see the pid
     ```
-* To list files in an installed debian package, `dpkg -L $package_name`
 * One way of creating ruby libraris: In your library base file you should
   require all the files defining things you want at top-level scope. E.g.:
 
