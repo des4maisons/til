@@ -1,3 +1,6 @@
+* USDT is "user-level statically-defined tracing". It is where a probe has been
+    inserted & compiled into code. Tools like dtrace can then hook into those
+    probes.
 * A uprobe is a probe inserted into user-space code
 * A kernel probe is a set of handlers placed on a certain instruction address.
     * A KProbe is defined by a pre-handler and a post-handler.
