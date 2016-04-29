@@ -1,3 +1,9 @@
+* A uprobe is a probe inserted into user-space code
+* A kernel probe is a set of handlers placed on a certain instruction address.
+    * A KProbe is defined by a pre-handler and a post-handler.
+    * JProbes are used to get access to a kernel function's arguments at
+        runtime. A JProbe is defined by a JProbe handler with the same prototype
+        as that of the function whose arguments are to be accessed.
 * To extract a debian, `dpkg -x <debian> <target dir>`
 * To list files in an installed debian package, `dpkg (-L|--listfiles)
     $package_name`
