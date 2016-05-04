@@ -1,3 +1,32 @@
+* If managing an ssh tunnel in bash, there are a few elegant ways to ensure it
+    is closed in the end. These tips come from [this gist](https://gist.github.com/scy/6781836)
+    * Pipe the command that needs the tunnel to the ssh command:
+
+        ```
+        mysql -e 'SHOW DATABASES;' -h 127.0.0.1 | ssh -L 3306:localhost:3306 remotehost cat
+        ```
+
+        We don't do this for the *purpose* of sending stdout to the remote
+        server, but to ensure that when the calling program closes its stdout,
+        the ssh connection will close.
+    * Run `sleep` on the remote server
+
+        ```
+        ssh -f -o ExitOnForwardFailure=yes -L 3306:localhost:3306 sleep 10
+        mysql -e 'SHOW DATABASES;' -h 127.0.0.1
+        ```
+
+        The connection will stay open as long as `mysql` is using it.
+    * Tell ssh to use a control socket, which can later be used to control and
+        shut down the connection.
+
+        ```
+        $ ssh -M -S my-ctrl-socket -fnNT -L 50000:localhost:3306 jm@sampledomain.com
+        $ ssh -S my-ctrl-socket -O check jm@sampledomain.com
+        Master running (pid=3517)
+        $ ssh -S my-ctrl-socket -O exit jm@sampledomain.com
+        Exit request sent.
+        ```
 * USDT is "user-level statically-defined tracing". It is where a probe has been
     inserted & compiled into code. Tools like dtrace can then hook into those
     probes.
