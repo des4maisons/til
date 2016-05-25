@@ -1,3 +1,4 @@
+* Logs for things started with upstart/initctl are in /var/log/upstart
 * If managing an ssh tunnel in bash, there are a few elegant ways to ensure it
     is closed in the end. These tips come from [this gist](https://gist.github.com/scy/6781836)
     * Pipe the command that needs the tunnel to the ssh command:
