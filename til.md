@@ -1,3 +1,25 @@
+* In wireshark, you can change the display of values like time and seq and ack
+    to be *relative* to the start of the packet capture. This can help because
+    it lets you see the time elapsed between / bytes increased by each requests.
+* When analysing a packet-capture with wireshark, a sent ACK number of (say) X
+    means an acknowledgement of an earlier received packet of sequence (seq)
+    number X.
+    The seq and ack numbers roughly correspond to the number of bytes sent
+    (though I'm a bit iffy on the details, because a SYN and FIN packet cause
+    increases of 1).
+    See [this page](http://packetlife.net/blog/2010/jun/7/understanding-tcp-sequence-acknowledgment-numbers/)
+* When analysing a packet-capture with wireshark, you can use a query language
+    similar to:
+
+    ```
+    tcp.port eq <port> && tcp.seq eq <sequence_number>
+    ```
+* To rewrite a large capture file into many smaller ones,
+
+    ```
+    tcpdump -r <large_file> -w <new_file_prefix> -C <max_size_in_MB>
+    ```
+    This also works for sysdig.
 * Logs for things started with upstart/initctl are in /var/log/upstart
 * If managing an ssh tunnel in bash, there are a few elegant ways to ensure it
     is closed in the end. These tips come from [this gist](https://gist.github.com/scy/6781836)
