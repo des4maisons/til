@@ -1,3 +1,13 @@
+* You can get a bunch of diagnostic information about docker by running this:
+
+    ```
+    echo -e "GET /containers/6e4483df6241/stats HTTP/1.1\r\n" | nc -q 300 -U /var/run/docker.sock
+    ```
+    If you have a new enough version of curl, you can also just
+    ```
+    curl /var/run/docker.sock/containers/<containerid>/stats
+    ```
+    but older versions of curl don't support curling a socket.
 * In wireshark, you can change the display of values like time and seq and ack
     to be *relative* to the start of the packet capture. This can help because
     it lets you see the time elapsed between / bytes increased by each requests.
