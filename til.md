@@ -1,3 +1,47 @@
+* [This blog post](http://www.cyberciti.biz/faq/network-statistics-tools-rhel-centos-debian-linux/)
+    has a treasure-trove of useful network diagnostic commands & tools.
+* To see summary stats for each interface, such as dropped packets, `ip -s link`
+* `netstat -s` will show a summary of stats for each protocol on the wire.
+* `nstat` is a tool that shows you various stats about the network, such as
+    number of tcp-resets, tcp retransmissions, new connections... Each run is
+    relative to the last run. So if an event (such as a TCP Retransmit) hasn't
+    happened since the last time you ran it, that statistic won't show up.
+* To take a packet capture with tcpdump that can be read with wireshark,
+
+    ```
+    tcpdump [-i interface] -w packet_capture_file
+    ```
+* `iperf` measures actual maximum achievable bandwidth on IP networks. eg,
+    - bandwidth
+    - loss
+    - mtu/mss
+* In Wireshark, you can view all packets in the conversation of a particular
+    packet by right clicking and clicking "follow".
+* In Wireshark, you can view a tcp conversation flow by: Statistics > Flow Graph
+* `pv`, "Pipe Viewer", is basically `cat`, but it tracks how much data has come
+    through, and when possible, how much is left. The following examples are
+    [from this nice blog post about pv](http://www.catonmat.net/blog/unix-utilities-pipe-viewer/):
+
+    ```
+    pv access.log | gzip > access.log.gz
+    pv -cN source access.log | gzip | pv -cN gzip > access.log.gz
+    tar -cf - . | pv -s $(du -sb . | awk '{print $1}') | gzip > out.tgz
+    ```
+
+    You can use it to inspect the speed of the network as well:
+
+    ```
+    # on computer A, with IP address 192.168.1.100
+    $ tar -cf - /path/to/dir | pv | nc -l -p 6666 -q 5
+    ```
+
+    ```
+    # on computer B
+    $ nc 192.168.1.100 6666 | pv | tar -xf -
+    ```
+    (Note this is backwards from how I usually do it -- unsually I would have
+    computer A initiate the connection, and have computer B listen for traffic.
+    But it all works out in the end.)
 * You can get a bunch of diagnostic information about docker by running this:
 
     ```
@@ -12,12 +56,10 @@
     to be *relative* to the start of the packet capture. This can help because
     it lets you see the time elapsed between / bytes increased by each requests.
 * When analysing a packet-capture with wireshark, a sent ACK number of (say) X
-    means an acknowledgement of an earlier received packet of sequence (seq)
-    number X.
-    The seq and ack numbers roughly correspond to the number of bytes sent
-    (though I'm a bit iffy on the details, because a SYN and FIN packet cause
-    increases of 1).
-    See [this page](http://packetlife.net/blog/2010/jun/7/understanding-tcp-sequence-acknowledgment-numbers/)
+    means an acknowledgement of all X - 1 bytes received so far, or looking at
+    it another way, which byte number it's expecting next. This will correspond
+    to the next SEQ number it expects to receive from the other server. See
+    [this page](http://packetlife.net/blog/2010/jun/7/understanding-tcp-sequence-acknowledgment-numbers/).
 * When analysing a packet-capture with wireshark, you can use a query language
     similar to:
 
