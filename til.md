@@ -1,3 +1,9 @@
+* To see the *actual* groups of a running process (not the groups that the user
+    running the process *should* have), use:
+
+    ```
+    grep Groups /proc/$$/status
+    ```
 * [This blog post](http://www.cyberciti.biz/faq/network-statistics-tools-rhel-centos-debian-linux/)
     has a treasure-trove of useful network diagnostic commands & tools.
 * To see summary stats for each interface, such as dropped packets, `ip -s link`
