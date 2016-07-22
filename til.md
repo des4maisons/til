@@ -1,3 +1,27 @@
+* See what _installed_ package provides a certain file:
+
+    ```
+    dpkg --search <path-to-file>
+    ```
+* See what package provides a certain file:
+
+    ```
+    apt-get install apt-file
+    apt-file update
+    apt-file search <file>
+    ```
+* See installed packages on ubuntu:
+
+    ```
+    dpkg --get-selections | grep -v deinstall
+    # or
+    apt --installed list
+    ```
+* See all _explicitly_ installed packages:
+
+    ```
+    aptitude search '~i!~M'
+    ```
 * To see the *actual* groups of a running process (not the groups that the user
     running the process *should* have), use:
 
