@@ -1,3 +1,8 @@
+* One way to parallelize processes on the command-line is to use xargs:
+
+    ```
+    find . -name '*.gem' | xargs --max-procs=5 --max-args=1 gem install
+    ```
 * See what _installed_ package provides a certain file:
 
     ```
