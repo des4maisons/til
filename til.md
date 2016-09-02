@@ -1,3 +1,6 @@
+* bundler's `cache_path` config option, or the `BUNDLE_CACHE_PATH` environment
+    variable, tells bundler where to put (and also where to look for) the bundle
+    cache generated with `bundle package` and `bundle cache`
 * One way to parallelize processes on the command-line is to use xargs:
 
     ```
