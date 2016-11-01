@@ -1,3 +1,12 @@
+* You can read the parsing for chef / knife search strings in [this chef zero
+    file](https://github.com/chef/chef-zero/blob/a9f0654dabb6aa0f3c59e66abc1a36bfd7767947/lib/chef_zero/solr/solr_parser.rb)
+* knife searches:
+
+    ```
+    knife search node '( recipes:foo OR recipes:foo\:\:default ) AND roles:bar'
+    ```
+
+    You have to escape `:` because it's a special character.
 * bundler's `cache_path` config option, or the `BUNDLE_CACHE_PATH` environment
     variable, tells bundler where to put (and also where to look for) the bundle
     cache generated with `bundle package` and `bundle cache`
