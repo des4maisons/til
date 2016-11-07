@@ -1,3 +1,9 @@
+* Testing who the aws credentials belong to:
+
+    ```
+    pip install awscli
+    AWS_ACCESS_KEY_ID=foo AWS_SECRET_KEY=bar aws iam get-user
+    ```
 * TextEdit saves recovery files here: `~/Library/Containers/com.apple.TextEdit/Data/Library/Autosave\ Information/`
 * Sending an event to datadog:
 
