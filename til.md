@@ -1,3 +1,10 @@
+* Sending an event to datadog:
+
+    ```
+    title=foo
+    text=bar
+    echo "_e{${#title},${#text}}:$title|$text|#shell,bash"  >/dev/udp/localhost/8125
+    ```
 * You can read the parsing for chef / knife search strings in [this chef zero
     file](https://github.com/chef/chef-zero/blob/a9f0654dabb6aa0f3c59e66abc1a36bfd7767947/lib/chef_zero/solr/solr_parser.rb)
 * knife searches:
