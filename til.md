@@ -1,3 +1,4 @@
+* TextEdit saves recovery files here: `~/Library/Containers/com.apple.TextEdit/Data/Library/Autosave\ Information/`
 * Sending an event to datadog:
 
     ```
