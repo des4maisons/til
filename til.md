@@ -1,3 +1,20 @@
+* There's no easy way of asking to see all the hard links to a file. `find /
+    -inum <inode>` is a pretty good way of seeing them.
+* Directories always have at least 2 hard links that reference them, its full
+    path and `.`. It gets an additional hard link for every child directory,
+    because of the `..` hard links.
+
+    ```
+    $ mkdir foo
+    $ ls -ld foo
+    drwx------  2 marguerite  staff  68 Nov 24 10:18 foo/
+    $ mkdir foo/bar && ls -ld foo
+    drwx------  3 marguerite  staff  102 Nov 24 10:18 foo/
+    $ mkdir foo/baz
+    $ ls -ld foo
+    drwx------  4 marguerite  staff  136 Nov 24 10:19 foo/
+    ```
+* The 2nd column of `ls -l` shows the number of hard links to the file.
 * Testing who the aws credentials belong to:
 
     ```
