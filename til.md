@@ -1,3 +1,8 @@
+* To indicate attribute nesting to the _search string_ of a `knife search`, use
+    underscores. But to indicate attribute nesting to the `-a` flage, use dots.
+    ```
+    knife search node 'foo_bar_baz:true' -a foo.bar.baz
+    ```
 * There's no easy way of asking to see all the hard links to a file. `find /
     -inum <inode>` is a pretty good way of seeing them.
 * Directories always have at least 2 hard links that reference them, its full
