@@ -1,3 +1,5 @@
+* To run a single chef recipe on a node: `chef-client -E <chef_env>  -o "recipe[<recipe_name>]"`
+* httpie: curl with features designed for humans!
 * To indicate attribute nesting to the _search string_ of a `knife search`, use
     underscores. But to indicate attribute nesting to the `-a` flage, use dots.
     ```
