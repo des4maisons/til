@@ -1,3 +1,8 @@
+* Brendan Gregg lists some [useful commands](http://www.brendangregg.com/USEmethod/use-linux.html)
+    to apply USE to various aspects of unix resources such as CPU, memory,
+    network, etc.
+* USE is a method for understanding a performance problem. It stands for
+    Utilization Saturation Errors.
 * concatenating two gzips makes a single valid gzip!
 * To make spaces into newlines on command line: `tr ' ' "\n"`
 * To list dependencies in a Golang project: `go list -f '{{ .Deps }}'`
