@@ -1,3 +1,6 @@
+* concatenating two gzips makes a single valid gzip!
+* To make spaces into newlines on command line: `tr ' ' "\n"`
+* To list dependencies in a Golang project: `go list -f '{{ .Deps }}'`
 * To run a single chef recipe on a node: `chef-client -E <chef_env>  -o "recipe[<recipe_name>]"`
 * httpie: curl with features designed for humans!
 * To indicate attribute nesting to the _search string_ of a `knife search`, use
