@@ -1,3 +1,15 @@
+* OOM killer will favour killing shorter-lived processes than long ones, to the
+    tune of
+
+    ```
+    process_badness =                      mem_used_by_process
+                      ----------------------------------------------------------------
+                      sqrt(process_lifetime_in_s))*sqrt(sqrt(process_lifetime_in_min))
+    ```
+* OOM killer checks for available memory in page cache, free pages, free swap
+    pages, and a couple other caches before deciding there is no more memory
+    available.
+* `swapon -s` to test if you have swap enabled
 * Brendan Gregg lists some [useful commands](http://www.brendangregg.com/USEmethod/use-linux.html)
     to apply USE to various aspects of unix resources such as CPU, memory,
     network, etc.
