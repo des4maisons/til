@@ -1,3 +1,9 @@
+* If OOM killer is disabled for a memory cgroup and the cgroup runs out of
+    memory, any access to that memory will hang, even if not in the memory
+    cgroup. The process will become defunct.
+
+    See [Reading /proc/pid/cmdline can hang forever](http://rachelbythebay.com/w/2014/10/27/ps/)
+    and [this docker bug](https://github.com/docker/docker/issues/14440)
 * OOM killer will favour killing shorter-lived processes than long ones, to the
     tune of
 
@@ -6,6 +12,8 @@
                       ----------------------------------------------------------------
                       sqrt(process_lifetime_in_s))*sqrt(sqrt(process_lifetime_in_min))
     ```
+
+    See [chapter in kernel book](https://www.kernel.org/doc/gorman/html/understand/understand016.html)
 * OOM killer checks for available memory in page cache, free pages, free swap
     pages, and a couple other caches before deciding there is no more memory
     available.
