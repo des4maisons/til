@@ -1,3 +1,4 @@
+* To pretty print json with `jq`: `jq .`
 * To authenticate to the slack api, you have to pass the "token" parameter
     either as a query string in the URL or as part of the POSTed JSON:
 
