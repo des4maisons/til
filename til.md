@@ -1,3 +1,23 @@
+* To authenticate to the slack api, you have to pass the "token" parameter
+    either as a query string in the URL or as part of the POSTed JSON:
+
+    ```
+    https://slack.com/api/search.messages?token=<your-token-here>
+    ```
+    or
+
+    ```
+    {
+      "token": "your-token-here",
+      ...
+    }
+    ```
+* You can do complex searching on JIRA issues using JQL, Jira query language.
+    Jira > project page > all issues and filters > advanced. Example:
+
+    ```
+    project = STOMPY AND status not in (open) AND resolved >= startOfYear() AND resolved <= endOfYear() ORDER BY updated ASC
+    ```
 * If OOM killer is disabled for a memory cgroup and the cgroup runs out of
     memory, any access to that memory will hang, even if not in the memory
     cgroup. The process will become defunct.
