@@ -1,3 +1,12 @@
+* Instead of DROP or ACCEPT, you can LOG ip packets that match a filter:
+
+    ```
+    iptables -A FORWARD -s <source-ip> -d <dest-ip> -j DROP --log-prefix=XXX
+    ```
+
+    > When this option is set for a rule, the Linux kernel will print some
+    > information on all  match‐ ing  packets  (like most IP header fields) via the
+    > kernel log (where it can be read with dmesg or syslogd(8))
 * To pretty print json with `jq`: `jq .`
 * To authenticate to the slack api, you have to pass the "token" parameter
     either as a query string in the URL or as part of the POSTed JSON:
