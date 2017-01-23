@@ -1,3 +1,4 @@
+* Sending `SIGUSR1` to Docker causes it to dump its stacktrace in the logs.
 * Instead of DROP or ACCEPT, you can LOG ip packets that match a filter:
 
     ```
