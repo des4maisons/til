@@ -1,3 +1,14 @@
+* To verify that an RSA priv/pub key pair match:
+
+    ```
+    openssl rsa -noout -modulus -in ~/junk/privk.txt | shasum
+    ```
+* To verify an RSA private/public key:
+
+    ```
+    openssl rsa -noout -in ~/junk/privk.txt
+    openssl rsa -noout -pubin -in ~/junk/pk.txt
+    ```
 * Sending `SIGUSR1` to Docker causes it to dump its stacktrace in the logs.
 * Instead of DROP or ACCEPT, you can LOG ip packets that match a filter:
 
