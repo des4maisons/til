@@ -1,3 +1,11 @@
+* On ubuntu, `envsubst` allows you to expand environment variables in text from
+    standard input. You can specify which environment variables to expand using
+    the argument to `envsubst`.
+
+    ```
+    $ FOO=1 BAR=2 BAZ=3 envsubst '$FOO,$BAZ' <<< '$FOO $BAR $BAZ'
+    1 $BAR 3
+    ```
 * To verify that an RSA priv/pub key pair match:
 
     ```
