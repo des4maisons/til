@@ -378,6 +378,11 @@
 
 # system
 
+* to view configuration for systemd unit,
+
+    ```
+    systemctl cat <unit>
+    ```
 * OOM killer will favour killing shorter-lived processes than long ones, to the
     tune of
 
