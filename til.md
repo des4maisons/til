@@ -581,6 +581,8 @@
 
 # git, github
 
+* `git commit --amend --no-edit` says to use the commit message for the commit
+    you're about to amend, instead of forcing you to edit it.
 * Add this to your `.git/config` if you want `git fetch` to pull down all the
     pull request tips. Put it under `[remote "origin"]`.
 
