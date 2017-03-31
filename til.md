@@ -1217,6 +1217,7 @@
     neither `''` or `'marguerite'` has a password, you might get `''`'s grants.
     Basically, you need to greate a `'marguerite'@'localhost'` user with
     `'marguerite'`'s password for `marguerite` to be able to log in on localhost
+* Use `--defaults-file=` (`=` is required) for specifying a mysql config file
 
 # logging
 
