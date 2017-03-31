@@ -1173,6 +1173,7 @@
     of chars)
 * `set('abc')` => `set(['a', 'b', 'c'])` in python (set of a string makes a
     list of chars)
+* `enumerate(alist)` will give you `index, item` when iterating over it.
 
 
 # aws
