@@ -522,6 +522,8 @@
 
 # command line
 
+* `pbpaste` is an OSX command to paste from your buffer (goes along with
+    `pbcopy`).
 * On ubuntu, `envsubst` allows you to expand environment variables in text from
     standard input. You can specify which environment variables to expand using
     the argument to `envsubst`.
