@@ -555,6 +555,7 @@
 
 # bash
 
+* Parameter substitution documentation [lives here](http://www.tldp.org/LDP/abs/html/parameter-substitution.html)
 * `#!/bin/bash -x -e` is not a valid shebang line on ubuntu (it is on osx).
     The valid shebang line is `#!/bin/bash -xe`
 * `set -u` in bash causes an error when you use an undefined variable.
@@ -572,7 +573,8 @@
     $ [ a > b ]   # exits 0
     $ [[ a > b ]] # exists 1
     ```
-* In bash, if `~` is quoted, it doesn't get expanded to your home directory.
+* In bash, if `~` is (double or single) quoted, it doesn't get expanded to your
+  home directory.
 
     ```
     $ file ~
