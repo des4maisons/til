@@ -206,6 +206,8 @@
 
 # network, HTTP, DNS
 
+* To test UDP reachability/connectivity, use `nc -v -u -z -w <timeout>
+    <dest-host> <port-range>`. This uses ICMP though which may be dropped.
 * httpie: curl with features designed for humans!
 * [This blog post](http://www.cyberciti.biz/faq/network-statistics-tools-rhel-centos-debian-linux/)
     has a treasure-trove of useful network diagnostic commands & tools.
@@ -378,6 +380,9 @@
 
 # system
 
+* To view stats on last ntp sync, use `ntpq -p`. See
+    [this page](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/s1-Checking_the_Status_of_NTP.html)
+    for details.
 * to view configuration for systemd unit,
 
     ```
