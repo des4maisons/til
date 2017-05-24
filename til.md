@@ -981,8 +981,9 @@
 * [Summary](https://www.golang-book.com/books/intro/13) of useful golang
     library functions
 
-# bundler, ruby, rake, rspec
+# bundler, ruby, rake, rspec, rvm
 
+* `rvm cleanup all` removes all stale sources and archives.
 * bundler's `cache_path` config option, or the `BUNDLE_CACHE_PATH` environment
     variable, tells bundler where to put (and also where to look for) the bundle
     cache generated with `bundle package` and `bundle cache`
