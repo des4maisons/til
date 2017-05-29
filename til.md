@@ -1188,6 +1188,22 @@
 
 # aws
 
+* On an AWS node, `curl http://169.254.169.254/latest/meta-data/` gives you all
+    its instance metadata / attributes! My coworker says:
+
+    > The instance metadata service is great for self-provisioning instances.
+    > If we were to ever use auto-scaling, you can just have a simple startup
+    > script which reads in things like the instance tags from the metadata
+    > service, and provisions itself based on the tags it has.
+    >
+    > e.g. we have a single base AMI, but based on how we tag the instance
+    > would determine what it provisions as. So you can have an auto-scaling
+    > group set tags like `app=load-balancer`, `env=prod`, etc. and it can
+    > provision itself accordingly.
+    >
+    > It has some security issues though. Since the instance metadata service
+    > also returns API tokens if you use EC2 roles, anything on the box with
+    > network access can query the service and get those temporary tokens.
 * Testing who the aws credentials belong to:
 
     ```
