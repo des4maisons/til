@@ -1274,6 +1274,8 @@
 
 # everything else
 
+* To view the health of a cassandra node, try `nodetool status` and
+    `nodetool netstats`.
 * To authenticate to the slack api, you have to pass the "token" parameter
     either as a query string in the URL or as part of the POSTed JSON:
 
