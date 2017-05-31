@@ -206,6 +206,10 @@
 
 # network, HTTP, DNS
 
+* Private address ranges:
+    - 192.168.0.0 - 192.168.255.255
+    - 172.16.0.0 - 172.31.255.255
+    - 10.0.0.0 - 10.255.255.255
 * To test UDP reachability/connectivity, use `nc -v -u -z -w <timeout>
     <dest-host> <port-range>`. This uses ICMP though which may be dropped.
 * httpie: curl with features designed for humans!
