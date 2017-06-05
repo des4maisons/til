@@ -1294,6 +1294,9 @@
 
 # everything else
 
+* `$('.class-name')` is the jquery selector for things of a certain class
+* `$('ancestor-selector descendent-selector')` is the jquery selector for
+    something that's a descendent of something else
 * To view the health of a cassandra node, try `nodetool status` and
     `nodetool netstats`.
 * To authenticate to the slack api, you have to pass the "token" parameter
