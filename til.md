@@ -1296,6 +1296,10 @@
 
 # everything else
 
+* In `sqlite3`, `cast(substr(location, 1, instr(location, "-") - 1) as integer)`
+    will split a string on `-`, take the first part, and cast to int.
+* In `sqlite3`, `.schema <table>` shows you the table schema.
+* In `sqlite3`, `.tables` shows you the tables in the db.
 * `$('.class-name')` is the jquery selector for things of a certain class
 * `$('ancestor-selector descendent-selector')` is the jquery selector for
     something that's a descendent of something else
