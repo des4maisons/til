@@ -531,6 +531,7 @@
 
 # command line
 
+* Converting a unix timestamp: `date -d @<unix-timestamp>`
 * `pbpaste` is an OSX command to paste from your buffer (goes along with
     `pbcopy`).
 * On ubuntu, `envsubst` allows you to expand environment variables in text from
