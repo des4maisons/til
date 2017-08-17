@@ -556,6 +556,7 @@
 * `echo "foo.bar.baz:1|c" | nc -w 1 -u <statsd_bridge> 8125` to manually emit
     statsd metrics
 * Converting a unix timestamp: `date -d @<unix-timestamp>`
+* On ubuntu, `sort -h` sorts by "human readable" sizes, e.g. `1G` vs `1K`.
 * `pbpaste` is an OSX command to paste from your buffer (goes along with
     `pbcopy`).
 * On ubuntu, `envsubst` allows you to expand environment variables in text from
@@ -1249,6 +1250,7 @@
 
 # aws
 
+* [list of names of datacenters and where they are](http://docs.aws.amazon.com/general/latest/gr/rande.html)
 * On an AWS node, `curl http://169.254.169.254/latest/meta-data/` gives you all
     its instance metadata / attributes! My coworker says:
 
