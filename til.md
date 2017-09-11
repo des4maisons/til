@@ -531,6 +531,8 @@
 
 # command line
 
+* `echo "foo.bar.baz:1|c" | nc -w 1 -u <statsd_bridge> 8125` to manually emit
+    statsd metrics
 * Converting a unix timestamp: `date -d @<unix-timestamp>`
 * `pbpaste` is an OSX command to paste from your buffer (goes along with
     `pbcopy`).
