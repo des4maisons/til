@@ -599,6 +599,8 @@
 
 # git, github
 
+* `git rebase --exec <cmd>` runs `<cmd>` for every commit that you rebase.
+    (First seen [here](https://disjoint.ca/til/2017/10/04/signing-your-git-commits-using-your-gpg-key/))
 * `git commit --amend --no-edit` says to use the commit message for the commit
     you're about to amend, instead of forcing you to edit it.
 * Add this to your `.git/config` if you want `git fetch` to pull down all the
