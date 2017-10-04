@@ -531,6 +531,8 @@
 
 # command line
 
+* `lastlog` shows the last login date for each user.
+* `last` shows the history of who has logged into a box.
 * `echo "foo.bar.baz:1|c" | nc -w 1 -u <statsd_bridge> 8125` to manually emit
     statsd metrics
 * Converting a unix timestamp: `date -d @<unix-timestamp>`
