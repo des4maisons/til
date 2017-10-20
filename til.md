@@ -531,6 +531,8 @@
 
 # command line
 
+* `shuf` (or `gshuf` on a mac when you `brew install coreutils`) can be used
+    for extracting a random line from a file.
 * `lastlog` shows the last login date for each user.
 * `last` shows the history of who has logged into a box.
 * `echo "foo.bar.baz:1|c" | nc -w 1 -u <statsd_bridge> 8125` to manually emit
