@@ -531,6 +531,12 @@
 
 # command line
 
+* `watch -t '(date; <some-command>)' | tee -a <file>` will log the date and
+    output of running a command every second. The following is maybe easier to
+    remember:
+    ```
+    while true; do <some-command>; sleep 1; done | while read line; do echo $(date) $line; done
+    ```
 * `shuf` (or `gshuf` on a mac when you `brew install coreutils`) can be used
     for extracting a random line from a file.
 * `lastlog` shows the last login date for each user.
