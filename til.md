@@ -663,6 +663,26 @@
 
 # chef
 
+* You can set up an irb environment to be very similar to the environment in
+    which Chef executes:
+
+    ```
+    require 'chef'
+    Chef::Config.from_file '/path/to/knife.rb'
+
+    Chef::Node.list
+
+    node = Chef::Node.load('stg-ci-agent24') ; nil
+    node.name
+    node.recipes
+
+    q = Chef::Search::Query.new
+    ci_agents = q.search(:node, 'name:stg-ci-agent*') ; nil
+    ci_agents.size
+    ci_agents.first
+    ci_agents[0].first.name
+    ci_agents[0].first.kernel
+    ```
 * To see hosts' pretty hostnames when you `knife ssh`, use `knife ssh -a fqdn`.
 * To run a single chef recipe on a node: `chef-client -E <chef_env>  -o "recipe[<recipe_name>]"`
 * To indicate attribute nesting to the _search string_ of a `knife search`, use
