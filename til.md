@@ -253,7 +253,11 @@
     tcpdump -r <large_file> -w <new_file_prefix> -C <max_size_in_MB>
     ```
     This also works for sysdig.
-* Clear OSX's dns cache: `sudo killall -HUP mDNSResponder`
+* Clear OSX's dns cache:
+    ```
+    sudo killall -HUP mDNSResponder; sudo killall mDNSResponderHelper; sudo dscacheutil -flushcache
+    ```
+
 * Clear chrome's dns cache: go here
     [chrome://net-internals/#dns](chrome://net-internals/#dns) and push the button
 * HTTP basic-auth via url:
