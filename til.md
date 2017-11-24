@@ -388,6 +388,14 @@
 
 # system
 
+* If a program is being called when you don't expect it, here's a dirty way of
+    finding out what is happening:
+
+    ```
+    #!/bin/sh
+    ps axf > /tmp/apt-get.$$
+    apt-get.real "$@"
+    ```
 * To view stats on last ntp sync, use `ntpq -p`. See
     [this page](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/s1-Checking_the_Status_of_NTP.html)
     for details.
