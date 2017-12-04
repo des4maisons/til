@@ -675,6 +675,15 @@
 
 # chef
 
+* In chefspec, you can parse contents of a template to test the structure like so:
+
+    ```
+     expect(subject).to create_template('foo').with_content do |content|
+       j = JSON.parse(content)
+       expect(j).to_not be_nil
+       expect(j['bar']).to eq('baz')
+     end
+    ```
 * You can set up an irb environment to be very similar to the environment in
     which Chef executes:
 
