@@ -1353,6 +1353,14 @@
 
 # everything else
 
+* In Jira's JQL, `(+/-)nn(y|M|w|d|h|m)` is how you specify a time relative to
+    now, or a time increment relative to the date function it's being passed in
+    to.
+
+    ```
+    created >= "-5d"
+    endOfMonth(-6M)
+    ```
 * In `sqlite3`, `cast(substr(location, 1, instr(location, "-") - 1) as integer)`
     will split a string on `-`, take the first part, and cast to int.
 * In `sqlite3`, `.schema <table>` shows you the table schema.
