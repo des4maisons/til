@@ -1325,6 +1325,8 @@
 
 # vim
 
+* `ip` is a motion in vim that means "in paragraph". `yip` yanks the paragraph,
+    `dip` deletes a paragraph, etc. Works like `i(`, `i"`, etc.
 * Never again worry about deleting a file whose name is only punctuation,
     possibly magic punctuation that might be interpreted by your shell. Delete
     the file in vim's explore mode:
