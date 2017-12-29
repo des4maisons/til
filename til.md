@@ -388,6 +388,7 @@
 
 # system
 
+* To view system variables, run `sudo sysctl -a`.
 * If a program is being called when you don't expect it, here's a dirty way of
     finding out what is happening:
 
