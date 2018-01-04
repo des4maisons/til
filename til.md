@@ -1251,6 +1251,8 @@
 
 # aws
 
+* Go to https://phd.aws.amazon.com to see all your retirement notices at once.
+    (Personal health dashboard)
 * [list of names of datacenters and where they are](http://docs.aws.amazon.com/general/latest/gr/rande.html)
 * On an AWS node, `curl http://169.254.169.254/latest/meta-data/` gives you all
     its instance metadata / attributes! My coworker says:
