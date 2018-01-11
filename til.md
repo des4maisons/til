@@ -677,6 +677,11 @@
 
 # chef
 
+* To do a more complex command via knife ssh, put the whole command in quotes:
+
+    ```
+    knife ssh 'name:foo*' "sudo bash -c 'FOO=BAR echo hi'"
+    ```
 * In chefspec, you can parse contents of a template to test the structure like so:
 
     ```
