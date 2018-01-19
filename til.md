@@ -1,5 +1,8 @@
 # Package Management
 
+* Checksums for all the files in a deb are in
+    `/var/lib/dpkg/info/<package-name>.md5sums`. You can use this to check for
+    local modifications of a package-installed file.
 * `aptitude why <package>` shows what packages depend on `<package>`.
 * See what _installed_ package provides a certain file:
 
