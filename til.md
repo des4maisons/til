@@ -1,5 +1,22 @@
 # Package Management
 
+* You can see what will be run when you install a deb with
+
+    ```
+    dpkg -I <package.deb>  # shows control file and other info
+    ```
+    or extract only the control information with
+
+    ```
+    dpkg -e <package.deb>
+    ```
+    You can do a dry run of installing with
+
+    ```
+    dpkg --dry-run -i <package.deb>
+    ```
+* Debs downloaded by apt are stored in `/var/cache/apt/archives`, unless someone
+    cleaned up the system.
 * Checksums for all the files in a deb are in
     `/var/lib/dpkg/info/<package-name>.md5sums`. You can use this to check for
     local modifications of a package-installed file.
