@@ -1383,6 +1383,16 @@
 
 # everything else
 
+* [Here are the available functions to apply to your datadog
+  metrics](https://docs.datadoghq.com/graphing/miscellaneous/functions/)
+* [Here is the API Specification for creating a datadog
+    monitor](https://docs.datadoghq.com/api/?lang=python#create-a-monitor)
+* [Here is the order](https://help.datadoghq.com/hc/en-us/articles/204820019-Graphing-with-Datadog-from-the-query-to-the-graph)
+    in which datadog evaluates the different parts of a query when generating a
+    graph.
+* Datadog's [`rollup` function](https://help.datadoghq.com/hc/en-us/articles/204526615-What-is-the-rollup-function-)
+    affects how things are graphed. I'm not sure why you would need it in a
+    monitor.
 * In Jira's JQL, `(+/-)nn(y|M|w|d|h|m)` is how you specify a time relative to
     now, or a time increment relative to the date function it's being passed in
     to.
