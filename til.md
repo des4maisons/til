@@ -1,3 +1,8 @@
+# JQ
+
+* Display unix timestamps sensibly: ` | strftime("%Y-%m-%d")`
+* To pretty print json with `jq`: `jq .`
+
 # Package Management
 
 * You can see what will be run when you install a deb with
@@ -588,7 +593,6 @@
     $ FOO=1 BAR=2 BAZ=3 envsubst '$FOO,$BAZ' <<< '$FOO $BAR $BAZ'
     1 $BAR 3
     ```
-* To pretty print json with `jq`: `jq .`
 * To make spaces into newlines on command line: `tr ' ' "\n"`
 * One way to parallelize processes on the command-line is to use xargs:
 
@@ -1380,6 +1384,10 @@
 * In tmux to clear your scrollback history: `clear-history`
 * In tmux, if you `C-B` and immediately hit the up arrow key multiple times,
     you will cycle through the window panes.
+
+# Frontend development
+
+* [codepen.io](https://codepen.io) lets you share an HTML/CSS/JS application.
 
 # everything else
 
