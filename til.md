@@ -569,6 +569,10 @@
 
 # command line
 
+* You can get `curl` to make requests following a set alphanumeric sequence by
+  adding something like `[1-5]` in the URL. eg `curl localhost/[1-5]`. Also
+  works with set expansion: `curl localhost/{foo,bar,baz}`. See the URL section
+  (near the top) of [the curl man page](https://curl.haxx.se/docs/manpage.html).
 * `watch -t '(date; <some-command>)' | tee -a <file>` will log the date and
     output of running a command every second. The following is maybe easier to
     remember:
