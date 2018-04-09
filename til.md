@@ -569,6 +569,10 @@
 
 # command line
 
+* `xargs -J % <command containing %>` will replace the first occurence of `%`
+    with the argument coming from stdin, instead of appending the argument to
+    the end of the command. This is useful when the argument of the command you
+    are running doesn't go at the end.
 * You can get `curl` to make requests following a set alphanumeric sequence by
     adding something like `[1-5]` in the URL. eg `curl localhost/[1-5]`. Also
     works with set expansion: `curl localhost/{foo,bar,baz}`. See the URL
