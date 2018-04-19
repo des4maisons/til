@@ -575,6 +575,9 @@
     ```
     echo foo | ssh-keygen -lf /dev/stdin
     ```
+
+    This might not work because `/dev/stdin` is not a regular file in this case.
+    However if you use Bash's heredoc, it should work.
 * `xargs -J % <command containing %>` will replace the first occurence of `%`
     with the argument coming from stdin, instead of appending the argument to
     the end of the command. This is useful when the argument of the command you
