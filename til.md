@@ -569,6 +569,12 @@
 
 # command line
 
+* If you want a command to read from stdin, but it only accepts file arguments,
+    specify `/dev/stdin` as the file. Example:
+
+    ```
+    echo foo | ssh-keygen -lf /dev/stdin
+    ```
 * `xargs -J % <command containing %>` will replace the first occurence of `%`
     with the argument coming from stdin, instead of appending the argument to
     the end of the command. This is useful when the argument of the command you
