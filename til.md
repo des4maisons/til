@@ -1409,6 +1409,8 @@
 
 # everything else
 
+* downforeveryoneorjustme.com/<another-url> is a way of checking if another
+    party sees something as being down
 * [Here are the available functions to apply to your datadog
   metrics](https://docs.datadoghq.com/graphing/miscellaneous/functions/)
 * [Here is the API Specification for creating a datadog
