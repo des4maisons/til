@@ -633,6 +633,12 @@
 
 # bash
 
+* To exit with an error message if a variable is not set or is empty:
+
+    ```
+    ${foo:? error}
+    exits with status 1, with this output: bash: foo:  error
+    ```
 * Parameter substitution documentation [lives here](http://www.tldp.org/LDP/abs/html/parameter-substitution.html)
 * `#!/bin/bash -x -e` is not a valid shebang line on ubuntu (it is on osx).
     The valid shebang line is `#!/bin/bash -xe`
