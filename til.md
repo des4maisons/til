@@ -356,6 +356,11 @@
 
 # docker, docker-compose, cgroups, lxc
 
+* [`nsenter`](https://manpages.debian.org/jessie/util-linux/nsenter.1.en.html)
+    is a tool that lets you enter the namespace of a container while still
+    having access to utilities installed on the host.
+    Here is an [example of using tcpdump from the host inside the
+    container](https://github.com/jpetazzo/nsenter#install-nsenter-docker-enter-and-importenv-into-the-vm)
 * To gain console access to the docker-for-mac VM, use
 
     ```
