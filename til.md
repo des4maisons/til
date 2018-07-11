@@ -356,6 +356,11 @@
 
 # docker, docker-compose, cgroups, lxc
 
+* You can even avoid installing nsenter on the host by running it in docker:
+
+    ```
+    docker run -it --rm --privileged --pid=host debian nsenter
+    ```
 * [`nsenter`](https://manpages.debian.org/jessie/util-linux/nsenter.1.en.html)
     is a tool that lets you enter the namespace of a container while still
     having access to utilities installed on the host.
