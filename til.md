@@ -1429,6 +1429,7 @@
 
 # everything else
 
+* Cmd+ctrl+Q to lock your screen on OSX
 * Use [the github search documentation
     page](https://help.github.com/articles/searching-code/) to learn all the
     fancy things you can do with search. The [advanced search
