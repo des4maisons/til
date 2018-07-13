@@ -679,8 +679,10 @@
 
 # git, github
 
+* `git diff <branch>:<file> -- <branch>:<file>` lets you diff files across
+    branches
 * `git checkout <tree-ish> -- path/to/file` checks out and adds to index the
-  version of `path/to/file` as it was in `<tree-ish>`.
+    version of `path/to/file` as it was in `<tree-ish>`.
 * `git rebase --exec <cmd>` runs `<cmd>` for every commit that you rebase.
     (First seen [here](https://disjoint.ca/til/2017/10/04/signing-your-git-commits-using-your-gpg-key/))
 * `git commit --amend --no-edit` says to use the commit message for the commit
