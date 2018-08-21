@@ -1429,6 +1429,8 @@
 
 # everything else
 
+* Fixing my nicks on IRC when using irssi & bouncer:
+    https://disjoint.ca/til/2016/04/25/useful-znc-commands/
 * The Nomad UI has a [demo site](https://demo.nomadproject.io/ui/jobs)
 * Cmd+ctrl+Q to lock your screen on OSX
 * Use [the github search documentation
