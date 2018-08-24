@@ -679,7 +679,7 @@
 
 # git, github
 
-* `git diff <branch>:<file> -- <branch>:<file>` lets you diff files across
+* `git diff <branch>:<file> <branch>:<file>` lets you diff files across
     branches
 * `git checkout <tree-ish> -- path/to/file` checks out and adds to index the
     version of `path/to/file` as it was in `<tree-ish>`.
