@@ -157,7 +157,7 @@
     `IdentitiesOnly yes` despite saving the password to your keychain, it is
     likely that you either have a public key file that is not in a format
     recognized by your OSX, or that you have no public key file. Generate a new
-    one using `ssh-keygen -y -f id_rsa > id_rsa.pub`. Ghetttooooooooo. `ssh
+    one using `ssh-keygen -y -f id_rsa > id_rsa.pub`. Not great. `ssh
     -vvv` is not helpful in diagnosing this problem.
 * On OSX, if you use `IdentitiesOnly yes` in your ssh config, you can still avoid
     typing in your password *if* you save your password to the system key chain.
