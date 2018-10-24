@@ -1429,6 +1429,7 @@
 
 # everything else
 
+* Google Sheets has a "paste column width only" option.
 * Fixing my nicks on IRC when using irssi & bouncer:
     https://disjoint.ca/til/2016/04/25/useful-znc-commands/
 * The Nomad UI has a [demo site](https://demo.nomadproject.io/ui/jobs)
