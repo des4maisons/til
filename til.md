@@ -1381,6 +1381,7 @@
 
 # logging
 
+* `journalctl /path/to/executable` streams logs from that executable
 * `journalctl --unit <service>` is how you view the logs for a service that
     uses systemd.
 * Upstart scripts log service execution to `/var/log/upstart/service-name.log`.
