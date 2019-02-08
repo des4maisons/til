@@ -63,3 +63,4 @@
 - When some code you write interacts with private github repos, you need to
     take care that the extra step of authentication doesn't make it impossible
     to automate your processes.
+- a mark of seniority: the person's network / community
