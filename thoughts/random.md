@@ -64,3 +64,5 @@
     take care that the extra step of authentication doesn't make it impossible
     to automate your processes.
 - a mark of seniority: the person's network / community
+- Giving the work always to people with seniority is to not face one's own
+    inability to train, equip and give honest feedback to the next generation

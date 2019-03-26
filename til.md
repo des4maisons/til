@@ -1341,7 +1341,7 @@
 
     ```
     pip install awscli
-    AWS_ACCESS_KEY_ID=foo AWS_SECRET_KEY=bar aws iam get-user
+    AWS_ACCESS_KEY_ID=foo AWS_SECRET_ACCESS_KEY=bar aws iam get-user
     ```
 * AWS lambda debugging: If a lambda function test is giving you unhelpful
     errors,
