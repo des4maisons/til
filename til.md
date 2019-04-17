@@ -423,6 +423,9 @@
 
 # system
 
+* `otool -L` is the OSX equivalent of `ldd`
+* `ldd` - ldd prints the shared objects (shared libraries) required by each
+    program or shared object specified on the command line.
 * To view system variables, run `sudo sysctl -a`.
 * If a program is being called when you don't expect it, here's a dirty way of
     finding out what is happening:
