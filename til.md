@@ -231,6 +231,7 @@
 
 # network, HTTP, DNS
 
+* `tcpdump  -n icmp` to view traffic on icmp, do it from both sides of a connection to see who receives what
 * Private address ranges:
     - 192.168.0.0 - 192.168.255.255
     - 172.16.0.0 - 172.31.255.255
