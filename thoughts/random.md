@@ -1,3 +1,5 @@
+- Idea: Press-release-driven-development / -strategy. Eg, what's the press
+    release for your team 2 years from now, what do you have to do to get there
 - In a new git repo, use the first (empty) commit's message to describe the
     foreseen purpose of the repo at the time of the commit.
 - In git, make the first commit an empty one so that
