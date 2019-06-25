@@ -1,3 +1,11 @@
+- Proposing a change of course when you are not in charge, esp in an emergency:
+
+    1. Start by getting the captain’s attention. (Hey, Mike.)
+    2. Express your concern. (I’m worried that the thunderstorm has moved over the airport.)
+    3. State the problem as you see it. (We might get some dangerous wind shear.)
+    4. Propose a solution. (Let’s hold until the storm is clear of the airport.)
+    5. Get an explicit agreement. (Does that sound good to you, Mike?)
+- Admit that most information is not actionable
 - Idea: Press-release-driven-development / -strategy. Eg, what's the press
     release for your team 2 years from now, what do you have to do to get there
 - In a new git repo, use the first (empty) commit's message to describe the
