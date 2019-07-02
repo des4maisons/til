@@ -683,6 +683,8 @@
 
 # git, github
 
+* `git checkout -` works like `cd -`, checking out the previous thing you had
+    checked out.
 * `git diff <branch>:<file> <branch>:<file>` lets you diff files across
     branches
 * `git checkout <tree-ish> -- path/to/file` checks out and adds to index the
