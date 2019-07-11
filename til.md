@@ -745,6 +745,11 @@
 
 # chef
 
+* To search for a chef node that does _not_ have an attribute:
+
+    ```
+    knife search node "NOT my_attribute_name:*"
+    ```
 * To do a more complex command via knife ssh, put the whole command in quotes:
 
     ```
