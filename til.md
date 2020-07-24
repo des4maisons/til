@@ -683,6 +683,11 @@
 
 # git, github
 
+* Use [the github search documentation
+    page](https://help.github.com/articles/searching-code/) to learn all the
+    fancy things you can do with search. The [advanced search
+    page](https://github.com/search/advanced) doesn't have nearly as many useful
+    keywords.
 * `git checkout -` works like `cd -`, checking out the previous thing you had
     checked out.
 * `git diff <branch>:<file> <branch>:<file>` lets you diff files across
@@ -1446,11 +1451,6 @@
     https://disjoint.ca/til/2016/04/25/useful-znc-commands/
 * The Nomad UI has a [demo site](https://demo.nomadproject.io/ui/jobs)
 * Cmd+ctrl+Q to lock your screen on OSX
-* Use [the github search documentation
-    page](https://help.github.com/articles/searching-code/) to learn all the
-    fancy things you can do with search. The [advanced search
-    page](https://github.com/search/advanced) doesn't have nearly as many useful
-    keywords.
 * downforeveryoneorjustme.com/<another-url> is a way of checking if another
     party sees something as being down
 * [Here are the available functions to apply to your datadog
