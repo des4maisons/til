@@ -86,8 +86,13 @@
     extract.
 * Debian packages are `ar` archive files.
 
-# SSL, SSH
+# SSL, SSH, scp
 
+* To use wildcard globbing with `scp` on the remote server, quote the wildcard.
+
+    ```
+    scp 'servername:/path/to/dir/*' .
+    ```
 * To verify that an RSA priv/pub key pair match:
 
     ```
