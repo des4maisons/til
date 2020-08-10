@@ -1451,6 +1451,13 @@
 
 # everything else
 
+* To extract text from an image, upload it to google drive, then right click >
+  Open with google docs. Text will be automatically extracted.
+* Chrome Apps - a way to have a webpage open as its own application, without all
+  the distraction of tabs and address bar up top, and you can add the shortcut
+  to your doc. To create a shortcut: Open the webpage, click the three circles
+  in the top right of your browser > More tools > Create shortcut > Check "open
+  as window". I can work on my google doc with less distraction now!
 * Google Sheets has a "paste column width only" option.
 * Fixing my nicks on IRC when using irssi & bouncer:
     https://disjoint.ca/til/2016/04/25/useful-znc-commands/
