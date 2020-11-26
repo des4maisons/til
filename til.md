@@ -1468,6 +1468,9 @@
 
 # everything else
 
+* If you shorten a URL with [Google's URL shortener](http://goo.gl/), you can
+  track how many times the link was clicked. [help
+  doc](https://support.google.com/faqs/answer/190768?hl=en)
 * To extract text from an image, upload it to google drive, then right click >
   Open with google docs. Text will be automatically extracted.
 * Chrome Apps - a way to have a webpage open as its own application, without all
