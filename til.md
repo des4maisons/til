@@ -1449,6 +1449,10 @@
 
 * [codepen.io](https://codepen.io) lets you share an HTML/CSS/JS application.
 
+# Google Sheets
+
+* Google Sheets has a "paste column width only" option.
+
 # everything else
 
 * To extract text from an image, upload it to google drive, then right click >
@@ -1458,7 +1462,6 @@
   to your doc. To create a shortcut: Open the webpage, click the three circles
   in the top right of your browser > More tools > Create shortcut > Check "open
   as window". I can work on my google doc with less distraction now!
-* Google Sheets has a "paste column width only" option.
 * Fixing my nicks on IRC when using irssi & bouncer:
     https://disjoint.ca/til/2016/04/25/useful-znc-commands/
 * The Nomad UI has a [demo site](https://demo.nomadproject.io/ui/jobs)
