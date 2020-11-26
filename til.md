@@ -1451,6 +1451,19 @@
 
 # Google Sheets
 
+* Relative cell references in custom formulas for conditional formatting:
+  specify the formula relative to the top left cell of the conditional
+  formatting range.
+* Conditional formatting custom formulas: You can use the standard formulas
+  that you would use in a cell. Start with an `=`.
+* In a formula, if you DON'T use `$` anywhere, the cell reference you use is
+  RELATIVE in terms of offset rows and columns from the current cell. So if you
+  drag the corner of the cell to fill in other cells, the row & column reference
+  will change in those other cells to have the same relative offset WRT _those
+  cells_. If you want an _absolute reference_ for (eg) a column (which is
+  identified with letters), so that the column reference keeps the same letter
+  even if you drag the corner of the cell to fill other cells, you must use a
+  `$` in front of the column reference. Eg $A1 will fix the column reference.
 * Google Sheets has a "paste column width only" option.
 
 # everything else
