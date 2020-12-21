@@ -1468,6 +1468,10 @@
 
 # everything else
 
+* In Google Calendar, there is a more straightforward way to show/hide declined
+  events than going into Settings. Near top right, there is a dropdown for what
+  timerange to display. Click that, and at the bottom, there is "show/hide
+  declined events".
 * If you shorten a URL with [Google's URL shortener](http://goo.gl/), you can
   track how many times the link was clicked. [help
   doc](https://support.google.com/faqs/answer/190768?hl=en)
