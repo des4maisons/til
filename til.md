@@ -1468,6 +1468,8 @@
 
 # everything else
 
+* In slack, to apply formatting to a message that already has formatting
+  characters present, type Command+Shift+F.
 * In Google Calendar, there is a more straightforward way to show/hide declined
   events than going into Settings. Near top right, there is a dropdown for what
   timerange to display. Click that, and at the bottom, there is "show/hide
