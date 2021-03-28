@@ -1419,6 +1419,11 @@
 
 # vim
 
+* When you yank text in vim, the latest yank is stored in the `0` register.
+    The 2nd to last yanked text in `1` register.
+* To paste from a register, use `"<register-character>p`. To yank into a
+    register, use `"<register-character>y{motion}`. Also works whene deleting
+    with `d`.
 * `ip` is a motion in vim that means "in paragraph". `yip` yanks the paragraph,
     `dip` deletes a paragraph, etc. Works like `i(`, `i"`, etc.
 * Never again worry about deleting a file whose name is only punctuation,
