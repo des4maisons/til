@@ -1134,6 +1134,7 @@
 
 # bundler, ruby, rake, rspec, rvm
 
+* the environment variables `BUNDLE_PATH`, `BUNDLE_APP_CONFIG` and `BUNDLE_GEMFILE` can be set for non-standard bundle file hierarchies
 * `rvm cleanup all` removes all stale sources and archives.
 * bundler's `cache_path` config option, or the `BUNDLE_CACHE_PATH` environment
     variable, tells bundler where to put (and also where to look for) the bundle
