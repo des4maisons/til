@@ -5,6 +5,7 @@
 
 # Package Management
 
+* `yarn why <package name>` will tell you all your dependencies for a given node package, including all its different versions.
 * Semver `~` means: "Allows patch-level changes if a minor version is specified on the comparator. Allows minor-level changes if not."
 * Semver `^` means: "Allows changes that do not modify the left-most non-zero element in the [major, minor, patch] tuple."
 * You can see what will be run when you install a deb with
