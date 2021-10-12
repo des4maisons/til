@@ -1,3 +1,8 @@
+# postgres
+
+* `\dt` -> show tables
+* `\d` -> describe a single table
+
 # JQ
 
 * Display unix timestamps sensibly: ` | strftime("%Y-%m-%d")`
