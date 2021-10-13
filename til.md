@@ -437,6 +437,7 @@
 
 # system
 
+* `lsb_release -a` prints your ubuntu version.
 * `otool -L` is the OSX equivalent of `ldd`
 * `ldd` - ldd prints the shared objects (shared libraries) required by each
     program or shared object specified on the command line.
