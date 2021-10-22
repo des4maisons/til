@@ -661,6 +661,7 @@
 
 # bash
 
+* error management in a chain of pipes: Use `${PIPESTATUS[N]}` to grab the exit status of the Nth (0-based) piped command
 * To exit with an error message if a variable is not set or is empty:
 
     ```
