@@ -597,6 +597,7 @@
 
 # command line
 
+* How to view output in terminal AND pipe to `pbcopy`: `echo hi | tee >(pbcopy)`
 * If you want a command to read from stdin, but it only accepts file arguments,
     specify `/dev/stdin` as the file. Example:
 
