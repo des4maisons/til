@@ -768,6 +768,8 @@
 
 # chef
 
+* til that chef-server is written in erlang ??
+* `chef-server-ctl status` on a chef server tells you about all the processes that support chef
 * To search for a chef node that does _not_ have an attribute:
 
     ```
