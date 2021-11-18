@@ -438,6 +438,7 @@
 
 # system
 
+* https://command-not-found.com/ shows you the name of the package containing a command, for many different distros.
 * `lsb_release -a` prints your ubuntu version.
 * `otool -L` is the OSX equivalent of `ldd`
 * `ldd` - ldd prints the shared objects (shared libraries) required by each
