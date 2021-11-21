@@ -1490,6 +1490,11 @@
 
 # everything else
 
+* If you installed ubuntu on an old macbook, the `mtrack` touchpad driver will
+    let you emulate how you used to use your trackpad on macos:
+    
+    * [github project](https://github.com/p2rkw/xf86-input-mtrack)
+    * [Tutorial for installing and confuring](https://int3ractive.com/blog/2018/make-the-best-of-macbook-touchpad-on-ubuntu/)
 * In slack, to apply formatting to a message that already has formatting
   characters present, type Command+Shift+F.
 * In Google Calendar, there is a more straightforward way to show/hide declined
