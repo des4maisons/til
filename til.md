@@ -664,6 +664,8 @@
 
 # bash
 
+* [this stackoverflow answer](https://stackoverflow.com/a/6270803) talks about all the different uses of parentheses in bash - subshells, grouped expressions, arithmetic expressions, conditional expressions.
+* [this stackoverflow answer](https://unix.stackexchange.com/a/159514) talks about all the different control and redirection operators (list terminators, logical operatiors, pipe operators, list punctuation, redirection operators)
 * error management in a chain of pipes: Use `${PIPESTATUS[N]}` to grab the exit status of the Nth (0-based) piped command
 * To exit with an error message if a variable is not set or is empty:
 
