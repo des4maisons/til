@@ -1348,6 +1348,7 @@
 
 # python
 
+* python3 virtualenv incantation: `python3 -m venv tutorial-env`
 * [Manipulating binary data in python](http://www.devdungeon.com/content/working-binary-data-python)
 * `list('abc')` => `['a', 'b', 'c']` in python (list of a string makes a list
     of chars)
