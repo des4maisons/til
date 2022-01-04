@@ -599,6 +599,7 @@
 
 # command line
 
+* You can set the access/modify time of a file using `touch --date=STRING`.
 * How to view output in terminal AND pipe to `pbcopy`: `echo hi | tee >(pbcopy)`
 * If you want a command to read from stdin, but it only accepts file arguments,
     specify `/dev/stdin` as the file. Example:
@@ -703,6 +704,9 @@
 
 # git, github
 
+* Github can automatically generate a table of contents for markdown files. To access it,
+    there's a button at the top left of a markdown file that you click to access all the
+    headings. [See these docs](https://github.blog/changelog/2021-04-13-table-of-contents-support-in-markdown-files/)
 * `archived:false` to search non-archived repos
 * Use [the github search documentation
     page](https://help.github.com/articles/searching-code/) to learn all the
