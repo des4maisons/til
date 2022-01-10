@@ -704,6 +704,8 @@
 
 # git, github
 
+* Append `/compare` to your repository's url in github to bring up the compare
+  dialog, to compare arbitrary branches/tags/forks.
 * Github can automatically generate a table of contents for markdown files. To access it,
     there's a button at the top left of a markdown file that you click to access all the
     headings. [See these docs](https://github.blog/changelog/2021-04-13-table-of-contents-support-in-markdown-files/)
