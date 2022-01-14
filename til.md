@@ -710,11 +710,12 @@
     there's a button at the top left of a markdown file that you click to access all the
     headings. [See these docs](https://github.blog/changelog/2021-04-13-table-of-contents-support-in-markdown-files/)
 * `archived:false` to search non-archived repos
-* Use [the github search documentation
-    page](https://help.github.com/articles/searching-code/) to learn all the
-    fancy things you can do with search. The [advanced search
-    page](https://github.com/search/advanced) doesn't have nearly as many useful
-    keywords.
+* Github search links:
+    * The one I find most useful: [Searching Code](https://help.github.com/articles/searching-code/)
+    * [advanced search](https://github.com/search/advanced)
+    * [Understanding search
+      syntax](https://docs.github.com/en/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax),
+      includes how to exclude certain results.
 * `git checkout -` works like `cd -`, checking out the previous thing you had
     checked out.
 * `git diff <branch>:<file> <branch>:<file>` lets you diff files across
