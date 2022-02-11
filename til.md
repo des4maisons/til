@@ -1500,6 +1500,7 @@
 
 # everything else
 
+* To change playback speed of a video on a webpage, run `$('video').playbackRate = 1.7;` in the javascript console.
 * If you installed ubuntu on an old macbook, the `mtrack` touchpad driver will
     let you emulate how you used to use your trackpad on macos:
     
