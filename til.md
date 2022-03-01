@@ -1,3 +1,7 @@
+# terraform
+
+* set `TF_LOG=1` environment variable if you want terraform to tell you more about what it's doing, eg why you are getting an unauthorized.
+
 # postgres
 
 * `\dt` -> show tables
