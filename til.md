@@ -1,6 +1,6 @@
 # terraform
 
-* set `TF_LOG=1` environment variable if you want terraform to tell you more about what it's doing, eg why you are getting an unauthorized.
+* set `TF_LOG=TRACE` or DEBUG, INFO, WARN or ERROR if you want terraform to tell you more about what it's doing, eg why you are getting an unauthorized.
 
 # postgres
 
