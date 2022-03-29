@@ -1370,6 +1370,16 @@
 
 # aws
 
+* To run a command from a role that you can only get to by assuming another role, add this to your ~/.aws/config:
+    ```
+    [profile first-role]  ; this is the role that must be assumed in order to assume the final role
+    role_arn = <first-role-arn>
+    
+    [profile final-role]
+    role_arn = <final-role-arn>
+    source_profile = <first-role>
+    ```
+    Then run your command like this: `aws --profile final-role ....`
 * Go to https://phd.aws.amazon.com to see all your retirement notices at once.
     (Personal health dashboard)
 * [list of names of datacenters and where they are](http://docs.aws.amazon.com/general/latest/gr/rande.html)
