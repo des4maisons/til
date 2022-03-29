@@ -1,3 +1,7 @@
+# golang
+
+* `go clean -testcache` cleans the cache that keeps previous test results from `go test`.
+
 # terraform
 
 * set `TF_LOG=TRACE` or DEBUG, INFO, WARN or ERROR if you want terraform to tell you more about what it's doing, eg why you are getting an unauthorized.
