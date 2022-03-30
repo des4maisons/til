@@ -1,6 +1,7 @@
 # golang
 
 * `go clean -testcache` cleans the cache that keeps previous test results from `go test`.
+* `go test -run <test-regex> <path>` will only run the tests that match `<test-regex>`
 
 # terraform
 
