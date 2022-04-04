@@ -674,6 +674,20 @@
 
 # bash
 
+* How to pass a bash array to a bash function:
+    ```
+    function bar() {
+      local -n passed_array=$1
+      passed_array+=(another-element)
+    }
+    foo=()
+    bar foo
+    ```
+    
+    to understand `local -n`, you have to look up how `declare` works. But `-n` makes `passed_array` to be a
+    _reference_ to the variable whose _name_ is contained in `$1`. Note how `bar foo` isn't `bar $foo`.
+    Note that pass-by-reference means that modifications that `bar` makes to its argument are persisted back to
+    the original variable.
 * [this stackoverflow answer](https://stackoverflow.com/a/6270803) talks about all the different uses of parentheses in bash - subshells, grouped expressions, arithmetic expressions, conditional expressions.
 * [this stackoverflow answer](https://unix.stackexchange.com/a/159514) talks about all the different control and redirection operators (list terminators, logical operatiors, pipe operators, list punctuation, redirection operators)
 * error management in a chain of pipes: Use `${PIPESTATUS[N]}` to grab the exit status of the Nth (0-based) piped command
