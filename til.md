@@ -675,6 +675,12 @@
 
 # bash
 
+* `$'stuff'` -- when you write a string like this, then inside the string you can escape both types of string quotes.
+    ```
+    bash -c $'echo \'{\"hi\": \"bye\"}\' | jq"
+    ```
+    nobody likes escaping things but at least it's a consistent escaping experience for the two types of quotes.
+    Note that you can't expand variables in the string though.
 * How to pass a bash array to a bash function:
     ```
     function bar() {
