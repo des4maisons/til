@@ -734,6 +734,7 @@
 
 # git, github
 
+* You can set the SSH command that git uses under the covers. `GIT_SSH_COMMAND="ssh -vvv"`. For git versions 2.3.0+.
 * To cherry pick a commit from one repository into another, add the 2nd repository as a remote in the 1st. You can specify a local path for the remote. You can pull/fetch, commit, tag, and pull to the (local) remote repository.
 * Append `/compare` to your repository's url in github to bring up the compare
   dialog, to compare arbitrary branches/tags/forks.
