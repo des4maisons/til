@@ -107,6 +107,7 @@
 
 # SSL, SSH, scp
 
+* [Here's](https://d1smxttentwwqu.cloudfront.net/wp-content/uploads/2015/07/SSLTLS_handshake.png) a nice human-readable visual of the SSL handshake
 * To use wildcard globbing with `scp` on the remote server, quote the wildcard.
 
     ```
