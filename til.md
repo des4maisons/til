@@ -1,3 +1,8 @@
+# npm, node
+
+* To run only a single test with Jest, use `test.only` when declaring the test.
+* `npm run <command>` corresponds to commands declared in `package.json`.
+
 # golang
 
 * `go clean -testcache` cleans the cache that keeps previous test results from `go test`.
