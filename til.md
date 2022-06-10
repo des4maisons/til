@@ -1,9 +1,10 @@
-# npm, node
+# npm, node, js
 
 * To run only a single test with Jest, use `test.only` when declaring the test.
 * `npm run <command>` corresponds to commands declared in `package.json`.
 * You can pass more args to npm script targets by using `-- <extra args>`. Eg `npm run test -- ./path/to/test --jestOptions`
 * To see a trace log of `nock`'s attempted matching, run your tests with `DEBUG=nock.*` environment variable.
+* Variable argument lists: declare the function like so and access the argument like an array: `function (...vararg) { return vararg[3]; }`
 
 # golang
 
