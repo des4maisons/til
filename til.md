@@ -1521,6 +1521,7 @@
 
 # tmux
 
+* <kbd>C</kbd>-<kbd>B</kbd> <kbd>W</kbd> will show a pane where you can arrow-key through all your panes, seeing a preview of each one.
 * Tmux shared sessions:
     * *you*: `tmux -S /tmp/stompy.tmux.sock new stompy`
     * *them*: `tmux -S /tmp/stompy.tmux.sock attach -t stompy
@@ -1530,8 +1531,6 @@
     you may be able to fix it by renaming the window in which you catted.
     [See the stack exchange question.](http://unix.stackexchange.com/questions/49886/tmux-status-bar-corrupted-after-catting-a-binary-file-how-to-reset)
 * In tmux to clear your scrollback history: `clear-history`
-* In tmux, if you `C-B` and immediately hit the up arrow key multiple times,
-    you will cycle through the window panes.
 
 # Frontend development
 
