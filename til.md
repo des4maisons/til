@@ -618,6 +618,12 @@
 
 # command line
 
+
+* Convert unix time to something human readable:
+
+  | gnu date | macos |
+  | -------- | ----- |
+  |`date -d "@$TIMESTAMP"` | `date -r "$TIMESTAMP"` | 
 * You can set the access/modify time of a file using `touch --date=STRING`.
 * How to view output in terminal AND pipe to `pbcopy`: `echo hi | tee >(pbcopy)`
 * If you want a command to read from stdin, but it only accepts file arguments,
@@ -650,7 +656,6 @@
 * `last` shows the history of who has logged into a box.
 * `echo "foo.bar.baz:1|c" | nc -w 1 -u <statsd_bridge> 8125` to manually emit
     statsd metrics
-* Converting a unix timestamp: `date -d @<unix-timestamp>`
 * On ubuntu, `sort -h` sorts by "human readable" sizes, e.g. `1G` vs `1K`.
 * `pbpaste` is an OSX command to paste from your buffer (goes along with
     `pbcopy`).
