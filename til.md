@@ -1560,6 +1560,7 @@
 
 # everything else
 
+* buildkite terminology: "When you run a pipeline, a build is created. Each of the steps in the pipeline end up as jobs in the build, which then get distributed to available agents."
 * To change playback speed of a video on a webpage, run `$('video').playbackRate = 1.7;` in the javascript console.
 * If you installed ubuntu on an old macbook, the `mtrack` touchpad driver will
     let you emulate how you used to use your trackpad on macos:
