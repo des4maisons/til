@@ -748,7 +748,14 @@
 
 # git, github
 
-* Verifying the user who owns a personal access token:
+* Checking rate limit status for current user:
+  ```
+  curl \
+    -H "Accept: application/vnd.github.v3+json" \ 
+    -H "Authorization: token <TOKEN>" \
+    https://api.github.com/rate_limit
+  ```
+* Verifying the user who owns a personal access token - aka `whoami`:
     ```
     curl 'https://<token>@api.github.com/user'
     ```
