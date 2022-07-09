@@ -264,6 +264,14 @@
 
 # network, HTTP, DNS
 
+* Use `nettop` on macos to see network traffic counters per process.
+
+    ```
+    -t wifi      -> type wifi
+    -d           -> delta mode. Show difference since last sample. d in curses mode toggles this on/off.
+    -s <seconds> -> sample rate
+    -x           -> human readable sizes vs raw bytes. x in curses mode toggles this.
+    ```
 * `tcpdump  -n icmp` to view traffic on icmp, do it from both sides of a connection to see who receives what
 * Private address ranges:
     - 192.168.0.0 - 192.168.255.255
@@ -313,16 +321,17 @@
     ```
     This also works for sysdig.
 * Clear OSX's dns cache:
+
     ```
     sudo killall -HUP mDNSResponder; sudo killall mDNSResponderHelper; sudo dscacheutil -flushcache
     ```
-
 * Clear chrome's dns cache: go here
     [chrome://net-internals/#dns](chrome://net-internals/#dns) and push the button
 * HTTP basic-auth via url:
 
     ```
     http://<username>:<password>@hostname
+    ```
 * In `/etc/hosts`, a line looks like this:
 
     ```
