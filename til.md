@@ -1,3 +1,8 @@
+# kubernetes/k8s
+
+* To exec into the first container of a pod of a given deployment, you don't need to know the pod's name. You can do something like this: `kubectl exec deploy/<deployname> -i -t -- bash`
+* To list the clusters in your kubeconfig, run `kubectl config get-contexts`.
+
 # npm, node, js
 
 * To run only a single test with Jest, use `test.only` when declaring the test.
