@@ -632,7 +632,10 @@
 
 # command line
 
-
+* use `paste` to join multiple lines into one, joining on a character. Eg use it to add numbers:
+    ```
+    cat file_of_numbers | paste -sd '+' | bc
+    ```
 * Convert unix time to something human readable:
 
   | gnu date | macos |
