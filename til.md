@@ -632,6 +632,11 @@
 
 # command line
 
+* `numfmt` lets you convert from one unit of numbers from another, including converting from "human readable" units to no units.
+    Eg to sum the output of `du -h --summarize`, you can do something like
+    ```
+    du -h --summarize | numfmt --from=auto --to=none | cut -d ' ' -f 1 | paste -sd '+' | bc
+    ```
 * use `paste` to join multiple lines into one, joining on a character. Eg use it to add numbers:
     ```
     cat file_of_numbers | paste -sd '+' | bc
