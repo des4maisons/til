@@ -1,3 +1,20 @@
+# Github actions / github workflows
+
+* If you get
+    ```
+    Unexpected EOF while looking for matching `''
+    ```
+    while running a step that uses a docker image and passes a `bash -c '...'` script as args like so:
+    ```yaml
+      - uses: docker://python:3.9
+        with:
+          args: |
+            bash -c '...'
+    ```
+    switch your single quotes to double quotes. Proper escaping of double quotes is [implemented by the runner](https://github.com/actions/runner/blob/dca4f67143ae82672a8ee753b4fd6da347def206/src/Runner.Worker/Handlers/ContainerActionHandler.cs#L138), but not for single quotes.
+* The `GITHUB_TOKEN` available during a workflow cannot be granted `org:read` permissions which means it cannot assign a pull request to an owning team.
+* When using the `gh` CLI inside a step to operate against another repo, you may have to set the repo and ref explicitly in whatever commands you run, because `gh` will make assumptions that the ref you want to work on is the current one in the current repo.
+
 # kubernetes/k8s
 
 * To exec into the first container of a pod of a given deployment, you don't need to know the pod's name. You can do something like this: `kubectl exec deploy/<deployname> -i -t -- bash`
