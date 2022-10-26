@@ -787,6 +787,9 @@
 
 # git, github
 
+* Since `git checkout` was a bit overloaded, they've added `git switch <branch>`
+    to switch branches and `git restore --source=<treeish> <filepath>` to restore
+    files to their previous versions.
 * Checking rate limit status for current user:
   ```
   curl \
