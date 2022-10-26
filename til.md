@@ -44,6 +44,9 @@
 
 # JQ
 
+* To print strings without the quotes around them, use `--raw-output | -r`
+* expand arrays into all their items: `[]` (for top level array) or `foo[]` for an array indexed by key `foo`
+* show only available keys of a map: `keys`
 * Display unix timestamps sensibly: ` | strftime("%Y-%m-%d")`
 * To pretty print json with `jq`: `jq .`
 
