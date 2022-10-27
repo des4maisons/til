@@ -1612,6 +1612,7 @@
 
 # everything else
 
+* `make --dry-run` will print the command instead of running.
 * To view the list of all scaffolder actions in backstage, go to `<backstage-base-url>/create/actions`.
 * buildkite terminology: "When you run a pipeline, a build is created. Each of the steps in the pipeline end up as jobs in the build, which then get distributed to available agents."
 * To change playback speed of a video on a webpage, run `$('video').playbackRate = 1.7;` in the javascript console.
