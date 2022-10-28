@@ -1,3 +1,7 @@
+# MacOS
+
+* `launchctl` is kind of like `systemctl`. You can see init processes with `launchctl list` and control them too.
+
 # Github actions / github workflows
 
 * If you get
