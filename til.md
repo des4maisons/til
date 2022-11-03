@@ -21,6 +21,7 @@
 
 # kubernetes/k8s
 
+* `kubectl get <Kind> <name> -o yaml --show-managed-fields` is how you can see the field managers and `last-applied-configuration` annotation in a structured format. (`kubectl describe` shows that stuff but its not machine parseable and therefore ambiguous.)
 * To exec into the first container of a pod of a given deployment, you don't need to know the pod's name. You can do something like this: `kubectl exec deploy/<deployname> -i -t -- bash`
 * To list the clusters in your kubeconfig, run `kubectl config get-contexts`.
 
