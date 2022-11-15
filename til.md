@@ -44,6 +44,7 @@
 
 # postgres
 
+* `psql` to get a prompt (might need to instal postgresql)
 * `\dt` -> show tables
 * `\d` -> describe a single table
 
