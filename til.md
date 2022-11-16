@@ -45,8 +45,13 @@
 # postgres
 
 * `psql` to get a prompt (might need to instal postgresql)
-* `\dt` -> show tables
-* `\d` -> describe a single table
+* postgres commands
+    * `\l` or `\list` -> list databases
+    * `\c <database>` -> connect to database
+    * `\dt` -> show tables
+    * `\d` -> describe a single table
+    * `\h` or `\help` -> shows available sql commands
+    * `\?` -> shows available backlash commands
 
 # JQ
 
