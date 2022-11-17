@@ -742,6 +742,7 @@
 
 # bash
 
+* `compgen -c` lists all shell commands you can execute.
 * `$'stuff'` -- when you write a string like this, then inside the string you can escape both types of string quotes.
     ```
     bash -c $'echo \'{\"hi\": \"bye\"}\' | jq"
