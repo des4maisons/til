@@ -1,3 +1,9 @@
+# React
+
+* `<Route>` in `react-router` - if you pass both an `element=` and a sub-nested component,
+    then the nested component gets plugged into any declared `outlet` of the passed in `element`.
+    This is somewhat documented [here](https://reactrouter.com/en/main/hooks/use-outlet).
+
 # MacOS
 
 * `launchctl` is kind of like `systemctl`. You can see init processes with `launchctl list` and control them too.
