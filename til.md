@@ -669,6 +669,7 @@
 
 # command line
 
+* `curl` v7.75+ adds the `--aws-sigv4` flag which correctly signs the request for the service in question given an access key.
 * `numfmt` lets you convert from one unit of numbers from another, including converting from "human readable" units to no units.
     Eg to sum the output of `du -h --summarize`, you can do something like
     ```
