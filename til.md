@@ -809,6 +809,19 @@
 
 # git, github
 
+* To include `` ``` `` in a code block, use four backtics for the code fence. To include four backtics, code-fence with five backtics. eg:
+
+    `````
+    ````
+    ```
+    ````
+    `````
+    
+    will render as
+    
+    ````
+    ```
+    ````
 * Since `git checkout` was a bit overloaded, they've added `git switch <branch>`
     to switch branches and `git restore --source=<treeish> <filepath>` to restore
     files to their previous versions.
