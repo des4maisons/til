@@ -73,7 +73,7 @@
 # Package Management
 
 * `brew ls <package>` shows you where the package is installed
-* `yarn upgrade interactive` let's you interactively see which dependencies are out of date, semver-compatible, and upgrade them. `--latest` ensures it's offering to upgrade stuff past what is pinned in your `package.json`.
+* `yarn upgrade-interactive` let's you interactively see which dependencies are out of date, semver-compatible, and upgrade them. `--latest` ensures it's offering to upgrade stuff past what is pinned in your `package.json`.
 * `yarn why <package name>` will tell you all your dependencies for a given node package, including all its different versions.
 * Semver `~` means: "Allows patch-level changes if a minor version is specified on the comparator. Allows minor-level changes if not."
 * Semver `^` means: "Allows changes that do not modify the left-most non-zero element in the [major, minor, patch] tuple."
