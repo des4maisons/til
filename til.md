@@ -1647,6 +1647,10 @@
 
 # everything else
 
+* To insert an HTML anchor into a markdown page that you can reference later, use
+    ```
+    <a id="my-anchor"></a>
+    ```
 * `make --dry-run` will print the command instead of running.
 * To view the list of all scaffolder actions in backstage, go to `<backstage-base-url>/create/actions`.
 * buildkite terminology: "When you run a pipeline, a build is created. Each of the steps in the pipeline end up as jobs in the build, which then get distributed to available agents."
