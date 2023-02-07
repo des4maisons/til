@@ -1647,6 +1647,9 @@
 
 # everything else
 
+* On google docs, you can embed code by Insert -> Building Blocks -> Code Block.
+* On backstage, you can force-refresh an entity by clicking on the refresh icon
+  in the About section on its entity page.
 * To insert an HTML anchor into a markdown page that you can reference later, use
     ```
     <a id="my-anchor"></a>
