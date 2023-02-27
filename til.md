@@ -72,6 +72,8 @@
 
 # Package Management
 
+* You can pass flags to `apt` to enable debug output using `-oDebug::<flag>=1`. See `man apt.conf` for list of options.
+* You can tell apt to display the url it would use to download a package with the following: `apt download --print-uris <pkg-name>`
 * To view available versions for an apt package, run `apt-cache policy <package>`.
 * To install a specific package version with `apt`, run `apt-get install <package name>=<version>`.
 * For `apt`, `/var/lib/apt/lists` contains the index files for each list. So you can grep in this directory for a package to find out which list provides the package.
