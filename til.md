@@ -72,6 +72,8 @@
 
 # Package Management
 
+* To view available versions for an apt package, run `apt-cache policy <package>`.
+* To install a specific package version with `apt`, run `apt-get install <package name>=<version>`.
 * For `apt`, `/var/lib/apt/lists` contains the index files for each list. So you can grep in this directory for a package to find out which list provides the package.
 * `brew ls <package>` shows you where the package is installed
 * `yarn upgrade-interactive` let's you interactively see which dependencies are out of date, semver-compatible, and upgrade them. `--latest` ensures it's offering to upgrade stuff past what is pinned in your `package.json`.
