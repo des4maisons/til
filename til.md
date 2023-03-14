@@ -165,6 +165,7 @@
 
 # SSL, SSH, scp
 
+* https://www.ssllabs.com/ lets you do a comprehensive test of whether a server's ssl certificate is misconfigured.
 * [Here's](https://d1smxttentwwqu.cloudfront.net/wp-content/uploads/2015/07/SSLTLS_handshake.png) a nice human-readable visual of the SSL handshake
 * To use wildcard globbing with `scp` on the remote server, quote the wildcard.
 
