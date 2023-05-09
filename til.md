@@ -1650,6 +1650,16 @@
   even if you drag the corner of the cell to fill other cells, you must use a
   `$` in front of the column reference. Eg $A1 will fix the column reference.
 * Google Sheets has a "paste column width only" option.
+    
+# sbt
+    
+* `SBT_CREDENTIALS` is used to select the credentials used during the _boot_ phase of SBT, when it downloads the right version of itself and of scala.
+* The credentials file used during boot phase must also be added to the `credentials` setting. It is not enough to specify it only via SBT_CREDENTIALS, nor is it enough to specify it only as a `credentials` setting.
+* The credentials file used during boot phase cannot have multiple credential sets  in it.
+* BUT, other credentials files added to the `credentials` setting _can_ have multiple sets of credentials. You can create a credentials section via a credentials header, `[my-example-repo]`.
+* The Realm in the credentials file has to correspond with the basic auth realm http response header that the host returns when you make a request to it.
+* Resolvers & the repositories file are only used for _fetching_ packages.
+* To specify where you want to publish a package to, use the `publishTo` sbt setting.
 
 # everything else
 
