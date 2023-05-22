@@ -758,6 +758,7 @@
 
 # bash
 
+* `${bla:-blee}` will return `blee` if `bla` has not been set. (Default value for variable.)
 * `compgen -c` lists all shell commands you can execute.
 * `$'stuff'` -- when you write a string like this, then inside the string you can escape both types of string quotes.
     ```
@@ -785,7 +786,7 @@
 * To exit with an error message if a variable is not set or is empty:
 
     ```
-    ${foo:? error}
+    : ${foo:? error}
     exits with status 1, with this output: bash: foo:  error
     ```
 * Parameter substitution documentation [lives here](http://www.tldp.org/LDP/abs/html/parameter-substitution.html)
