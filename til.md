@@ -819,6 +819,7 @@
 
 # git, github
 
+* You can exclude a label from a github issue search by using `-label:foo`.
 * To include `` ``` `` in a code block, use four backtics for the code fence. To include four backtics, code-fence with five backtics. eg:
 
     `````
