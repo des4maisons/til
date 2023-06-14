@@ -72,6 +72,7 @@
 
 # Package Management
 
+* You can access an apt repo's index via your web browser, eg https://apt.datadoghq.com/dists/stable/main/binary-arm64/Packages - `stable` is the "distro" and "main" is the component
 * You can pass flags to `apt` to enable debug output using `-oDebug::<flag>=1`. See `man apt.conf` for list of options.
 * You can tell apt to display the url it would use to download a package with the following: `apt download --print-uris <pkg-name>`
 * To view available versions for an apt package, run `apt-cache policy <package>`.
