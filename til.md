@@ -7,6 +7,10 @@
 # MacOS
 
 * `launchctl` is kind of like `systemctl`. You can see init processes with `launchctl list` and control them too.
+* To see which files are being opened, run this script:
+    ```
+    sudo dtrace -n 'syscall::open*:entry { printf("%s %s",execname,copyinstr(arg0)); }
+    ```
 
 # Github actions / github workflows
 
