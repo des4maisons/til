@@ -170,6 +170,7 @@
 
 # SSL, SSH, scp
 
+* in ssh-config, `ControlMaster` let's you share a network connection between multiple SSH processes. This is useful paired with `ControlTimeout`, which can hold open the connection for a length of time.
 * https://www.ssllabs.com/ lets you do a comprehensive test of whether a server's ssl certificate is misconfigured.
 * [Here's](https://d1smxttentwwqu.cloudfront.net/wp-content/uploads/2015/07/SSLTLS_handshake.png) a nice human-readable visual of the SSL handshake
 * To use wildcard globbing with `scp` on the remote server, quote the wildcard.
@@ -1670,6 +1671,8 @@
 
 # everything else
 
+* In Ansible, you can start your playbook midway through by using `--start-at-task <name-of-task>`.
+* In Ansible, to reduce time spent gathering facts if they are not needed, set `gather_facts: no`.
 * On google docs, you can embed code by Insert -> Building Blocks -> Code Block.
 * On backstage, you can force-refresh an entity by clicking on the refresh icon
   in the About section on its entity page.
