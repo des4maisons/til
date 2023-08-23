@@ -523,6 +523,8 @@
 
 # system
 
+* View your current umask with the `umask` command.
+* View the umask of a running process with: `grep -i umask /proc/<pid>/status`. Use `-i` because for some reason `umask` is capitalized...
 * https://command-not-found.com/ shows you the name of the package containing a command, for many different distros.
 * `lsb_release -a` prints your ubuntu version.
 * `otool -L` is the OSX equivalent of `ldd`
