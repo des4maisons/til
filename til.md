@@ -1555,7 +1555,7 @@
     @mock.patch('foo1')
     @mock.patch('foo2')
     def test_with_foo_stubbed(self, foo2_stub, foo1_stub):
-        foo_stub.return_value = 'stompy'
+        foo1_stub.return_value = 'stompy'
     ```
     Note the reverse order for decorators as compared to arguments.
 * To patch a certain identifier, you need to patch using the right name. Let's say you
