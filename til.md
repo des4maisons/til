@@ -1509,6 +1509,80 @@
 
 # python
 
+* In python3 you don't need `(object)` when declaring a class.
+* Run `black` with `--preview` to enable more aggressive auto-fixing like linebreaks.
+* `flake8` does not provide auto-fixing. You need `black` for that.
+* You need to set the log level BEFORE you log your first line:
+    ```python
+    # this
+    import logging
+    logging.basicConfig(level=logging.DEBUG)
+    logging.debug('hi')
+
+    # not this
+    import logging
+    logging.debug('hi')
+    logging.basicConfig(level=logging.DEBUG)
+    logging.debug('another hi') #<- this will never be logged to the screen
+    ```
+* I'm still a bit confused by the `logging` stdlib but the following are both valid:
+    ```
+    import logging
+    logging.debug(...)
+    # and
+    logger = logging.getLogger(__name__)
+    logger.debug(...)
+    ```
+* `pyhamcrest` is a library of matchers. To make this library compatible with `unittest.mock`,
+    do the following:
+    ```python
+    import hamcrest
+    logger.stub.assert_called_with(
+        hamcrest.library.integration.match_equality(
+            contains_string('my substring')
+        )
+    )
+    ```
+    Massage your imports to make the above less ugly.
+* Use `python -m unittest discover` to find all the test python files and run them
+* When making assertions about the arguments passed to a mock, the only matcher provided by
+    `unittest` is `mock.ANY` which matches a positional argument. However you can write your
+    own matchers. Under the hood, `unittest` is using `==` to compare the matcher with the actual argument.
+    So if you create an object that implements `__eq__` in the way that you are trying to match,
+    then it can be used as a matcher.
+* Here is the syntax to patch an identifier:
+    ```python
+    @mock.patch('foo1')
+    @mock.patch('foo2')
+    def test_with_foo_stubbed(self, foo2_stub, foo1_stub):
+        foo_stub.return_value = 'stompy'
+    ```
+    Note the reverse order for decorators as compared to arguments.
+* To patch a certain identifier, you need to patch using the right name. Let's say you
+    `import process` and do `process.run` in your program, and you want to stub `process.run`.
+    Then you would use `@mock.patch('process.run')`. However, if in your program/module you
+    did `from process import run`, then you would use `@mock.patch('<your-module-name>.run')`.
+* To return different results from a stubbed function, you need to set the `side_effect`
+    attribute on the stubbed function to a callable that will decide what to return.
+
+    The docs aren't particularly clear on this but it's legitimate to make the side_effect
+    function raise exceptions based on certain input, with no ill effect on the mocking process.
+* Unittest patch vs mock:
+    * patching a reference means when that reference is invoked within your code,
+        its behaviour will be replaced with the patched (mock) object
+    * a mock is a dummy object that you can configure to behave how you want, and
+        and you can make assertions about what calls were made with what arguments
+* poetry cheat sheet:
+    ```
+    poetry init
+    poetry install [--with <group>]
+    poetry add [--group <group>]
+    poetry run <executable-in-the-project-virtualenv>
+    poetry run python
+    ```
+* Poetry creates a virtualenv somewhere and installs all your deps there.
+    It also separates your lockfile from your "declared dependencies". You
+    declare your dependencies in a `pyproject.toml`.
 * python3 virtualenv incantation: `python3 -m venv tutorial-env`
 * [Manipulating binary data in python](http://www.devdungeon.com/content/working-binary-data-python)
 * `list('abc')` => `['a', 'b', 'c']` in python (list of a string makes a list
