@@ -1509,6 +1509,15 @@
 
 # python
 
+* To disable a flake8 lint rule on a line, append `# noqa: E<rule-id>`. If you want to skip the rule
+    on a multi-line-spanning python statement, eg multi line string or import line, you can put it
+    at the end of the last line. `'''  # noqa: E<id>`
+* To disable `black` formatting on one line, append `# fmt: skip` to the line. For a block of code,
+    ```python
+    # fmt: off
+    blabla
+    # fmt: on
+    ```
 * In python3 you don't need `(object)` when declaring a class.
 * Run `black` with `--preview` to enable more aggressive auto-fixing like linebreaks.
 * `flake8` does not provide auto-fixing. You need `black` for that.
