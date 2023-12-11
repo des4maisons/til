@@ -766,6 +766,12 @@
 
 # bash
 
+* The file specified by `$BASH_ENV` will be sourced at the beginning of non-interactive bash sessions.
+    This is useful for passing env vars from one CircleCI step to another, since files are persisted but env vars are not.
+    Eg:
+    ```bash
+    echo 'export PATH="$GOPATH"/bin:"$PATH"' >> "$BASH_ENV
+    ```
 * `${bla:-blee}` will return `blee` if `bla` has not been set. (Default value for variable.)
 * `compgen -c` lists all shell commands you can execute.
 * `$'stuff'` -- when you write a string like this, then inside the string you can escape both types of string quotes.
