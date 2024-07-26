@@ -833,6 +833,8 @@
 
 # git, github
 
+* When searching code, use `NOT is:archived` to within non-archived repos.
+* When searching repos, use `archived:false` to search for non-archived repos
 * You can exclude a label from a github issue search by using `-label:foo`.
 * To include `` ``` `` in a code block, use four backtics for the code fence. To include four backtics, code-fence with five backtics. eg:
 
@@ -868,7 +870,6 @@
 * Github can automatically generate a table of contents for markdown files. To access it,
     there's a button at the top left of a markdown file that you click to access all the
     headings. [See these docs](https://github.blog/changelog/2021-04-13-table-of-contents-support-in-markdown-files/)
-* `archived:false` to search non-archived repos
 * Github search links:
     * The one I find most useful: [Searching Code](https://help.github.com/articles/searching-code/)
     * [advanced search](https://github.com/search/advanced)
