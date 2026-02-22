@@ -11,6 +11,9 @@
     ```
     sudo dtrace -n 'syscall::open*:entry { printf("%s %s",execname,copyinstr(arg0)); }
     ```
+* To see which process is using a USB drive, `sudo lsof /Volumes/<drive-name>`
+* Disable Spotlight indexing of your volume: `sudo mdutil -i off /Volumes/<drive-name>`
+* Flush the "quicklook" cache: `qlmanage -r cache` or force quit Finder - to release file locks held by quicklook
 
 # Github actions / github workflows
 
