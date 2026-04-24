@@ -56,6 +56,7 @@
 
 # terraform
 
+* if module A has `depends_on = [module.B]`, and module B has any pending changes, then all data sources inside module A will be re-read at apply time — their values become (known after apply) during planning.
 * set `TF_LOG=TRACE` or DEBUG, INFO, WARN or ERROR if you want terraform to tell you more about what it's doing, eg why you are getting an unauthorized.
 
 # postgres
